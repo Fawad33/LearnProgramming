@@ -4,7 +4,7 @@
 
 using namespace std;
 
-bool checkHappyNumber(int n, vector<int> v){
+bool checkHappyNumber2(int n, vector<int> v){
 	int sum = 0, ntemp = n;
 	if (n == 1){
 		return true;
@@ -22,24 +22,24 @@ bool checkHappyNumber(int n, vector<int> v){
 	}
 
 	v.push_back(ntemp);
-	return checkHappyNumber(sum , v);
+	return checkHappyNumber2(sum , v);
 
 }
 
-bool isHappy(int n){
+bool isHappy2(int n){
 	vector<int> v;
-	return checkHappyNumber(n,v);	
+	return checkHappyNumber2(n,v);	
 }
 
 
-void main(){
-	int num;
-	cout << "Enter a number: ";
-	cin >> num;
-	if (isHappy(num) == true){
-		cout << "True" << endl;
-	}
-	else{
-		cout << "False" << endl;
-	}
-}
+//void main(){
+//	int num;
+//	cout << "Enter a number: ";
+//	cin >> num;
+//	if (isHappy(num) == true){
+//		cout << "True" << endl;
+//	}
+//	else{
+//		cout << "False" << endl;
+//	}
+//}

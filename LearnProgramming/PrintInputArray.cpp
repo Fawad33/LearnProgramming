@@ -9,11 +9,11 @@ void printArray(int a[5]){
 	}
 }
 
-void main(){
-	int arr[5];
-	cout << "Enter 5 numbers: " << endl;
-	for (int i = 0; i < 5; i++){
-		cin >> arr[i];
-	}
-	printArray(arr);
-}
+//void main(){
+//	int arr[5];
+//	cout << "Enter 5 numbers: " << endl;
+//	for (int i = 0; i < 5; i++){
+//		cin >> arr[i];
+//	}
+//	printArray(arr);
+//}

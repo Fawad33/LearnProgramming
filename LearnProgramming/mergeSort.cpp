@@ -1,7 +1,7 @@
 #include<iostream>
 
 using namespace std;
-//
+
 void merge(int a[], int p, int q, int r){
 	int n1 = q - p + 1;
 	int n2 = r - q;
@@ -44,11 +44,11 @@ void mergeSort(int a[], int p, int r){
 }
 
 
-void main(){
-	int a[] = { 1, 2, 3, 6, 5, 4 };
-	mergeSort(a, 0, 5);
-	for (int i = 0; i < 6; i++){
-		printf("%d ", a[i]);
-	}
-
-}
+//void main(){
+//	int a[] = { 1, 2, 3, 6, 5, 4 };
+//	mergeSort(a, 0, 5);
+//	for (int i = 0; i < 6; i++){
+//		printf("%d ", a[i]);
+//	}
+//
+//}

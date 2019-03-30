@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -127,12 +127,17 @@
     <ClCompile Include="HappyNumber.cpp" />
     <ClCompile Include="HappyNumberWithTwoFuctionUpdated.cpp" />
     <ClCompile Include="HappyNumberWithTwoFunctions.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="mergeSort.cpp" />
     <ClCompile Include="PrintInputArray.cpp" />
     <ClCompile Include="RomanToInteger.cpp" />
+    <ClCompile Include="Sample.cpp" />
     <ClCompile Include="SearchInArray.cpp" />
     <ClCompile Include="SearchInVector.cpp" />
     <ClCompile Include="SearchWithBool.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sample.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

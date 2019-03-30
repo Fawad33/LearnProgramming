@@ -11,12 +11,12 @@ int addDigits(int num) {
 		return sum;
 }
 
-int main(){
-	int n;
-	cout << "Enter a number: " << endl;
-	cin >> n;
-	cout << addDigits(n) << endl;
-
-	return 0;
-}
+//int main(){
+//	int n;
+//	cout << "enter a number: " << endl;
+//	cin >> n;
+//	cout << adddigits(n) << endl;
+//
+//	return 0;
+//}
 

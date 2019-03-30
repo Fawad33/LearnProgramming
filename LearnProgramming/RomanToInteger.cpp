@@ -3,72 +3,69 @@
 
 using namespace std;
 
-int romanToInteger(string input){
+int romanToInteger(string s){
 	int total = 0;
-	for (auto x : input){
-		if (x == 'I'){
-			if (x + 1 == 'V'){
+	int length = s.length();
+	for (int i = 0; i < length; i++) {
+		if (s[i] == 'I'){
+			if (s[i + 1] == 'V'){
 				total += 4;
-				x++;
+				i++;
 			}
-			else if (x + 1 == 'X'){
+			else if (s[i + 1] == 'X'){
 				total += 9;
-				//x = x + 1;
+				i++;
 			}
 			else{
 				total += 1;
 			}
-			
 		}
-		else if (x == 'V'){
+		else if (s[i] == 'V'){
 			total += 5;
 		}
-		else if (x == 'X'){
-			total += 10;
-			if (x + 1 == 'L'){
+		else if (s[i] == 'X'){
+			if (s[i + 1] == 'L'){
 				total += 40;
-				x = x + 1;
+				i++;
 			}
-			else if (x + 1 == 'C'){
+			else if (s[i + 1] == 'C'){
 				total += 90;
-				x = x + 1;
+				i++;
 			}
 			else{
-				total += 1;
+				total += 10;
 			}
 		}
-		else if (x == 'L'){
+		else if (s[i] == 'L'){
 			total += 50;
 		}
-		else if (x == 'C'){
-			total += 100;
-			if (x + 1 == 'D'){
+		else if (s[i] == 'C'){
+			if (s[i + 1] == 'D'){
 				total += 400;
-				x = x + 1;
+				i++;
 			}
-			else if (x + 1 == 'M'){
+			else if (s[i + 1] == 'M'){
 				total += 900;
-				x = x + 1;
+				i++;
 			}
 			else{
-				total += 1;
+				total += 100;
 			}
 		}
-		else if (x == 'D'){
+		else if (s[i] == 'D'){
 			total += 500;
 		}
-		else if (x == 'M'){
+		else if (s[i] == 'M'){
 			total += 1000;
 		}
 	}
 	return total;
 }
 
-int main(){
-	string input;
-	cout << "Enter a valid roman number: ";
-	cin >> input;
-	cout <<"Integer value of the string is: " << romanToInteger(input) << endl;
-
-	return 0;
-}
+//int main(){
+//	string input;
+//	cout << "Enter a valid roman number: ";
+//	cin >> input;
+//	cout <<"Integer value of the string is: " << romanToInteger(input) << endl;
+//	return 0;
+//}
