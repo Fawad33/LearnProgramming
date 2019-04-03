@@ -131,6 +131,7 @@
     <ClCompile Include="mergeSort.cpp" />
     <ClCompile Include="PrintInputArray.cpp" />
     <ClCompile Include="RomanToInteger.cpp" />
+    <ClCompile Include="RotateArray.cpp" />
     <ClCompile Include="Sample.cpp" />
     <ClCompile Include="SearchInArray.cpp" />
     <ClCompile Include="SearchInVector.cpp" />
