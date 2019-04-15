@@ -15,7 +15,7 @@ void rotate(int nums[], int k) {
 
 	//int newSize = sizeof(numsNew);
 
-	for (int i = 0; i < size - k; i++) {
+	for (int i = k; i <= size; i++) {
 		numsNew[k] = nums[i];
 		k++;
 	}
