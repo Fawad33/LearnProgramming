@@ -7,15 +7,13 @@ void rotate(int nums[], int k) {
 	int numsNew[5];
 	int size = sizeof(nums);
 
-	for (int i = size - k; i <= size; i++) {
+	for (int i = size - k; i < size; i++) {
 		int j = 0;
 		numsNew[j] = nums[i];
 		j++;
 	}
 
-	//int newSize = sizeof(numsNew);
-
-	for (int i = k; i <= size; i++) {
+	for (int i = 0; i < size - k; i++) {
 		numsNew[k] = nums[i];
 		k++;
 	}
