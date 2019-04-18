@@ -24,10 +24,10 @@ void rotate(int nums[], int k) {
 
 }
 
-int main() {
-	int number;
-	int nums[5] = { 0, 1, 2, 3, 4 };
-	cout << "Enter the number of k: ";
-	cin >> number;	
-	rotate(nums, number);
-}
+//int main() {
+//	int number;
+//	int nums[5] = { 0, 1, 2, 3, 4 };
+//	cout << "Enter the number of k: ";
+//	cin >> number;	
+//	rotate(nums, number);
+//}
