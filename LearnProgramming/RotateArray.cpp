@@ -4,11 +4,11 @@
 using namespace std;
 
 void rotate(vector<int> nums, int k) {
-	int i = 0, j = 0;
+	int j = 0;
 	vector<int> numsNew;
 	int sizeNum = nums.size();
 
-	for (i = sizeNum - k; i < sizeNum - 1; i++) {		
+	for (int i = sizeNum - k; i < sizeNum - 1; i++) {		
 		numsNew[j] = nums[i];
 		j++;
 	}
