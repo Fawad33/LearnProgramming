@@ -1,2 +1,2 @@
-﻿  LinkedList.cpp
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\LinkedList.cpp(15): error C4700: uninitialized local variable 'second' used
+﻿  RotateArray.cpp
+  LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe

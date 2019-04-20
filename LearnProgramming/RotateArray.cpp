@@ -3,31 +3,35 @@
 
 using namespace std;
 
-void rotate(int nums[], int k) {
-	int numsNew[5];
-	int size = sizeof(nums);
+void rotate(vector<int> nums, int k) {
+	int i = 0, j = 0;
+	vector<int> numsNew;
+	int sizeNum = nums.size();
 
-	for (int i = size - k; i < size; i++) {
-		int j = 0;
+	for (int i = sizeNum - k; i < sizeNum - 1; i++) {		
 		numsNew[j] = nums[i];
 		j++;
 	}
 
-	for (int i = 0; i < size - k; i++) {
+	for (int i = 0; i < sizeNum - k - 1; i++) {
 		numsNew[k] = nums[i];
-		k++;
 	}
 
-	for (int i = 0; i < 5; i++) {
-		cout << numsNew[i] << " ";
+	for (auto i = numsNew.begin(); i != numsNew.end(); i++) {
+		cout << numsNew[*i] << " ";
 	}
 
 }
 
-//int main() {
-//	int number;
-//	int nums[5] = { 0, 1, 2, 3, 4 };
-//	cout << "Enter the number of k: ";
-//	cin >> number;	
-//	rotate(nums, number);
-//}
+int main() {
+	int number;
+	cout << "Enter the number of k: ";
+	cin >> number;
+	vector<int> nums;
+	nums.push_back(5);
+	nums.push_back(6);
+	nums.push_back(7);
+	nums.push_back(8);
+	nums.push_back(9);
+	rotate(nums, number);
+}
