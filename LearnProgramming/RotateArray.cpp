@@ -8,7 +8,7 @@ void rotate(vector<int> nums, int k) {
 	vector<int> numsNew;
 	int sizeNum = nums.size();
 
-	for (int i = sizeNum - k; i < sizeNum - 1; i++) {		
+	for (i = sizeNum - k; i < sizeNum - 1; i++) {		
 		numsNew[j] = nums[i];
 		j++;
 	}
