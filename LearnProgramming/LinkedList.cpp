@@ -19,7 +19,7 @@ int main() {
 	second->link = first;
 
 	node *third = new node();
-	third->info = 7;
+	third->info = 9;
 	third->link = second;
 
 	node *ptr = third;
