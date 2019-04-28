@@ -8,13 +8,13 @@ void rotate(vector<int> nums, int k) {
 	vector<int> numsNew;
 	int sizeNum = nums.size();
 
-	for (int i = sizeNum - k; i < sizeNum - 1; i++) {		
-		numsNew[j] = nums[i];
-		j++;
+	for (int i = sizeNum - k; i < sizeNum; i++) {		
+		numsNew.push_back(nums[i]);
+	
 	}
 
-	for (int i = 0; i < sizeNum - k - 1; i++) {
-		numsNew[k] = nums[i];
+	for (int i = 0; i < sizeNum - k; i++) {
+		numsNew.push_back(nums[i]);
 	}
 
 	for (auto i = numsNew.begin(); i != numsNew.end(); i++) {
