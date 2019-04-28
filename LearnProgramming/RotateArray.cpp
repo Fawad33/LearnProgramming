@@ -23,15 +23,15 @@ void rotate(vector<int> nums, int k) {
 
 }
 
-//int main() {
-//	int number;
-//	cout << "Enter the number of k: ";
-//	cin >> number;
-//	vector<int> nums;
-//	nums.push_back(5);
-//	nums.push_back(6);
-//	nums.push_back(7);
-//	nums.push_back(8);
-//	nums.push_back(9);
-//	rotate(nums, number);
-//}
+int main() {
+	int number;
+	cout << "Enter the number of k: ";
+	cin >> number;
+	vector<int> nums;
+	nums.push_back(5);
+	nums.push_back(6);
+	nums.push_back(7);
+	nums.push_back(8);
+	nums.push_back(9);
+	rotate(nums, number);
+}
