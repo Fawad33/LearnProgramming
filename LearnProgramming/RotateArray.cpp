@@ -21,22 +21,29 @@ void rotate(vector<int> nums, int k) {
 	}
 
 	cout << "[";
-	for (auto i = numsNew.begin(); i != numsNew.end(); i++) {
-		cout << *i << ",";
+	for (auto i : numsNew) {
+		if (i == numsNew[0]) {
+			cout << i;
+		}
+		else {
+			cout << "," << i;
+		}
 	}
 	cout << "]";
 
 }
 
-//int main() {
-//	int number;
-//	cout << "Enter the number of k: ";
-//	cin >> number;
-//	vector<int> nums;
-//	nums.push_back(5);
-//	nums.push_back(6);
-//	nums.push_back(7);
-//	nums.push_back(8);
-//	nums.push_back(9);
-//	rotate(nums, number);
-//}
+int main() {
+	int number;
+	cout << "Enter the number of k: ";
+	cin >> number;
+	vector<int> nums;
+	nums.push_back(1);
+	nums.push_back(2);
+	nums.push_back(3);
+	nums.push_back(4);
+	nums.push_back(5);
+	nums.push_back(6);
+	nums.push_back(7);
+	rotate(nums, number);
+}

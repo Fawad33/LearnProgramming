@@ -10,18 +10,18 @@ struct node {
 node* createLinkedList(int size) {
 	node* head = NULL;
 	node* temp = NULL;
-	node* traverse = NULL;
-
+	
 	for (int i = 0; i < size; i++) {
-		temp = (node*)malloc(sizeof(node));
+		temp = new(node);
 		cout << "Enter the data of the node " << i + 1 << ": ";
 		cin >> temp->info;
 		temp->link = NULL;
-
+		
 		if (head == NULL) {
 			head = temp;
 		}
 		else {
+			node* traverse = NULL;
 			traverse = head;
 			while (traverse->link != NULL) {
 				traverse = traverse->link;
@@ -40,12 +40,11 @@ void displayLinkedList(node * head) {
 	}
 }
 
-
-int main() {
-	int size;
-	node* HEAD = NULL;
-	cout << "enter the size of linked list: ";
-	cin >> size;
-	HEAD = createLinkedList(size);
-	displayLinkedList(HEAD);
-}
+//int main() {
+//	int size = 0;
+//	node* HEAD = NULL;
+//	cout << "enter the size of linked list: ";
+//	cin >> size;
+//	HEAD = createLinkedList(size);
+//	displayLinkedList(HEAD);
+//}
