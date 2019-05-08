@@ -20,16 +20,26 @@ void rotate(vector<int> nums, int k) {
 		numsNew.push_back(nums[i]);
 	}
 
+	for (int i = 0; i < sizeNum; i++) {
+		nums.pop_back();
+	}
+
+	for (int i = 0; i < sizeNum; i++) {
+		nums.push_back(numsNew[i]);
+	}
+
+	/*int count = 0;
 	cout << "[";
 	for (auto i : numsNew) {
-		if (i == numsNew[0]) {
-			cout << i;
+		if (count == 0) {
+			cout << i;		
 		}
 		else {
 			cout << "," << i;
 		}
+		count++;
 	}
-	cout << "]";
+	cout << "]";*/
 
 }
 
