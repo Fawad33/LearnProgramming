@@ -1,2 +1,2 @@
-﻿  RotateArray.cpp
-  LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe
+﻿LinkedListByUserInputInArray.obj : error LNK2005: "void __cdecl displayLinkedList(struct node *)" (?displayLinkedList@@YAXPAUnode@@@Z) already defined in LinkedListByUserInput.obj
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe : fatal error LNK1169: one or more multiply defined symbols found

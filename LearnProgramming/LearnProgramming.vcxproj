@@ -129,6 +129,7 @@
     <ClCompile Include="HappyNumberWithTwoFunctions.cpp" />
     <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="LinkedListByUserInput.cpp" />
+    <ClCompile Include="LinkedListByUserInputInArray.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="mergeSort.cpp" />
     <ClCompile Include="PrintInputArray.cpp" />
