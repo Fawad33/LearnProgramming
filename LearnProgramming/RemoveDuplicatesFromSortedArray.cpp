@@ -16,7 +16,6 @@ int removeDuplicates(vector<int> inputArray) {
 		}
 		else {
 			inputArray.erase(x);
-			x++;
 		}
 		n++;
 	}
