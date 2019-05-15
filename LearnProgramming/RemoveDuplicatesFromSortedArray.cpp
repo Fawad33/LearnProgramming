@@ -3,22 +3,25 @@
 
 using namespace std;
 
-int removeDuplicates(vector<int> nums) {
+int removeDuplicates(vector<int> inputArray) {
 	int n = 0, x = 1;
 	int* start, * temp;
-	start = &nums[n];
-	temp = &nums[x];
-	int size = nums.size();
+	start = &inputArray[n];
+	temp = &inputArray[x];
+	int size = inputArray.size();
 
-	while (nums[*temp] <= size) {
-		if (*start == *temp) {
-			nums.erase(*temp);
+	while (x < size) {
+		if (*start != *temp) {
+			x++;
+		}
+		else {
+			inputArray.erase(x);
 			x++;
 		}
 		n++;
 	}
 
-	int sizeNew = nums.size();
+	int sizeNew = inputArray.size();
 	return sizeNew;
 }
 
