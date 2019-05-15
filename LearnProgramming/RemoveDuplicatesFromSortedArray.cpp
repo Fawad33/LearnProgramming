@@ -3,31 +3,41 @@
 
 using namespace std;
 
-int removeDuplicates(vector<int> inputArray) {
-	int n = 0, x = 1;
-	int* start, * temp;
-	start = &inputArray[n];
-	temp = &inputArray[x];
-	int size = inputArray.size();
+int removeDuplicates(vector<int> inputArray) {	
+	auto f = inputArray.begin();
+	if (f == inputArray.end())
+		return 0;
+	auto s = f + 1;
+	if (s == inputArray.end())
+		return 0;
 
-	while (x < size) {
-		if (*start != *temp) {
-			x++;
+	auto last = inputArray.end() - 1;
+	for (auto a = inputArray.begin(); a != inputArray.end(); a++) {
+		if (f != s) {
+			if (s == last)
+				break; 
+			else {
+				s++, f++;
+			}
 		}
-		else {
-			inputArray.erase(x);
+		else if (f == s) {
+			if (s == last) {
+				inputArray.erase(s);
+				break;
+			}
+			else {
+				inputArray.erase(s);
+				s = f + 1;
+			}
 		}
-		n++;
 	}
-
-	int sizeNew = inputArray.size();
-	return sizeNew;
+	
+	
+	return inputArray.size();
 }
 
 int main() {
 	vector<int> inputArray;
 	inputArray = {1, 1, 22, 22, 3, 3, 0};
-	for (int i = 0; i < 7; i++)
-		cout << inputArray[i] << " ";
 	cout << removeDuplicates(inputArray);
 }
