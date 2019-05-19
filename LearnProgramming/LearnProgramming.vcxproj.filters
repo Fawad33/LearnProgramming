@@ -72,6 +72,9 @@
     <ClCompile Include="RemoveDuplicatesFromSortedArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="InsertingNode_StartingofLinkedList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sample.h">

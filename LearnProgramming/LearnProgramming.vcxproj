@@ -127,6 +127,7 @@
     <ClCompile Include="HappyNumber.cpp" />
     <ClCompile Include="HappyNumberWithTwoFuctionUpdated.cpp" />
     <ClCompile Include="HappyNumberWithTwoFunctions.cpp" />
+    <ClCompile Include="InsertingNode_StartingofLinkedList.cpp" />
     <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="LinkedListByUserInput.cpp" />
     <ClCompile Include="LinkedListByUserInputInArray.cpp" />

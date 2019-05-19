@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int removeDuplicates(vector<int> inputArray) {	
+int removeDuplicates(vector<int> inputArray) {
 	auto f = inputArray.begin();
 	if (f == inputArray.end())
 		return 0;
@@ -15,7 +15,7 @@ int removeDuplicates(vector<int> inputArray) {
 	for (auto a = inputArray.begin(); a != inputArray.end(); a++) {
 		if (f != s) {
 			if (s == last)
-				break; 
+				break;
 			else {
 				s++, f++;
 			}
@@ -31,13 +31,16 @@ int removeDuplicates(vector<int> inputArray) {
 			}
 		}
 	}
-	
-	
+
+	for (auto a = inputArray.begin(); a != inputArray.end(); a++) {
+		cout << inputArray[*a] << " ";
+	}
 	return inputArray.size();
 }
 
-int main() {
-	vector<int> inputArray;
-	inputArray = {1, 1, 22, 22, 3, 3, 0};
-	cout << removeDuplicates(inputArray);
-}
+
+//int main() {
+//	vector<int> inputArray;
+//	inputArray = {1, 1, 22, 22, 3, 3, 0};
+//	cout << removeDuplicates(inputArray);
+//}
