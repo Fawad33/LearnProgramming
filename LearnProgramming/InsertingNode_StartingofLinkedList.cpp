@@ -45,24 +45,24 @@ void push_node(node** head, int newNodeData) {
 	*head = input_node;
 }
 
-int main() {
-	int size = 0;
-	int inputNode = 0;
-	int* a = nullptr;
-	node* HEAD = nullptr;
-	cout << "Enter the size of the linked list: ";
-	cin >> size;
-	a = new int[size];
-	cout << "Enter the number of nodes: ";
-	for (int i = 0; i < size; i++) {
-		cin >> a[i];
-	}
-	HEAD = createLinkedList(a, size);
-	displayLinkedList(HEAD);
-	cout << "Enter data for the new node which will be inserted in the starting of the list: ";	
-	cin >> inputNode;
-	push_node(&HEAD, inputNode);
-	displayLinkedList(HEAD);
-	delete[] a;
-	return 0;
-}
+//int main() {
+//	int size = 0;
+//	int inputNode = 0;
+//	int* a = nullptr;
+//	node* HEAD = nullptr;
+//	cout << "Enter the size of the linked list: ";
+//	cin >> size;
+//	a = new int[size];
+//	cout << "Enter the number of nodes: ";
+//	for (int i = 0; i < size; i++) {
+//		cin >> a[i];
+//	}
+//	HEAD = createLinkedList(a, size);
+//	displayLinkedList(HEAD);
+//	cout << "Enter data for the new node which will be inserted in the starting of the list: ";	
+//	cin >> inputNode;
+//	push_node(&HEAD, inputNode);
+//	displayLinkedList(HEAD);
+//	delete[] a;
+//	return 0;
+//}

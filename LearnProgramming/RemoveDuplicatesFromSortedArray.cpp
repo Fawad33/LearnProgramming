@@ -31,16 +31,11 @@ int removeDuplicates(vector<int> inputArray) {
 			}
 		}
 	}
-
-	for (auto a = inputArray.begin(); a != inputArray.end(); a++) {
-		cout << inputArray[*a] << " ";
-	}
 	return inputArray.size();
 }
 
-
-//int main() {
-//	vector<int> inputArray;
-//	inputArray = {1, 1, 22, 22, 3, 3, 0};
-//	cout << removeDuplicates(inputArray);
-//}
+int main() {
+	vector<int> inputArray { 1, 1, 22, 22, 3, 3, 0 };
+	cout << removeDuplicates(inputArray);
+	return 0;
+}
