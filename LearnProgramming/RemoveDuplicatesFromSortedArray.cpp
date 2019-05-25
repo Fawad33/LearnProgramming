@@ -13,14 +13,7 @@ int removeDuplicates(vector<int> inputArray) {
 
 	auto last = inputArray.end() - 1;
 	for (auto a = inputArray.begin(); a != inputArray.end(); a++) {
-		if (f != s) {
-			if (s == last)
-				break;
-			else {
-				s++, f++;
-			}
-		}
-		else if (f == s) {
+		if (*f == *s) {
 			if (s == last) {
 				inputArray.erase(s);
 				break;
@@ -30,6 +23,14 @@ int removeDuplicates(vector<int> inputArray) {
 				s = f + 1;
 			}
 		}
+		else{
+			if (s == last)
+				break;
+			else {
+				s + 1, f + 1;
+			}
+		}
+		
 	}
 	return inputArray.size();
 }

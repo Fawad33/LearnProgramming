@@ -133,6 +133,7 @@
     <ClCompile Include="LinkedListByUserInputInArray.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="mergeSort.cpp" />
+    <ClCompile Include="PlusOne.cpp" />
     <ClCompile Include="PrintInputArray.cpp" />
     <ClCompile Include="RemoveDuplicatesFromSortedArray.cpp" />
     <ClCompile Include="RomanToInteger.cpp" />
