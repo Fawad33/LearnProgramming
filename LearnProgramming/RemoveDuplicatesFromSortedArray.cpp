@@ -3,36 +3,35 @@
 
 using namespace std;
 
-int removeDuplicates(vector<int> inputArray) {
-	auto f = inputArray.begin();
-	if (f == inputArray.end())
+int removeDuplicates(vector<int>& nums) {
+	auto f = nums.begin();
+	if (f == nums.end())
 		return 0;
 	auto s = f + 1;
-	if (s == inputArray.end())
-		return 0;
+	if (s == nums.end())
+		return nums.size();
 
-	auto last = inputArray.end() - 1;
-	for (auto a = inputArray.begin(); a != inputArray.end(); a++) {
+	auto last = nums.end() - 1;
+	while (true) {
 		if (*f == *s) {
-			if (s == last) {
-				inputArray.erase(s);
+			if (s + 1 == nums.end()) {
+				nums.erase(s);
 				break;
 			}
 			else {
-				inputArray.erase(s);
+				nums.erase(s);
 				s = f + 1;
 			}
 		}
-		else{
-			if (s == last)
+		else {
+			if (s + 1 == nums.end())
 				break;
 			else {
-				s + 1, f + 1;
+				s++, f++;
 			}
 		}
-		
 	}
-	return inputArray.size();
+	return nums.size();
 }
 
 int main() {
