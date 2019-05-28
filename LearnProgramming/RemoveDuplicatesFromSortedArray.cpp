@@ -34,8 +34,8 @@ int removeDuplicates(vector<int>& nums) {
 	return nums.size();
 }
 
-int main() {
-	vector<int> inputArray { 1, 1, 22, 22, 3, 3, 0 };
-	cout << removeDuplicates(inputArray);
-	return 0;
-}
+//int main() {
+//	vector<int> inputArray { 1, 1, 22, 22, 3, 3, 0 };
+//	cout << removeDuplicates(inputArray);
+//	return 0;
+//}
