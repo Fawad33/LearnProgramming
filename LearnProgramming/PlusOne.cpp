@@ -3,31 +3,24 @@
 
 using namespace std;
 
-vector<int> plusOne(vector<int>& digits) {
-	(*(digits.end() - 1))++;
-	int carry = 0;
-	
+vector<int> plusOne(vector<int>& digits) {	
 	reverse(digits.begin(), digits.end());
-	int last = (*digits.begin());
+	(*(digits.begin()))++;
+	int carry = 0;
 	vector<int> temp;
-
-	if (last == 10) {		
-		for (auto i = digits.begin(); i != digits.end(); i++) {
-			if (*i == 10) {
-				temp.push_back(0);
-				carry++;
-			}
-			else {
-				temp.push_back(*i);
-			}
-			if (carry > 0) {
+	for (auto i = digits.begin(); i != digits.end(); i++) {
+		if (*i == 10) {
+			carry = 1;
+			temp.push_back(0);
+			if ((i + 1) != digits.end()) {
 				(*(i + 1))++;
 				carry--;
 			}
+			else {
+				temp.push_back(1);
+			}
 		}
-	}
-	else {
-		for (auto i = digits.begin(); i != digits.end(); i++) {
+		else {
 			temp.push_back(*i);
 		}
 	}
@@ -39,6 +32,6 @@ vector<int> plusOne(vector<int>& digits) {
 }
 
 int main() {
-	vector<int> inputArray{8,9};
+	vector<int> inputArray{9,9};
 	plusOne(inputArray);
 }
