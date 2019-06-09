@@ -136,6 +136,7 @@
     <ClCompile Include="PlusOne.cpp" />
     <ClCompile Include="PrintInputArray.cpp" />
     <ClCompile Include="RemoveDuplicatesFromSortedArray.cpp" />
+    <ClCompile Include="RemoveElements.cpp" />
     <ClCompile Include="RomanToInteger.cpp" />
     <ClCompile Include="RotateArray.cpp" />
     <ClCompile Include="Sample.cpp" />

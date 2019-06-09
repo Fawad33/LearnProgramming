@@ -31,7 +31,7 @@ vector<int> plusOne(vector<int>& digits) {
 	return temp;
 }
 
-int main() {
-	vector<int> inputArray{9,9};
-	plusOne(inputArray);
-}
+//int main() {
+//	vector<int> inputArray{9,9};
+//	plusOne(inputArray);
+//}
