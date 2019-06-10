@@ -31,9 +31,9 @@ int removeElement(vector<int>& nums, int val) {
 	return nums.size();
 }
 
-int main() {
-	vector<int> nums{ 3,2,2,3 };
-	int value = 3;
-	removeElement(nums, value);
-	return 0;
-}
+//int main() {
+//	vector<int> nums{ 3,2,2,3 };
+//	int value = 3;
+//	removeElement(nums, value);
+//	return 0;
+//}

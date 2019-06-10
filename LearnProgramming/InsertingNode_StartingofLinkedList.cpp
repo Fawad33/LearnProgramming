@@ -22,7 +22,7 @@
 //		else {
 //			node* traverse = nullptr;
 //			traverse = head;
-//			while (traverse != nullptr)
+//			while (traverse->next != nullptr)
 //				traverse = traverse->next;
 //			traverse->next = temp;
 //		}
@@ -50,16 +50,16 @@
 //	int inputnode = 0;
 //	int* a = nullptr;
 //	node* head = nullptr;
-//	cout << "enter the size of the linked list: ";
+//	cout << "Enter the size of the linked list: ";
 //	cin >> size;
 //	a = new int[size];
-//	cout << "enter the number of nodes: ";
+//	cout << "Enter the number of nodes: ";
 //	for (int i = 0; i < size; i++) {
 //		cin >> a[i];
 //	}
 //	head = createlinkedlist(a, size);
 //	displaylinkedlist(head);
-//	cout << "enter data for the new node which will be inserted in the starting of the list: ";	
+//	cout << "\nEnter data for the new node which will be inserted in the starting of the list: ";	
 //	cin >> inputnode;
 //	push_node(&head, inputnode);
 //	displaylinkedlist(head);

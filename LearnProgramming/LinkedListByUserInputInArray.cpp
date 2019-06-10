@@ -18,7 +18,8 @@
 //
 //		if (head == nullptr) {
 //			head = temp;
-//		}else{
+//		}
+//		else{
 //			node* traverse = nullptr;
 //			traverse = head;
 //			while (traverse->next != nullptr) {
