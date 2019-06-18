@@ -4,36 +4,26 @@
 using namespace std;
 
 int removeElement(vector<int>& nums, int val) {
-	auto f = nums.begin();
-	if (f == nums.end())
+	if (nums.size() == 0)
 		return 0;
-	auto s = f + 1;
-	
-	while (true) {
-		if (*f == val) {
-			nums.erase(f);
-			s++;
-			f = s - 1;
-		}
-		else if ((s + 1) == nums.end() && *s == val) {
-			nums.erase(s);
+	for (auto i = nums.begin(); i != nums.end(); i++) {
+		if ((i + 1) == nums.end() && *i == val) {
+			nums.erase(i);
 			break;
 		}
-		else if (*f == val && s == nums.end()) {
-			nums.erase(f);
-			break;
-		}
-		else {
-			s++, f++;
+		else if (*i == val) {
+			auto p = i + 1;
+			nums.erase(i);
+			i = p;
 		}
 	}
 	cout << nums.size();
 	return nums.size();
 }
 
-//int main() {
-//	vector<int> nums{ 3,2,2,3 };
-//	int value = 3;
-//	removeElement(nums, value);
-//	return 0;
-//}
+int main() {
+	vector<int> nums{ 2,3,3,2 };
+	int value = 3;
+	removeElement(nums, value);
+	return 0;
+}

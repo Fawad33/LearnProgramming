@@ -124,6 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AddDigits.cpp" />
+    <ClCompile Include="DeleteNode.cpp" />
     <ClCompile Include="HappyNumber.cpp" />
     <ClCompile Include="HappyNumberWithTwoFuctionUpdated.cpp" />
     <ClCompile Include="HappyNumberWithTwoFunctions.cpp" />
