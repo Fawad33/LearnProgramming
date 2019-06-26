@@ -11,6 +11,7 @@
 //	node* head = nullptr;
 //	node* temp = nullptr;
 //	int x = 0;
+//	int val = 0;
 //
 //	for (int i = 0; i < size; i++) {
 //		temp = new(node);
@@ -30,6 +31,9 @@
 //			traverse->next = temp;
 //
 //		}
+//		val++;
+//
+//		if(val == )
 //	}
 //	return head;
 //}
