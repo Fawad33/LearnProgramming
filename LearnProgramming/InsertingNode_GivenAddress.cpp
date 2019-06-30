@@ -32,10 +32,8 @@
 //
 //		}
 //		val++;
-//
-//		if(val == )
-//	}
 //	return head;
+//
 //}
 //
 //void display(node* head) {

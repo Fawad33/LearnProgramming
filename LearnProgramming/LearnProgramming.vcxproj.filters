@@ -78,13 +78,13 @@
     <ClCompile Include="PlusOne.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RemoveElements.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="InsertingNode_GivenAddress.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DeleteNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveElementsWithFlag.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
