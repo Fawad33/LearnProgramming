@@ -138,6 +138,7 @@
     <ClCompile Include="PlusOne.cpp" />
     <ClCompile Include="PrintInputArray.cpp" />
     <ClCompile Include="RemoveDuplicatesFromSortedArray.cpp" />
+    <ClCompile Include="RemoveElements.cpp" />
     <ClCompile Include="RemoveElementsWithFlag.cpp" />
     <ClCompile Include="RemoveElementWithCount.cpp" />
     <ClCompile Include="RomanToInteger.cpp" />
