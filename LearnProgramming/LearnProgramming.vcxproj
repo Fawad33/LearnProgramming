@@ -124,10 +124,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AddDigits.cpp" />
+    <ClCompile Include="arrayOfPointers.cpp" />
     <ClCompile Include="DeleteNode.cpp" />
     <ClCompile Include="HappyNumber.cpp" />
     <ClCompile Include="HappyNumberWithTwoFuctionUpdated.cpp" />
     <ClCompile Include="HappyNumberWithTwoFunctions.cpp" />
+    <ClCompile Include="HashTable.cpp" />
     <ClCompile Include="InsertingNode_GivenAddress.cpp" />
     <ClCompile Include="InsertingNode_StartingofLinkedList.cpp" />
     <ClCompile Include="LinkedList.cpp" />
