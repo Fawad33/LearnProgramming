@@ -93,10 +93,13 @@
     <ClCompile Include="RemoveElements.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="HashTable.cpp">
+    <ClCompile Include="arrayOfPointers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="arrayOfPointers.cpp">
+    <ClCompile Include="Map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HappyNumberWithHashing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
