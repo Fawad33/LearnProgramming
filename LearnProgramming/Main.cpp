@@ -2,15 +2,17 @@
 //
 //using namespace std;
 //
-//extern int romanToInteger(string s);
+////extern int romanToInteger(string s);
 //
-//int main() {
-//
-//	string input;
-//	cout << "Enter a valid roman number: ";
-//	cin >> input;
-//	cout <<"Integer value of the string is: " << romanToInteger(input) << endl;
-//
-//
-//	return 0;
+//void main() {
+//	int num;
+//	HappyNumberWithHashing::ishappy(num);
+//	cout << "Enter a number: ";
+//	cin >> num;
+//	if (ishappy(num) == true) {
+//		cout << "True";
+//	}
+//	else {
+//		cout << "False";
+//	}
 //}

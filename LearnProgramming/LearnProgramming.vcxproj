@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="AddDigits.cpp" />
     <ClCompile Include="arrayOfPointers.cpp" />
+    <ClCompile Include="FrequencyCountOfInt.cpp" />
     <ClCompile Include="DeleteNode.cpp" />
     <ClCompile Include="HappyNumber.cpp" />
     <ClCompile Include="HappyNumberWithTwoFuctionUpdated.cpp" />

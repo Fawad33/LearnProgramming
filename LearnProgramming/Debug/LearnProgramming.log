@@ -1,7 +1,2 @@
-﻿  HappyNumber.cpp
-  HashMap.cpp
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HashMap.cpp(14): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HashMap.cpp(25): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  Map.cpp
-  Generating Code...
+﻿  CountIntWithMap.cpp
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe
