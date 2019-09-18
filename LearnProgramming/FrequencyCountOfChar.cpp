@@ -19,8 +19,8 @@ void frequencyCountOfChar(string str) {
 		cout << i->first << " occurred " << i->second << " times\n";
 }
 
-int main() {
-	string str = "aaaaabcddddddddd";
-	frequencyCountOfChar(str);
-	return 0;
-}
+//int main() {
+//	string str = "aaaaabcddddddddd";
+//	frequencyCountOfChar(str);
+//	return 0;
+//}
