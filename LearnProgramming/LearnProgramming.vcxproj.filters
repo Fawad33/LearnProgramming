@@ -96,9 +96,6 @@
     <ClCompile Include="arrayOfPointers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Map.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="HappyNumberWithHashing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -109,6 +106,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="FrequencyCountOfWords.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FrequencyCountOfWordsModular.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

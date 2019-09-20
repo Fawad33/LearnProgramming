@@ -32,11 +32,11 @@ void countWords(string word) {
 	}
 }
 
-int main() {
-	string str = "the quick brown fox jumped over the lazy dog";
-	seperateWord(str);
-	for (auto i = wordCount.begin(); i != wordCount.end(); i++) {
-		cout << i->first << " appeared " << i->second << " times" << endl;
-	}
-	return 0;
-}
+//int main() {
+//	string str = "nigga nigga nigga";
+//	seperateWord(str);
+//	for (auto i = wordCount.begin(); i != wordCount.end(); i++) {
+//		cout << i->first << " appeared " << i->second << " times" << endl;
+//	}
+//	return 0;
+//}

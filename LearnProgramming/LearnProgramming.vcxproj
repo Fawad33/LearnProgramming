@@ -129,11 +129,11 @@
     <ClCompile Include="FrequencyCountOfInt.cpp" />
     <ClCompile Include="DeleteNode.cpp" />
     <ClCompile Include="FrequencyCountOfWords.cpp" />
+    <ClCompile Include="FrequencyCountOfWordsModular.cpp" />
     <ClCompile Include="HappyNumber.cpp" />
     <ClCompile Include="HappyNumberWithTwoFuctionUpdated.cpp" />
     <ClCompile Include="HappyNumberWithTwoFunctions.cpp" />
     <ClCompile Include="HappyNumberWithHashing.cpp" />
-    <ClCompile Include="Map.cpp" />
     <ClCompile Include="InsertingNode_GivenAddress.cpp" />
     <ClCompile Include="InsertingNode_StartingofLinkedList.cpp" />
     <ClCompile Include="LinkedList.cpp" />
