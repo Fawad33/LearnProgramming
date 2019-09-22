@@ -6,42 +6,38 @@
 using namespace std;
 
 vector<string> seperateWords(string str) {
-	vector<string> singleWord;
+	vector<string> words;
 	string word = "";
-	for (auto i : str) {
-		if (i == ' ') {
-			singleWord.push_back(word);
+	for (auto ch : str) {
+		if (ch == ' ') {
+			words.push_back(word);
 			word = "";
 		}
 		else {
-			word += i;
+			word += ch;
 		}
 	}
-	singleWord.push_back(word);
-	return singleWord;
+	words.push_back(word);
+	return words;
 }
 
-void returnWordCount(vector<string>& wordList) {
-	map<string, int> countWords;
-	map<string, int> ::iterator mapIterator;	
-	for (auto i : wordList) {
-		mapIterator = countWords.find(i);
-		if (mapIterator != countWords.end())
-			mapIterator->second++;
+map<string, int> getWordCount(const vector<string>& wordList) {
+	map<string, int> wordCount;
+
+	for (auto const & word : wordList) {
+		map<string, int> ::iterator it = wordCount.find(word);		
+		if (it != wordCount.end())
+			it->second++;
 		else
-			countWords.insert({ i, 1 });
+			wordCount.insert({word, 1 });
 	}
 
-	for (auto i = countWords.begin(); i != countWords.end(); i++)
-		cout << i->first << " appeared " << i->second << " times" << endl;
-
-	//return countWords;
+	return wordCount;
 }
 
 //int main() {
-//	vector<string> wordList;
 //	string str = "a quick brown fox jumped over the lazy dog";
-//	wordList = seperateWords(str);
-//	returnWordCount(wordList);
+//	for (auto j : getWordCount(seperateWords(str)))
+//		cout << j.first << " appeared " << j.second << " times" << endl;
 //	return 0;
 //}
