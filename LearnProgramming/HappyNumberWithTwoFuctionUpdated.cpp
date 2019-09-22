@@ -4,7 +4,7 @@
 
 using namespace std;
 
-bool checkHappyNumber1(int n, vector<int> v){
+bool checkhappynumber1(int n, vector<int> v){
 	int sum = 0;	
 
 	if (n == 1){
@@ -24,13 +24,13 @@ bool checkHappyNumber1(int n, vector<int> v){
 		n = n / 10;
 	}
 
-	return checkHappyNumber1(sum, v);
+	return checkhappynumber1(sum, v);
 
 }
 
-bool isHappy1(int n){
+bool ishappy1(int n){
 	vector<int> v;
-	return checkHappyNumber1(n, v);
+	return checkhappynumber1(n, v);
 }
 
 //void main(){

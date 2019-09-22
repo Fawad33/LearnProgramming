@@ -38,10 +38,10 @@ void returnWordCount(vector<string>& wordList) {
 	//return countWords;
 }
 
-int main() {
-	vector<string> wordList;
-	string str = "a quick brown fox jumped over the lazy dog";
-	wordList = seperateWords(str);
-	returnWordCount(wordList);
-	return 0;
-}
+//int main() {
+//	vector<string> wordList;
+//	string str = "a quick brown fox jumped over the lazy dog";
+//	wordList = seperateWords(str);
+//	returnWordCount(wordList);
+//	return 0;
+//}

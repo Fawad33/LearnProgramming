@@ -26,10 +26,10 @@ bool checkHappyNumber2(int n, vector<int> v){
 
 }
 
-bool isHappy2(int n){
-	vector<int> v;
-	return checkHappyNumber2(n,v);	
-}
+//bool isHappy2(int n){
+//	vector<int> v;
+//	return checkHappyNumber2(n,v);	
+//}
 
 
 //void main(){

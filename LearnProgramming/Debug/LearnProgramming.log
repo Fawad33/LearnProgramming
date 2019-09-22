@@ -1,2 +1,32 @@
 ﻿  FrequencyCountOfWordsModular.cpp
-  LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe
+  HappyNumberWithMap.cpp
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(11,23) : warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(18,28) : error C2664: 'std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const _Kty,_Ty>>>> std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::insert(std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const _Kty,_Ty>>>>,const std::pair<const _Kty,_Ty> &)': cannot convert argument 1 from 'initializer list' to 'std::pair<const _Kty,_Ty> &&'
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(18,28) : error C2664:         with
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(18,28) : error C2664:         [
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(18,28) : error C2664:             _Kty=int,
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(18,28) : error C2664:             _Ty=int,
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(18,28) : error C2664:             _Pr=std::less<int>,
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(18,28) : error C2664:             _Alloc=std::allocator<std::pair<const int,int>>
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(18,28) : error C2664:         ]
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(18,28) : error C2664:         and
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(18,28) : error C2664:         [
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(18,28) : error C2664:             _Kty=int,
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(18,28) : error C2664:             _Ty=int
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(18,28) : error C2664:         ]
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(18,28) : message : Reason: cannot convert from 'initializer list' to 'std::pair<const _Kty,_Ty>'
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(18,28) : message :         with
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(18,28) : message :         [
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(18,28) : message :             _Kty=int,
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(18,28) : message :             _Ty=int
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(18,28) : message :         ]
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(18,28) : message : No constructor could take the source type, or constructor overload resolution was ambiguous
+  Generating Code...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1343,3) : message : see declaration of 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::insert'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1343,3) : message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1343,3) : message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1343,3) : message :             _Kty=int,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1343,3) : message :             _Ty=int,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1343,3) : message :             _Pr=std::less<int>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1343,3) : message :             _Alloc=std::allocator<std::pair<const int,int>>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1343,3) : message :         ]
