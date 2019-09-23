@@ -1,6 +1,3 @@
-﻿  FrequencyCountOfWordsModular.cpp
-  HappyNumberWithMap.cpp
-  Generating Code...
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(12,23) : warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(25)  : warning C4715: 'isHappy': not all control paths return a value
+﻿  HappyNumberWithMap.cpp
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\HappyNumberWithMap.cpp(13,24) : warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe
