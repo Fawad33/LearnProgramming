@@ -15,14 +15,20 @@ bool isHappy(int n) {
 	}
 
 	auto it = numberMap.find(sum);
-	if (it != numberMap.end()) 
-		return false;
+	if (it != numberMap.end())
+		it->second++;
 	else 
-		numberMap.insert({ it->first, 1 });
+		numberMap.insert({ sum, 1 });
+
+	if (it->second > 1)
+		return false;
 
 	return isHappy(sum);
 }
 
 int main() {
-	cout << isHappy(10);
+	if (isHappy(16) == true)
+		cout << "true";
+	else
+		cout << "false";
 }
