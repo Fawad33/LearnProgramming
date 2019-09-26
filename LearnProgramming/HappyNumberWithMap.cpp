@@ -18,16 +18,13 @@ bool isHappy(int n) {
 	if (it != numberMap.end())
 		it->second++;
 	else 
-		numberMap.insert({ sum, 1 });
-
-	if (it->second > 1)
-		return false;
-
+		auto temp = numberMap.insert({ sum, 1 });
+	
 	return isHappy(sum);
 }
 
 int main() {
-	if (isHappy(16) == true)
+	if (isHappy(17) == true)
 		cout << "true";
 	else
 		cout << "false";
