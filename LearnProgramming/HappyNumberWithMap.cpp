@@ -1,10 +1,11 @@
 #include<iostream>
 #include<map>
+#include<vector>
+#include<cassert>
 
 using namespace std;
 
-bool isHappy(int n) {
-	map<int, int> numberMap;
+bool determineIsHappy(int n, map<int, int> numberMap) {	
 	int sum = 0;
 	if (n == 1)
 		return true;
@@ -16,16 +17,21 @@ bool isHappy(int n) {
 
 	auto it = numberMap.find(sum);
 	if (it != numberMap.end())
-		it->second++;
+		return false;
 	else 
-		auto temp = numberMap.insert({ sum, 1 });
+		numberMap.insert({ sum, 1 });
 	
-	return isHappy(sum);
+	return determineIsHappy(sum,numberMap);
+}
+
+bool isHappy(int number) {	
+	map<int, int> numberMap;
+	return determineIsHappy(number, numberMap);
 }
 
 int main() {
-	if (isHappy(17) == true)
-		cout << "true";
-	else
-		cout << "false";
+	vector<int> happyInputs = { 1, 7, 10, 13, 19, 23, 28, 31, 32, 44, 49, 68, 70 };
+	for (auto i : happyInputs){
+		assert(isHappy(i) == true);
+	}
 }
