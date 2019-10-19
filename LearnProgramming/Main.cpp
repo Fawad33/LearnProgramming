@@ -1,18 +1,17 @@
-//#include<iostream>
-//
-//using namespace std;
-//
-////extern int romanToInteger(string s);
-//
+#include<iostream>
+#include "HappyNumberWithTwoFunctions.cpp"
+
+using namespace std;
+
 //void main() {
 //	int num;
-//	HappyNumberWithHashing::ishappy(num);
+//	HappyNumberWithTwoFunctions happyNumberWithTwoFunctions;
 //	cout << "Enter a number: ";
 //	cin >> num;
-//	if (ishappy(num) == true) {
-//		cout << "True";
+//	if (happyNumberWithTwoFunctions.isHappy2(num) == true) {
+//		cout << "True" << endl;
 //	}
 //	else {
-//		cout << "False";
+//		cout << "False" << endl;
 //	}
 //}

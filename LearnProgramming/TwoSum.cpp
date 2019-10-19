@@ -20,8 +20,8 @@ vector<int> twoSum(vector<int>& nums, int target) {
 	return nums;
 }
 
-void main() {
-	vector<int> numbers = { 6, 1, 2, 7, 11, 15 };
-	int target = 9;
-	twoSum(numbers, target);
-}
+//void main() {
+//	vector<int> numbers = { 6, 1, 2, 7, 11, 15 };
+//	int target = 9;
+//	twoSum(numbers, target);
+//}

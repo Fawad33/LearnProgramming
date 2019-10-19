@@ -152,6 +152,7 @@
     <ClCompile Include="Sample.cpp" />
     <ClCompile Include="SearchInArray.cpp" />
     <ClCompile Include="SearchInLinkedList.cpp" />
+    <ClCompile Include="SearchInsertPosition.cpp" />
     <ClCompile Include="SearchInSortedLinkedList.cpp" />
     <ClCompile Include="SearchInVector.cpp" />
     <ClCompile Include="SearchWithBool.cpp" />
