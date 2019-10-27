@@ -19,9 +19,9 @@ public:
 	}
 };
 
-void main() {
-	vector<int> nums = { 1,3,5,6 };
-	int target = 7;
-	SearchInsertPosition searchInsertPosition;
-	cout << searchInsertPosition.searchInsert(nums, target);
-}
+//void main() {
+//	vector<int> nums = { 1,3,5,6 };
+//	int target = 7;
+//	SearchInsertPosition searchInsertPosition;
+//	cout << searchInsertPosition.searchInsert(nums, target);
+//}

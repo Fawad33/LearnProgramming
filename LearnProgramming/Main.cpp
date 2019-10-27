@@ -1,17 +1,11 @@
 #include<iostream>
-#include "HappyNumberWithTwoFunctions.cpp"
+#include "TwoSum.cpp"
 
 using namespace std;
 
 //void main() {
-//	int num;
-//	HappyNumberWithTwoFunctions happyNumberWithTwoFunctions;
-//	cout << "Enter a number: ";
-//	cin >> num;
-//	if (happyNumberWithTwoFunctions.isHappy2(num) == true) {
-//		cout << "True" << endl;
-//	}
-//	else {
-//		cout << "False" << endl;
-//	}
+//	vector<int> numbers = { 6, 1, 2, 7 };
+//	int target = 9;
+//	TwoSum twoSumObject;
+//	twoSumObject.twoSum(numbers, target);
 //}

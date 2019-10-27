@@ -1,3 +1,4 @@
-﻿  SearchInsertPosition.cpp
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\SearchInsertPosition.cpp(23,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
+﻿  LongestCommonPrefix.cpp
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\LongestCommonPrefix.cpp(17,21) : warning C4018: '<': signed/unsigned mismatch
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\LongestCommonPrefix.cpp(29,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe
