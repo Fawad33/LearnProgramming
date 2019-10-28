@@ -26,8 +26,8 @@ public:
 	}
 };
 
-void main() {
-	vector<string> words = {"","floor","fl"};
-	LongestCommonPrefix longestCommonPrefixObject;
-	cout << longestCommonPrefixObject.longestCommonPrefix(words);
-}
+//void main() {
+//	vector<string> words = {"","floor","fl"};
+//	LongestCommonPrefix longestCommonPrefixObject;
+//	cout << longestCommonPrefixObject.longestCommonPrefix(words);
+//}
