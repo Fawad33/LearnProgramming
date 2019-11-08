@@ -123,6 +123,9 @@
     <ClCompile Include="LengthOfLastWord.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MergeSortedArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sample.h">

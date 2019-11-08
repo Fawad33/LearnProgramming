@@ -143,6 +143,7 @@
     <ClCompile Include="LongestCommonPrefix.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="mergeSort.cpp" />
+    <ClCompile Include="MergeSortedArray.cpp" />
     <ClCompile Include="PlusOne.cpp" />
     <ClCompile Include="PrintInputArray.cpp" />
     <ClCompile Include="RemoveDuplicatesFromSortedArray.cpp" />

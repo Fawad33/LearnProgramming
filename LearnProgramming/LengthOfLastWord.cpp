@@ -22,7 +22,7 @@ public:
 	}
 };
 
-void main() {
-	LengthOfLastWord lengthOfLastWordObject;
-	cout << lengthOfLastWordObject.lengthOfLastWord("Hello World      ");
-}
+//void main() {
+//	LengthOfLastWord lengthOfLastWordObject;
+//	cout << lengthOfLastWordObject.lengthOfLastWord("Hello World      ");
+//}
