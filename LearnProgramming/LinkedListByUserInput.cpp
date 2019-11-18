@@ -39,7 +39,7 @@
 //		traverse = traverse->link;
 //	}
 //}
-
+//
 //int main() {
 //	int size = 0;
 //	node* HEAD = NULL;

@@ -159,6 +159,7 @@
     <ClCompile Include="SearchInSortedLinkedList.cpp" />
     <ClCompile Include="SearchInVector.cpp" />
     <ClCompile Include="SearchWithBool.cpp" />
+    <ClCompile Include="TraverseTree.cpp" />
     <ClCompile Include="TwoSum.cpp" />
   </ItemGroup>
   <ItemGroup>
