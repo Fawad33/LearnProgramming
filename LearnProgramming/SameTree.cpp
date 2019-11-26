@@ -12,15 +12,19 @@ struct TreeNode {
 class SameTree {
 public:
 	bool isSameTree(TreeNode* p, TreeNode* q) {
-		TreeNode* current1 = p;
-		TreeNode* current2 = q;
-		if (current1 != current2 || current1->left != current2->left || current1->right != current2->right)
+		if (p == NULL && q == NULL) {
+			cout << "true";
+			return true;
+		}
+		if (p == NULL || q == NULL || p->val != q->val) {
 			cout << "false";
 			return false;
-		if (p == NULL && q == NULL)
-			return;
-		isSameTree(p->left, q->left);		
-		isSameTree(p->right, q->right);
+		}
+		if (isSameTree(p->left, q->left) == false) {
+			cout << "false";
+			return false;
+		}
+		return isSameTree(p->right, q->right);
 	}
 };
 
@@ -30,7 +34,7 @@ void main() {
 	root->right = new TreeNode(3);
 
 	struct TreeNode* root2 = new TreeNode(1);
-	root2->left = new TreeNode(3);
+	root2->left = new TreeNode(2);
 	root2->right = new TreeNode(3);
 
 	SameTree sameTree;

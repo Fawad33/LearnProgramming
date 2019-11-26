@@ -1,4 +1,3 @@
 ﻿  SameTree.cpp
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\SameTree.cpp(21,1) : error C2561: 'SameTree::isSameTree': function must return a value
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\SameTree.cpp(14) : message : see declaration of 'SameTree::isSameTree'
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\SameTree.cpp(27,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\SameTree.cpp(31,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
+  LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe
