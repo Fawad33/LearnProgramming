@@ -135,6 +135,9 @@
     <ClCompile Include="SameTreeWithVector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SameTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sample.h">

@@ -10,7 +10,7 @@ struct TreeNode {
 	TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
-class SameTree {
+class SameTreeWithVector {
 public:
 	void printInOrder(struct TreeNode* node, vector<int> & v) {
 		if (node == NULL)
@@ -34,15 +34,15 @@ public:
 	}
 };
 
-void main() {
-	struct TreeNode* root = new TreeNode(0);
-	/*root->left = new TreeNode(2);
-	root->right = new TreeNode(3);*/
-
-	struct TreeNode* root2 = new TreeNode(NULL);
-	/*root2->left = new TreeNode(2);
-	root2->right = new TreeNode(3);*/
-
-	SameTree sameTree;
-	sameTree.isSameTree(root, root2);
-}
+//void main() {
+//	struct TreeNode* root = new TreeNode(1);
+//	root->left = new TreeNode(2);
+//	root->right = new TreeNode(3);
+//
+//	struct TreeNode* root2 = new TreeNode(1);
+//	root2->left = new TreeNode(2);
+//	root2->right = new TreeNode(3);
+//
+//	SameTreeWithVector sameTreeWithVector;
+//	sameTreeWithVector.isSameTree(root, root2);
+//}
