@@ -12,7 +12,7 @@ struct TreeNode {
 
 class SameTree {
 public:
-	void printInOrder(struct TreeNode* node, vector<int> v) {
+	void printInOrder(struct TreeNode* node, vector<int> & v) {
 		if (node == NULL)
 			return;
 		printInOrder(node->left, v);
@@ -27,22 +27,21 @@ public:
 		for (int i = 0; i < x.size(); i++) {
 			if (x[i] != y[i]){
 				cout << "false";
-			return false;
+				return false;
 			}
 		}
-		cout << "true";
 		return true;
 	}
 };
 
 void main() {
-	struct TreeNode* root = new TreeNode(1);
-	root->left = new TreeNode(2);
-	root->right = new TreeNode(3);
+	struct TreeNode* root = new TreeNode(0);
+	/*root->left = new TreeNode(2);
+	root->right = new TreeNode(3);*/
 
-	struct TreeNode* root2 = new TreeNode(1);
-	root2->left = new TreeNode(9);
-	root2->right = new TreeNode(3);
+	struct TreeNode* root2 = new TreeNode(NULL);
+	/*root2->left = new TreeNode(2);
+	root2->right = new TreeNode(3);*/
 
 	SameTree sameTree;
 	sameTree.isSameTree(root, root2);

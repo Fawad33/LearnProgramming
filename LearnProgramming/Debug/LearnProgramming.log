@@ -1,4 +1,4 @@
 ﻿  SameTree.cpp
 C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\SameTree.cpp(27,21) : warning C4018: '<': signed/unsigned mismatch
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\SameTree.cpp(38,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\SameTree.cpp(37,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe

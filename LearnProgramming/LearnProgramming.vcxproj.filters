@@ -132,7 +132,7 @@
     <ClCompile Include="TraverseTreeWithStack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SameTree.cpp">
+    <ClCompile Include="SameTreeWithVector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
