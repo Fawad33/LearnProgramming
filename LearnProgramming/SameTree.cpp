@@ -28,15 +28,15 @@ public:
 	}
 };
 
-void main() {
-	struct TreeNode* root = new TreeNode(1);
-	root->left = new TreeNode(2);
-	root->right = new TreeNode(3);
-
-	struct TreeNode* root2 = new TreeNode(1);
-	root2->left = new TreeNode(2);
-	root2->right = new TreeNode(3);
-
-	SameTree sameTree;
-	sameTree.isSameTree(root,root2);
-}
+//void main() {
+//	struct TreeNode* root = new TreeNode(1);
+//	root->left = new TreeNode(2);
+//	root->right = new TreeNode(3);
+//
+//	struct TreeNode* root2 = new TreeNode(1);
+//	root2->left = new TreeNode(2);
+//	root2->right = new TreeNode(3);
+//
+//	SameTree sameTree;
+//	sameTree.isSameTree(root,root2);
+//}
