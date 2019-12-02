@@ -24,18 +24,17 @@ class DepthFirstSearch {
 				parent.insert(0, *it);
 				dfsVisit(*it, v, parent);
 			}
-
 		}
 	}
 };
 
-void main() {
-	vector<int> v1 = { 2, 4 };
-	vector<int> v2 = { 5 };
-	vector<int> v3 = { 5,6 };
-	vector<int> v4 = { 2 };
-	vector<int> v5 = { 4 };
-	vector<int> v6 = { 6 };
-
-	vector<int> nodes = { 1, 2, 3, 4, 5, 6 };
-}
+//void main() {
+//	vector<int> v1 = { 2, 4 };
+//	vector<int> v2 = { 5 };
+//	vector<int> v3 = { 5,6 };
+//	vector<int> v4 = { 2 };
+//	vector<int> v5 = { 4 };
+//	vector<int> v6 = { 6 };
+//
+//	vector<int> nodes = { 1, 2, 3, 4, 5, 6 };
+//}

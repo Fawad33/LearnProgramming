@@ -126,6 +126,7 @@
     <ClCompile Include="AddDigits.cpp" />
     <ClCompile Include="arrayOfPointers.cpp" />
     <ClCompile Include="DepthFirstSearch.cpp" />
+    <ClCompile Include="DepthFirstSearchNew.cpp" />
     <ClCompile Include="SameTree.cpp" />
     <ClCompile Include="SameTreeWithVector.cpp" />
     <ClCompile Include="SymmetricTree.cpp" />
