@@ -18,15 +18,14 @@ class DepthFirstSearchNew {
 public:
 	void representgraph(vector<Edge> vectorOfEdges) {
 		vector<Edge*> adjacencyList;
-		map<Node*, adjacencyList> graph;
+		map<Node*, vector<Edge*>> graph;
 		for (auto it = vectorOfEdges.begin(); it != vectorOfEdges.end(); it++) {
-			map<Node*, Edge*> ::iterator mapIterator;
-			mapIterator = graph.find(it->x->i);
+			auto mapIterator = graph.find(it->x->i);
 			if (mapIterator != graph.end()) {
-				graph->second = *mapIterator;
+				adjacencyList.insert(mapIterator);
 			}
 			else {
-				adjacencyList.insert(*mapIterator);
+				graph.insert(it, NULL);
 			}
 			mapIterator = 
 		}
