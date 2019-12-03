@@ -21,4 +21,4 @@ C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirst
 C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearch.cpp(13) : message :         ]
   SymmetricTree.cpp
   Generating Code...
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(15,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(27,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'

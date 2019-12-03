@@ -1,4 +1,6 @@
 #include<iostream>
+#include<vector>
+#include<map>
 
 using namespace std;
 
@@ -10,6 +12,18 @@ struct Edge {
 	struct Node* x;
 	struct Node* y;
 	Edge(Node* x, Node* y) : x(x), y(y) {}
+};
+
+class DepthFirstSearchNew {
+public:
+	void representGraph(vector<Edge> vectorOfEdges) {
+		map<Node*, vector<Node*>> graph;
+		map<Node*, Node*> :: iterator mapIterator;
+		mapIterator = graph.find((Edge->x)->i);
+		if (mapIterator != graph.end()) {
+			*graph->second
+		}
+	}
 };
 
 void main() {
