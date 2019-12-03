@@ -1,10 +1,10 @@
 #include<iostream>
 using namespace std;
 
-struct node {
-	int info;
-	node *link;
-};
+//struct node {
+//	int info;
+//	node *link;
+//};
 
 //int main() {
 //	node *first;

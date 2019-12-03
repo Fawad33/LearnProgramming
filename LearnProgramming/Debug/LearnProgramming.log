@@ -1,24 +1,5 @@
 ﻿  DepthFirstSearch.cpp
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1376,1) : error C2100: illegal indirection
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearch.cpp(13) : message : see reference to function template instantiation 'void std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::insert<int>(_Iter,_Iter)' being compiled
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearch.cpp(13) : message :         with
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearch.cpp(13) : message :         [
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearch.cpp(13) : message :             _Kty=int,
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearch.cpp(13) : message :             _Ty=int,
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearch.cpp(13) : message :             _Pr=std::less<int>,
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearch.cpp(13) : message :             _Alloc=std::allocator<std::pair<const int,int>>,
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearch.cpp(13) : message :             _Iter=int
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearch.cpp(13) : message :         ]
   DepthFirstSearchNew.cpp
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearch.cpp(13) : message : see reference to function template instantiation 'void std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::insert<int>(_Iter,_Iter)' being compiled
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearch.cpp(13) : message :         with
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearch.cpp(13) : message :         [
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearch.cpp(13) : message :             _Kty=int,
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearch.cpp(13) : message :             _Ty=int,
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearch.cpp(13) : message :             _Pr=std::less<int>,
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearch.cpp(13) : message :             _Alloc=std::allocator<std::pair<const int,int>>,
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearch.cpp(13) : message :             _Iter=int
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearch.cpp(13) : message :         ]
-  SymmetricTree.cpp
   Generating Code...
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(27,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(29,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
+  LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe
