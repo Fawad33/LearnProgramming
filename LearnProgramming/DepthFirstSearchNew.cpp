@@ -17,7 +17,7 @@ struct Edge {
 class DepthFirstSearchNew {
 public:
 	void representGraph(vector<Edge> vectorOfEdges) {
-		map<Node*, vector<Node*>> graph;
+		map<Node*, vector<Node*> adjacencyList> graph;
 		map<Node*, Node*> :: iterator mapIterator;
 		mapIterator = graph.find((Edge->x)->i);
 		if (mapIterator != graph.end()) {
@@ -42,4 +42,5 @@ void main() {
 	struct Edge* fourToTwo = new Edge(four, two);
 	struct Edge* fiveToFour = new Edge(five, four);
 	struct Edge* sixToSix = new Edge(six, six);
+	cout << (oneToFour->x)->i;
 }
