@@ -1,5 +1,132 @@
-﻿  DepthFirstSearch.cpp
-  DepthFirstSearchNew.cpp
+﻿  DepthFirstSearchNew.cpp
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(23,1) : error C2664: 'std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const _Kty,_Ty>>>> std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::find(Node *const &) const': cannot convert argument 1 from 'int' to 'Node *const &'
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(23,1) : error C2664:         with
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(23,1) : error C2664:         [
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(23,1) : error C2664:             _Kty=Node *,
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(23,1) : error C2664:             _Ty=std::vector<Edge *,std::allocator<Edge *>>,
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(23,1) : error C2664:             _Pr=std::less<Node *>,
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(23,1) : error C2664:             _Alloc=std::allocator<std::pair<Node *const ,std::vector<Edge *,std::allocator<Edge *>>>>
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(23,1) : error C2664:         ]
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(23,1) : message : Reason: cannot convert from 'int' to 'Node *const '
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(23,39) : message : Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1467,25) : message : see declaration of 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::find'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1467,25) : message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1467,25) : message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1467,25) : message :             _Kty=Node *,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1467,25) : message :             _Ty=std::vector<Edge *,std::allocator<Edge *>>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1467,25) : message :             _Pr=std::less<Node *>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1467,25) : message :             _Alloc=std::allocator<std::pair<Node *const ,std::vector<Edge *,std::allocator<Edge *>>>>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1467,25) : message :         ]
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(24,1) : error C3536: 'mapIterator': cannot be used before it is initialized
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(24,1) : error C2678: binary '!=': no operator found which takes a left-hand operand of type 'int' (or there is no acceptable conversion)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\system_error(253,24) : message : could be 'bool std::operator !=(const std::error_condition &,const std::error_condition &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\system_error(248,24) : message : or       'bool std::operator !=(const std::error_condition &,const std::error_code &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\system_error(243,24) : message : or       'bool std::operator !=(const std::error_code &,const std::error_condition &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\system_error(238,24) : message : or       'bool std::operator !=(const std::error_code &,const std::error_code &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\exception(302,24) : message : or       'bool std::operator !=(const std::exception_ptr &,std::nullptr_t) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\exception(298,24) : message : or       'bool std::operator !=(std::nullptr_t,const std::exception_ptr &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\exception(294,24) : message : or       'bool std::operator !=(const std::exception_ptr &,const std::exception_ptr &) noexcept'
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(24,1) : message : while trying to match the argument list '(int, std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const _Kty,_Ty>>>>)'
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(24,1) : message :         with
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(24,1) : message :         [
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(24,1) : message :             _Kty=Node *,
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(24,1) : message :             _Ty=std::vector<Edge *,std::allocator<Edge *>>
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(24,1) : message :         ]
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(25,1) : error C2661: 'std::vector<Edge *,std::allocator<_Ty>>::insert': no overloaded function takes 1 arguments
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(25,1) : error C2661:         with
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(25,1) : error C2661:         [
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(25,1) : error C2661:             _Ty=Edge *
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(25,1) : error C2661:         ]
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(28,1) : error C2664: 'std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const _Kty,_Ty>>>> std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::insert(std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const _Kty,_Ty>>>>,const std::pair<const _Kty,_Ty> &)': cannot convert argument 1 from 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>' to 'std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const _Kty,_Ty>>>>'
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(28,1) : error C2664:         with
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(28,1) : error C2664:         [
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(28,1) : error C2664:             _Kty=Node *,
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(28,1) : error C2664:             _Ty=std::vector<Edge *,std::allocator<Edge *>>,
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(28,1) : error C2664:             _Pr=std::less<Node *>,
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(28,1) : error C2664:             _Alloc=std::allocator<std::pair<Node *const ,std::vector<Edge *,std::allocator<Edge *>>>>
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(28,1) : error C2664:         ]
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(28,1) : error C2664:         and
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(28,1) : error C2664:         [
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(28,1) : error C2664:             _Ty=Edge
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(28,1) : error C2664:         ]
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(28,1) : error C2664:         and
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(28,1) : error C2664:         [
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(28,1) : error C2664:             _Kty=Node *,
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(28,1) : error C2664:             _Ty=std::vector<Edge *,std::allocator<Edge *>>
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(28,1) : error C2664:         ]
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(28,18) : message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1361,14) : message : see declaration of 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::insert'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1361,14) : message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1361,14) : message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1361,14) : message :             _Kty=Node *,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1361,14) : message :             _Ty=std::vector<Edge *,std::allocator<Edge *>>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1361,14) : message :             _Pr=std::less<Node *>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1361,14) : message :             _Alloc=std::allocator<std::pair<Node *const ,std::vector<Edge *,std::allocator<Edge *>>>>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1361,14) : message :         ]
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(31,1) : error C2664: 'std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const _Kty,_Ty>>>> std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::find(Node *const &) const': cannot convert argument 1 from 'int' to 'Node *const &'
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(31,1) : error C2664:         with
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(31,1) : error C2664:         [
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(31,1) : error C2664:             _Kty=Node *,
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(31,1) : error C2664:             _Ty=std::vector<Edge *,std::allocator<Edge *>>,
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(31,1) : error C2664:             _Pr=std::less<Node *>,
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(31,1) : error C2664:             _Alloc=std::allocator<std::pair<Node *const ,std::vector<Edge *,std::allocator<Edge *>>>>
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(31,1) : error C2664:         ]
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(31,1) : message : Reason: cannot convert from 'int' to 'Node *const '
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(31,34) : message : Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1467,25) : message : see declaration of 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::find'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1467,25) : message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1467,25) : message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1467,25) : message :             _Kty=Node *,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1467,25) : message :             _Ty=std::vector<Edge *,std::allocator<Edge *>>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1467,25) : message :             _Pr=std::less<Node *>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1467,25) : message :             _Alloc=std::allocator<std::pair<Node *const ,std::vector<Edge *,std::allocator<Edge *>>>>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1467,25) : message :         ]
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(32,1) : error C2678: binary '!=': no operator found which takes a left-hand operand of type 'int' (or there is no acceptable conversion)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\system_error(253,24) : message : could be 'bool std::operator !=(const std::error_condition &,const std::error_condition &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\system_error(248,24) : message : or       'bool std::operator !=(const std::error_condition &,const std::error_code &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\system_error(243,24) : message : or       'bool std::operator !=(const std::error_code &,const std::error_condition &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\system_error(238,24) : message : or       'bool std::operator !=(const std::error_code &,const std::error_code &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\exception(302,24) : message : or       'bool std::operator !=(const std::exception_ptr &,std::nullptr_t) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\exception(298,24) : message : or       'bool std::operator !=(std::nullptr_t,const std::exception_ptr &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\exception(294,24) : message : or       'bool std::operator !=(const std::exception_ptr &,const std::exception_ptr &) noexcept'
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(32,1) : message : while trying to match the argument list '(int, std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const _Kty,_Ty>>>>)'
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(32,1) : message :         with
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(32,1) : message :         [
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(32,1) : message :             _Kty=Node *,
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(32,1) : message :             _Ty=std::vector<Edge *,std::allocator<Edge *>>
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(32,1) : message :         ]
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(33,1) : error C2661: 'std::vector<Edge *,std::allocator<_Ty>>::insert': no overloaded function takes 1 arguments
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(33,1) : error C2661:         with
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(33,1) : error C2661:         [
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(33,1) : error C2661:             _Ty=Edge *
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(33,1) : error C2661:         ]
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(36,1) : error C2664: 'std::_Tree_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const _Kty,_Ty>>>> std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::insert(std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const _Kty,_Ty>>>>,const std::pair<const _Kty,_Ty> &)': cannot convert argument 1 from 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>' to 'std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<std::pair<const _Kty,_Ty>>>>'
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(36,1) : error C2664:         with
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(36,1) : error C2664:         [
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(36,1) : error C2664:             _Kty=Node *,
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(36,1) : error C2664:             _Ty=std::vector<Edge *,std::allocator<Edge *>>,
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(36,1) : error C2664:             _Pr=std::less<Node *>,
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(36,1) : error C2664:             _Alloc=std::allocator<std::pair<Node *const ,std::vector<Edge *,std::allocator<Edge *>>>>
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(36,1) : error C2664:         ]
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(36,1) : error C2664:         and
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(36,1) : error C2664:         [
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(36,1) : error C2664:             _Ty=Edge
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(36,1) : error C2664:         ]
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(36,1) : error C2664:         and
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(36,1) : error C2664:         [
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(36,1) : error C2664:             _Kty=Node *,
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(36,1) : error C2664:             _Ty=std::vector<Edge *,std::allocator<Edge *>>
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(36,1) : error C2664:         ]
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(36,18) : message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1361,14) : message : see declaration of 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>::insert'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1361,14) : message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1361,14) : message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1361,14) : message :             _Kty=Node *,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1361,14) : message :             _Ty=std::vector<Edge *,std::allocator<Edge *>>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1361,14) : message :             _Pr=std::less<Node *>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1361,14) : message :             _Alloc=std::allocator<std::pair<Node *const ,std::vector<Edge *,std::allocator<Edge *>>>>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\xtree(1361,14) : message :         ]
+  LinkedList.cpp
+  SearchInSortedLinkedList.cpp
   Generating Code...
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(29,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
-  LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\DepthFirstSearchNew.cpp(43,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'

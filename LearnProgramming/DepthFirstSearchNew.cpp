@@ -27,7 +27,14 @@ public:
 			else {
 				graph.insert(it, NULL);
 			}
-			mapIterator = 
+
+			mapIterator = graph.find(it->y->i);
+			if (mapIterator != graph.end()) {
+				adjacencyList.insert(mapIterator);
+			}
+			else {
+				graph.insert(it, NULL);
+			}
 		}
 		
 	}
