@@ -22,18 +22,18 @@ public:
 		for (auto it = vectorOfEdges.begin(); it != vectorOfEdges.end(); it++) {
 			auto mapIterator = graph.find(it->x->i);
 			if (mapIterator != graph.end()) {
-				adjacencyList.insert(mapIterator);
+				adjacencyList.push_back(mapIterator);
 			}
 			else {
-				graph.insert(it, NULL);
+				graph.insert({ it, NULL });
 			}
 
 			mapIterator = graph.find(it->y->i);
 			if (mapIterator != graph.end()) {
-				adjacencyList.insert(mapIterator);
+				adjacencyList.push_back(mapIterator);
 			}
 			else {
-				graph.insert(it, NULL);
+				graph.insert({ it, NULL });
 			}
 		}
 		
