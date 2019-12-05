@@ -17,23 +17,24 @@ struct Edge {
 class DepthFirstSearchNew {
 public:
 	void representgraph(vector<Edge> vectorOfEdges) {
-		vector<Edge*> adjacencyList;
-		map<Node*, vector<Edge*>> graph;
+		map<Node*, vector<Node*>> graph;
 		for (auto it = vectorOfEdges.begin(); it != vectorOfEdges.end(); it++) {
-			auto mapIterator = graph.find(it->x->i);
+			auto mapIterator = graph.find(it->x);
 			if (mapIterator != graph.end()) {
-				adjacencyList.push_back(mapIterator);
+				//mapIterator->second.push_back(it->y);
+				graph.insert(it->y);
 			}
 			else {
-				graph.insert({ it, NULL });
+				graph.insert(it, );
 			}
 
-			mapIterator = graph.find(it->y->i);
+			mapIterator = graph.find(it->y);
 			if (mapIterator != graph.end()) {
-				adjacencyList.push_back(mapIterator);
+				graph.insert(mapIterator);
 			}
 			else {
-				graph.insert({ it, NULL });
+				vector<Node*> newVector;
+				graph.insert({ it, newVector });
 			}
 		}
 		
