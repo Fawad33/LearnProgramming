@@ -31,11 +31,12 @@ public:
 
 			mapIterator = graph.find(it->y);
 			if (mapIterator != graph.end()) {
-				graph.insert(mapIterator);
+				graph[it->y].push_back(it->x);
 			}
 			else {
 				vector<Node*> newVector;
-				graph.insert({ it, newVector });
+				graph[it->y] = newVector;
+				newVector.push_back(it->x);
 			}
 		}
 		
