@@ -21,11 +21,12 @@ public:
 		for (auto it = vectorOfEdges.begin(); it != vectorOfEdges.end(); it++) {
 			auto mapIterator = graph.find(it->x);
 			if (mapIterator != graph.end()) {
-				//mapIterator->second.push_back(it->y);
-				graph.insert(it->y);
+				graph[it->x].push_back(it->y);
 			}
 			else {
-				graph.insert(it, );
+				vector<Node*> newVector;
+				graph[it->x] = newVector;
+				newVector.push_back(it->y);
 			}
 
 			mapIterator = graph.find(it->y);
