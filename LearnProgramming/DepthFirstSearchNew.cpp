@@ -16,30 +16,47 @@ struct Edge {
 
 class DepthFirstSearchNew {
 public:
-	void representgraph(vector<Edge> vectorOfEdges) {
+	map<Node*, vector<Node*>> representGraph(vector<Edge*> vectorOfEdges) {
 		map<Node*, vector<Node*>> graph;
 		for (auto it = vectorOfEdges.begin(); it != vectorOfEdges.end(); it++) {
-			auto mapIterator = graph.find(it->x);
+			auto mapIterator = graph.find((*it)->x);
 			if (mapIterator != graph.end()) {
-				graph[it->x].push_back(it->y);
+				graph[(*it)->x].push_back((*it)->y);
 			}
 			else {
 				vector<Node*> newVector;
-				graph[it->x] = newVector;
-				newVector.push_back(it->y);
+				graph[(*it)->x] = newVector;
+				newVector.push_back((*it)->y);
 			}
 
-			mapIterator = graph.find(it->y);
+			mapIterator = graph.find((*it)->y);
 			if (mapIterator != graph.end()) {
-				graph[it->y].push_back(it->x);
+				graph[(*it)->y].push_back((*it)->x);
 			}
 			else {
 				vector<Node*> newVector;
-				graph[it->y] = newVector;
-				newVector.push_back(it->x);
+				graph[(*it)->y] = newVector;
+				newVector.push_back((*it)->x);
 			}
 		}
-		
+		return graph;
+	}
+
+	void dfs(map<Node*, vector<Node*>> graphRepresentation, vector<Node*> vectorOfNodes, Node* startingNode, Node* targetNode) {
+		map<Node*, string> coloredNodes;
+		for (auto it = vectorOfNodes.begin(); it != vectorOfNodes.end(); it++) {
+			coloredNodes.insert({ *it, "white" });
+		}
+		vector<Node*> path;
+		for (auto it = coloredNodes.begin(); it != coloredNodes.end(); it++) {
+			if (it->second == "white") {
+				dfsVisit(graphRepresentation, vectorOfNodes, startingNode, targetNode, path);
+			}
+		}
+	}
+
+	void dfsVisit(map<Node*, vector<Node*>> graphRepresentation, vector<Node*> vectorOfNodes, Node* startingNode, Node* targetNode, vector<Node*> path) {
+
 	}
 };
 
@@ -59,6 +76,10 @@ void main() {
 	Edge* fourToTwo = new Edge(four, two);
 	Edge* fiveToFour = new Edge(five, four);
 	Edge* sixToSix = new Edge(six, six);
-	auto w = four->i;
-	cout << w;
+
+	vector<Edge*> vectorOfEdges = { oneToTwo , oneToFour , twoToFive , threeToFive , threeToSix ,fourToTwo , fiveToFour , sixToSix };
+	DepthFirstSearchNew depthFirstSearchNew;
+	map<Node*, vector<Node*>> graphRepresentation = depthFirstSearchNew.representGraph(vectorOfEdges);
+	vector<Node*> vectorOfNodes = { one, two, three, four, five, six };
+	depthFirstSearchNew.dfs(graphRepresentation, vectorOfNodes, one, three);
 }
