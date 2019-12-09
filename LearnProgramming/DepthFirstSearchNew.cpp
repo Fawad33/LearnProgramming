@@ -42,7 +42,7 @@ public:
 		return graph;
 	}
 
-	void dfs(map<Node*, vector<Node*>> graphRepresentation, vector<Node*> vectorOfNodes, Node* startingNode, Node* targetNode) {
+	vector<Node*> dfs(map<Node*, vector<Node*>> graphRepresentation, vector<Node*> vectorOfNodes, Node* startingNode, Node* targetNode) {
 		map<Node*, string> coloredNodes;
 		for (auto it = vectorOfNodes.begin(); it != vectorOfNodes.end(); it++) {
 			coloredNodes.insert({ *it, "white" });
@@ -53,6 +53,7 @@ public:
 				dfsVisit(graphRepresentation, vectorOfNodes, startingNode, targetNode, path);
 			}
 		}
+		return path;
 	}
 
 	void dfsVisit(map<Node*, vector<Node*>> graphRepresentation, vector<Node*> vectorOfNodes, Node* startingNode, Node* targetNode, vector<Node*> path) {
