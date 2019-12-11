@@ -50,29 +50,28 @@ public:
 		vector<Node*> path;
 		for (auto it = coloredNodes.begin(); it != coloredNodes.end(); it++) {
 			if (it->second == "white") {
-				dfsVisit(graphRepresentation, vectorOfNodes, startingNode, targetNode, path);
+				dfsVisit(graphRepresentation, coloredNodes, it->first, targetNode, path);
 			}
 		}
 		return path;
 	}
+	//putting void as a placeholder 
+	void dfsVisit(map<Node*, vector<Node*>> graphRepresentation, map<Node*, string> coloredNodes, Node* startingNode, Node* targetNode, vector<Node*> path) {
+		map<Node*, string> ::iterator colorIterator;
+		colorIterator = coloredNodes.find(startingNode);
+		colorIterator->second = "grey";
 
-	vector<Node*> dfsVisit(map<Node*, vector<Node*>> graphRepresentation, vector<Node*> vectorOfNodes, Node* startingNode, Node* targetNode, vector<Node*> path) {
-		auto it = graphRepresentation.find(startingNode);
-		path.push_back(startingNode);
-		for (auto it2 = it->second.begin(); it2 != it->second.end(); it2++) {
-			if (*it2 == targetNode) {	
-				cout << *it2 << " ";
-				path.push_back(*it2);
-				return path;
-			}
-			else {
-				auto iteratorForNodesInAdj = it2;
-				cout << *it2 << " ";
-				path.push_back(*it2);
-				dfsVisit(graphRepresentation, vectorOfNodes, startingNode, targetNode, path);
+		map<Node*, vector<Node*>> ::iterator graphIterator;
+		graphIterator = graphRepresentation.find(startingNode);
+		for (auto it = graphIterator->second.begin(); it != graphIterator->second.end(); it++) {
+			map<Node*, string> ::iterator changeNodeColor;
+			changeNodeColor = coloredNodes.find(*it);
+			if (changeNodeColor->second == "white") {
+				path.push_back(*it);
+				dfsVisit(graphRepresentation, coloredNodes, *it, targetNode, path);
 			}
 		}
-		return path;
+		colorIterator->second = "black";
 	}
 };
 
@@ -97,7 +96,6 @@ void main() {
 	DepthFirstSearchNew depthFirstSearchNew;
 	map<Node*, vector<Node*>> graphRepresentation = depthFirstSearchNew.representGraph(vectorOfEdges);
 	vector<Node*> vectorOfNodes = { one, two, three, four, five, six };
-	vector<Node*> path;
-	depthFirstSearchNew.dfsVisit(graphRepresentation, vectorOfNodes, one, three, path);
+	depthFirstSearchNew.dfs(graphRepresentation, vectorOfNodes, one, three);
 	
 }
