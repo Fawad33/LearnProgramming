@@ -56,8 +56,23 @@ public:
 		return path;
 	}
 
-	void dfsVisit(map<Node*, vector<Node*>> graphRepresentation, vector<Node*> vectorOfNodes, Node* startingNode, Node* targetNode, vector<Node*> path) {
-
+	vector<Node*> dfsVisit(map<Node*, vector<Node*>> graphRepresentation, vector<Node*> vectorOfNodes, Node* startingNode, Node* targetNode, vector<Node*> path) {
+		auto it = graphRepresentation.find(startingNode);
+		path.push_back(startingNode);
+		for (auto it2 = it->second.begin(); it2 != it->second.end(); it2++) {
+			if (*it2 == targetNode) {	
+				cout << *it2 << " ";
+				path.push_back(*it2);
+				return path;
+			}
+			else {
+				auto iteratorForNodesInAdj = it2;
+				cout << *it2 << " ";
+				path.push_back(*it2);
+				dfsVisit(graphRepresentation, vectorOfNodes, startingNode, targetNode, path);
+			}
+		}
+		return path;
 	}
 };
 
@@ -82,5 +97,7 @@ void main() {
 	DepthFirstSearchNew depthFirstSearchNew;
 	map<Node*, vector<Node*>> graphRepresentation = depthFirstSearchNew.representGraph(vectorOfEdges);
 	vector<Node*> vectorOfNodes = { one, two, three, four, five, six };
-	depthFirstSearchNew.dfs(graphRepresentation, vectorOfNodes, one, three);
+	vector<Node*> path;
+	depthFirstSearchNew.dfsVisit(graphRepresentation, vectorOfNodes, one, three, path);
+	
 }
