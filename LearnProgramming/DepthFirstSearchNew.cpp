@@ -67,9 +67,14 @@ public:
 			map<Node*, string> ::iterator changeNodeColor;
 			changeNodeColor = coloredNodes.find(*it);
 			if (changeNodeColor->second == "white") {
-				cout << *it;
-				path.push_back(*it);
-				dfsVisit(graphRepresentation, coloredNodes, *it, targetNode, path);
+				if (*it != targetNode) {
+					cout << *it;
+					path.push_back(*it);
+					dfsVisit(graphRepresentation, coloredNodes, *it, targetNode, path);
+				}
+				else {
+					return path;
+				}
 			}
 		}
 
