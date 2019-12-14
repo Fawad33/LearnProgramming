@@ -77,9 +77,7 @@ public:
 				}
 			}
 		}
-
 		colorIterator->second = "black";
-		return path;
 	}
 };
 
