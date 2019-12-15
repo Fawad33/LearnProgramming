@@ -56,7 +56,7 @@ public:
 		return path;
 	}
 
-	vector<Node*> dfsVisit(map<Node*, vector<Node*>> graphRepresentation, map<Node*, string> coloredNodes, Node* startingNode, Node* targetNode, vector<Node*> path) {
+	bool dfsVisit(map<Node*, vector<Node*>> graphRepresentation, map<Node*, string> coloredNodes, Node* startingNode, Node* targetNode, vector<Node*> path) {
 		map<Node*, string> ::iterator colorIterator;
 		colorIterator = coloredNodes.find(startingNode);
 		colorIterator->second = "grey";
@@ -68,16 +68,18 @@ public:
 			changeNodeColor = coloredNodes.find(*it);
 			if (changeNodeColor->second == "white") {
 				if (*it != targetNode) {
-					cout << *it;
 					path.push_back(*it);
 					dfsVisit(graphRepresentation, coloredNodes, *it, targetNode, path);
 				}
 				else {
-					return path;
+					path.push_back(*it);
+					return true;
 				}
 			}
 		}
 		colorIterator->second = "black";
+		return false;
+		
 	}
 };
 
@@ -103,7 +105,7 @@ int main() {
 	map<Node*, vector<Node*>> graphRepresentation = depthFirstSearchNew.representGraph(vectorOfEdges);
 	vector<Node*> vectorOfNodes = { one, two, three, four, five, six };
 	vector<Node*> x = depthFirstSearchNew.dfs(graphRepresentation, vectorOfNodes, one, three);
-	/*for (auto i = x.begin(); i != x.end(); i++) {
+	for (auto i = x.begin(); i != x.end(); i++) {
 		cout << (*i)->i << endl;
-	}*/
+	}
 }
