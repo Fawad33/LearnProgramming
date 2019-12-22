@@ -48,11 +48,12 @@ public:
 			coloredNodes.insert({ *it, "white" });
 		}
 		vector<Node*> path;
-		for (auto it = coloredNodes.begin(); it != coloredNodes.end(); it++) {
+		/*for (auto it = coloredNodes.begin(); it != coloredNodes.end(); it++) {
 			if (it->second == "white") {
 				dfsVisit(graphRepresentation, coloredNodes, it->first, targetNode, path);
 			}
-		}
+		}*/
+		dfsVisit(graphRepresentation, coloredNodes, startingNode, targetNode, path);
 		return path;
 	}
 
@@ -65,14 +66,13 @@ public:
 		if (path.empty() == false) {
 			copy(path.begin(), path.end(), back_inserter(pathLocal));
 		}		
-
+		pathLocal.push_back(startingNode);
 		map<Node*, vector<Node*>> ::iterator graphIterator;
 		graphIterator = graphRepresentation.find(startingNode);
 		for (auto it = graphIterator->second.begin(); it != graphIterator->second.end(); it++) {
 			map<Node*, string> ::iterator changeNodeColor;
 			changeNodeColor = coloredNodes.find(*it);
-			if (changeNodeColor->second == "white") {
-				pathLocal.push_back(*it);
+			if (changeNodeColor->second == "white") {				
 				if (*it != targetNode) {
 					dfsVisit(graphRepresentation, coloredNodes, *it, targetNode, pathLocal);
 				}
