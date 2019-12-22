@@ -60,6 +60,11 @@ public:
 		map<Node*, string> ::iterator colorIterator;
 		colorIterator = coloredNodes.find(startingNode);
 		colorIterator->second = "grey";
+		
+		vector<Node*> pathLocal;
+		if (path.empty() == false) {
+			copy(path.begin(), path.end(), back_inserter(pathLocal));
+		}		
 
 		map<Node*, vector<Node*>> ::iterator graphIterator;
 		graphIterator = graphRepresentation.find(startingNode);
@@ -67,14 +72,11 @@ public:
 			map<Node*, string> ::iterator changeNodeColor;
 			changeNodeColor = coloredNodes.find(*it);
 			if (changeNodeColor->second == "white") {
- 				path.push_back(*it);
-				dfsVisit(graphRepresentation, coloredNodes, *it, targetNode, path);
+				pathLocal.push_back(*it);
 				if (*it != targetNode) {
-					path.push_back(*it);
-					dfsVisit(graphRepresentation, coloredNodes, *it, targetNode, path);
+					dfsVisit(graphRepresentation, coloredNodes, *it, targetNode, pathLocal);
 				}
 				else {
-					path.push_back(*it);
 					return true;
 				}
 			}
