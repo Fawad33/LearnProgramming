@@ -7,13 +7,14 @@ using namespace std;
 class LongestCommonPrefix {
 public:
 	string longestCommonPrefix(vector<string>& strs) {
-		string maxPrefix = *strs.begin();	
+		string maxPrefix = strs[0];
 		string currentPrefix;
-		for (auto it = strs.begin() + 1; it != strs.end(); it++) {
+		for (int j = 1; j < strs.size(); j++) {
 			currentPrefix = "";
 			for (int i = 0; i < maxPrefix.size(); i++) {
-				if (maxPrefix[i] == *it[i]) {					
-					currentPrefix.push_back[i];
+				string tempString = strs[j];
+				if (maxPrefix[i] == tempString[i]) {
+					currentPrefix = currentPrefix + maxPrefix[i];
 				}
 			}
 		}
