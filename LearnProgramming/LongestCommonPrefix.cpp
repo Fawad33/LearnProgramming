@@ -10,7 +10,7 @@ public:
 		if (strs.empty())
 			return "";
 		string maxPrefix = strs[0];
-		string currentPrefix;
+		string currentPrefix = strs[0];
 		for (int j = 1; j < strs.size(); j++) {
 			string currentString = strs[j];
 			currentPrefix = "";
@@ -19,13 +19,14 @@ public:
 					currentPrefix = currentPrefix + maxPrefix[i];
 				}
 			}
+			maxPrefix = currentPrefix;
 		}
 		return currentPrefix;
 	}
 };
 
 void main() {
-	vector<string> words = { "cat", "cats", "co"};
+	vector<string> words = { "aaa", "aa", "aaa"};
 	LongestCommonPrefix longestCommonPrefixObject;
 	cout << longestCommonPrefixObject.longestCommonPrefix(words);
 }
