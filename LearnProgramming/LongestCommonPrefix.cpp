@@ -7,27 +7,22 @@ using namespace std;
 class LongestCommonPrefix {
 public:
 	string longestCommonPrefix(vector<string>& strs) {
-		string word0 = strs[0], word1 = strs[1], word2 = strs[2], prefix = "";
-		if (strs.empty()) {
-			return "";
-		}
-		else if (word0 == "" || word1 == "" || word2 == "") {
-			return "";
-		}
-		for (int i = 0; i < word0.size(); i++) {
-			if (word0.at(i) == word1.at(i) && word1.at(i) == word2.at(i)) {
-				prefix.push_back(word0.at(i));
-			}
-			else {
-				return prefix;
+		string maxPrefix = *strs.begin();	
+		string currentPrefix;
+		for (auto it = strs.begin() + 1; it != strs.end(); it++) {
+			for (int i = 0; i < maxPrefix.size(); i++) {
+				if (maxPrefix[i] == *it[i]) {
+					currentPrefix = "";
+					currentPrefix.push_back[i];
+				}
 			}
 		}
-		return prefix;
+		return currentPrefix;
 	}
 };
 
-//void main() {
-//	vector<string> words = {"","floor","fl"};
-//	LongestCommonPrefix longestCommonPrefixObject;
-//	cout << longestCommonPrefixObject.longestCommonPrefix(words);
-//}
+void main() {
+	vector<string> words = {"cat", "car", "cow"};
+	LongestCommonPrefix longestCommonPrefixObject;
+	cout << longestCommonPrefixObject.longestCommonPrefix(words);
+}
