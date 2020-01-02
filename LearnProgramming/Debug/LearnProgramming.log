@@ -3,4 +3,4 @@ C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\LongestCom
 C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\LongestCommonPrefix.cpp(17,22) : warning C4018: '<': signed/unsigned mismatch
 C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\LongestCommonPrefix.cpp(17,46) : warning C4018: '<': signed/unsigned mismatch
 C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\LongestCommonPrefix.cpp(28,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
-  LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\LongestCommonPrefix.cpp  : fatal error C1090: PDB API call failed, error code '3': C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\Debug\vc142.pdb

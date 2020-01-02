@@ -21,7 +21,7 @@ public:
 			}
 			maxPrefix = currentPrefix;
 		}
-		return currentPrefix;
+		return maxPrefix;
 	}
 };
 
