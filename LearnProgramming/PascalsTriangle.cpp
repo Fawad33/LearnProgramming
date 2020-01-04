@@ -30,13 +30,13 @@ public:
 	}
 };
 
-void main() {
-	PascalsTriangle pascalsTriangle;
-	vector<vector<int>> x = pascalsTriangle.generate(3);
-	for (auto i = 0; i < 3; i++) {
-		for (auto j = x[i].begin(); j != x[i].end(); j++) {
-			cout << *j << " ";
-		}
-		cout << endl;
-	}
-}
+//void main() {
+//	PascalsTriangle pascalsTriangle;
+//	vector<vector<int>> x = pascalsTriangle.generate(1);
+//	for (auto i = 0; i < 1; i++) {
+//		for (auto j = x[i].begin(); j != x[i].end(); j++) {
+//			cout << *j << " ";
+//		}
+//		cout << endl;
+//	}
+//}
