@@ -6,34 +6,27 @@ using namespace std;
 class PascalsTriangleII {
 public:
 	vector<int> getRow(int rowIndex) {
-		vector<vector<int>> triangle;
-		vector<int> x;
-
+		vector<int> lastRow;
 		if (rowIndex == 0)
-			return x;
-
-		vector<int> rowFirst = { 1 };
-		triangle.push_back(rowFirst);
+			return lastRow;
+		lastRow.push_back(1);
 
 		for (int i = 1; i < rowIndex; i++) {
-			vector<int> row;
+			vector<int> currentRow;
 			for (int j = 0; j <= i; j++) {
 				if (j - 1 < 0) {
-					row.push_back(triangle[i - 1][j]);
+					currentRow.push_back(lastRow[j]);
 				}
 				else if (j == i) {
-					row.push_back(triangle[i - 1][j - 1]);
+					currentRow.push_back(lastRow[j - 1]);
 				}
 				else {
-					row.push_back(triangle[i - 1][j - 1] + triangle[i - 1][j]);
+					currentRow.push_back(lastRow[j - 1] + lastRow[j]);
 				}
 			}
-
-			if(i == rowIndex - 1)
-				return row;
-
-			triangle.push_back(row);
+			lastRow = currentRow;
 		}
+		return lastRow;
 	}
 };
 
