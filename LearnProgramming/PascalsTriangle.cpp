@@ -21,7 +21,7 @@ public:
 					row.push_back(j - 1);
 				}
 				else {
-					triangle[i].push_back(triangle[i - 1][j - 1] + triangle[i - 1][j]);
+					row.push_back(triangle[i - 1][j - 1] + triangle[i - 1][j]);
 				}
 			}
 			triangle.push_back(row);
