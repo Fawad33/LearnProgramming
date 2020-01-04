@@ -6,21 +6,27 @@ using namespace std;
 class PascalsTriangle {
 public:
 	vector<vector<int>> generate(int numRows) {		
-		vector<vector<int>> row;
+		vector<vector<int>> triangle;
 		if (numRows == 0)
-			return row;
-		row[0].push_back(1);
+			return triangle;		
+		vector<int> rowFirst = {1};
+		triangle.push_back(rowFirst);
 		for (int i = 1; i < numRows; i++) {
+			vector<int> row;
 			for (int j = 0; j <= i; j++) {
-				if (row[i - 1][j - 1] == NULL || row[i - 1][j] == NULL) {
-					row[i].push_back(1);
+				if (j - 1 < 0) {
+					row.push_back(j);
+				}
+				else if (j == i) {
+					row.push_back(j - 1);
 				}
 				else {
-					row[i].push_back(row[i - 1][j - 1] + row[i - 1][j]);
+					triangle[i].push_back(triangle[i - 1][j - 1] + triangle[i - 1][j]);
 				}
 			}
+			triangle.push_back(row);
 		}
-		return row;
+		return triangle;
 	}
 };
 
