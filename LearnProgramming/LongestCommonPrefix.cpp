@@ -18,6 +18,8 @@ public:
 				if (maxPrefix[i] == currentString[i]) {
 					currentPrefix = currentPrefix + maxPrefix[i];
 				}
+				else
+					break;
 			}
 			maxPrefix = currentPrefix;
 		}
@@ -25,8 +27,8 @@ public:
 	}
 };
 
-void main() {
-	vector<string> words = { "aaa", "aa", "aaa"};
-	LongestCommonPrefix longestCommonPrefixObject;
-	cout << longestCommonPrefixObject.longestCommonPrefix(words);
-}
+//void main() {
+//	vector<string> words = { "aca","cba"};
+//	LongestCommonPrefix longestCommonPrefixObject;
+//	cout << longestCommonPrefixObject.longestCommonPrefix(words);
+//}
