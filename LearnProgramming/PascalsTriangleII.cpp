@@ -8,10 +8,13 @@ public:
 	vector<int> getRow(int rowIndex) {
 		vector<vector<int>> triangle;
 		vector<int> x;
+
 		if (rowIndex == 0)
 			return x;
+
 		vector<int> rowFirst = { 1 };
 		triangle.push_back(rowFirst);
+
 		for (int i = 1; i < rowIndex; i++) {
 			vector<int> row;
 			for (int j = 0; j <= i; j++) {
@@ -25,9 +28,12 @@ public:
 					row.push_back(triangle[i - 1][j - 1] + triangle[i - 1][j]);
 				}
 			}
+
+			if(i == rowIndex - 1)
+				return row;
+
 			triangle.push_back(row);
 		}
-		return triangle[rowIndex - 1];
 	}
 };
 
@@ -36,6 +42,5 @@ void main() {
 	vector<int> x = pascalsTriangleII.getRow(5);
 	for (auto i = x.begin(); i != x.end(); i++) {
 			cout << *i << " ";
-	}
-	
+	}	
 }
