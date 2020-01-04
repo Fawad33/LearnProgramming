@@ -15,10 +15,10 @@ public:
 			vector<int> row;
 			for (int j = 0; j <= i; j++) {
 				if (j - 1 < 0) {
-					row.push_back(j);
+					row.push_back(triangle[i - 1][j]);
 				}
 				else if (j == i) {
-					row.push_back(j - 1);
+					row.push_back(triangle[i - 1][j - 1]);
 				}
 				else {
 					row.push_back(triangle[i - 1][j - 1] + triangle[i - 1][j]);
@@ -37,5 +37,6 @@ void main() {
 		for (auto j = x[i].begin(); j != x[i].end(); j++) {
 			cout << *j << " ";
 		}
+		cout << endl;
 	}
 }
