@@ -1,3 +1,5 @@
-﻿  PascalsTriangleII.cpp
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\PascalsTriangleII.cpp(33,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
-  LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe
+﻿  ImplementStrStr.cpp
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\ImplementStrStr.cpp(10,1) : error C2665: 'strstr': none of the 2 overloads could convert all the argument types
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(522,28) : message : could be 'char *strstr(char *const ,const char *const )'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.23.28019\include\vcruntime_string.h(79,38) : message : or       'const char *strstr(const char *,const char *)'
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\ImplementStrStr.cpp(10,1) : message : while trying to match the argument list '(std::string, std::string)'
