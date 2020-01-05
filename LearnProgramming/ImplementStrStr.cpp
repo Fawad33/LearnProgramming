@@ -6,15 +6,19 @@ using namespace std;
 class ImplementStrStr {
 public:
 	int strStr(string haystack, string needle) {
-		char* ptr;
-		ptr = strstr(haystack,needle);
-		cout << *ptr;
-		return *ptr;
+		for (int i = 0; i < haystack.size(); i++) {
+			if (haystack.substr(i, needle.size()) == needle) {
+				return i;
+			}
+			else {
+				return -1;
+			}
+		}
 	}
 };
 
 int main() {
-	string needle = "ll", haystack = "hello";
+	string needle = "x", haystack = "hello";
 	ImplementStrStr implementStrStr;
-	implementStrStr.strStr(haystack, needle);
+	cout << implementStrStr.strStr(haystack, needle);
 }
