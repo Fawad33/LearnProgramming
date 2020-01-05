@@ -1,4 +1,3 @@
 ﻿  ImplementStrStr.cpp
 C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\ImplementStrStr.cpp(9,21) : warning C4018: '<': signed/unsigned mismatch
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\ImplementStrStr.cpp(17)  : warning C4715: 'ImplementStrStr::strStr': not all control paths return a value
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe

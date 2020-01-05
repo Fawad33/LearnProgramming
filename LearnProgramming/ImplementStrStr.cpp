@@ -10,10 +10,8 @@ public:
 			if (haystack.substr(i, needle.size()) == needle) {
 				return i;
 			}
-			else {
-				return -1;
-			}
 		}
+		return -1;
 	}
 };
 
