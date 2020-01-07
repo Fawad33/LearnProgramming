@@ -13,16 +13,21 @@ public:
 			for (j = 0, i = k; i < haystack.size() && j < needle.size(); i++, j++) {
 				if (haystack[i] != needle[j]) {
 					break;
-				}				
+				}
+			}
+			if (k = haystack.size()) {
+				break;
 			}
 			k++;
 		}
+		if (haystack.size() == k)
+			return -1;
 		return k;
 	}
 };
 
 int main() {
-	string needle = "ll", haystack = "hello";
+	string needle = "hello", haystack = "ll";
 	ImplementStrStr implementStrStr;
 	cout << implementStrStr.strStr(haystack, needle);
 }
