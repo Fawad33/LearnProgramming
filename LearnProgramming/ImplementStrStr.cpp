@@ -15,7 +15,7 @@ public:
 					break;
 				}
 			}
-			if (k = haystack.size()) {
+			if (j == needle.size()) {
 				break;
 			}
 			k++;
