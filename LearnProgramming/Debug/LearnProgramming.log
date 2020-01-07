@@ -1,4 +1,4 @@
 ﻿  ImplementStrStr.cpp
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\ImplementStrStr.cpp(12,21) : warning C4018: '<': signed/unsigned mismatch
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\ImplementStrStr.cpp(12,44) : warning C4018: '<': signed/unsigned mismatch
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\ImplementStrStr.cpp(12,17) : warning C4018: '<': signed/unsigned mismatch
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\ImplementStrStr.cpp(12,40) : warning C4018: '<': signed/unsigned mismatch
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe
