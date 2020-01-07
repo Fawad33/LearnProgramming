@@ -8,14 +8,12 @@ public:
 	int strStr(string haystack, string needle) {
 		if (needle == "" && haystack == "")
 			return 0;
-		int i, k = 0;
+		int i, j, k = 0;
 		while (k < haystack.size()) {
-			for (i = k; i < haystack.size(); i++) {
-				for (int j = 0; j < haystack.size() && j < needle.size(); j++) {
-					if (haystack[i] != needle[j]) {
-						break;
-					}
-				}
+			for (j = 0, i = k; i < haystack.size() && j < needle.size(); i++, j++) {
+				if (haystack[i] != needle[j]) {
+					break;
+				}				
 			}
 			k++;
 		}
