@@ -5,23 +5,26 @@ using namespace std;
 
 class ImplementStrStr {
 public:
-	bool strStr(string haystack, string needle) {
+	int strStr(string haystack, string needle) {
 		if (needle == "" && haystack == "")
-			return false;
-		int i;
-		for (i = 0; i < haystack.size() && i < needle.size(); i++) {
-			if (haystack[i] != needle[i]) {
-				break;
+			return 0;
+		int i, k = 0;
+		while (k < haystack.size()) {
+			for (i = k; i < haystack.size(); i++) {
+				for (int j = 0; j < haystack.size() && j < needle.size(); j++) {
+					if (haystack[i] == needle[j]) {
+						break;
+					}
+				}
 			}
+			k++;
 		}
-		if (i == needle.size())
-			return true;
-		return false;
+		return k;
 	}
 };
 
 int main() {
-	string needle = "app", haystack = "apple";
+	string needle = "apple", haystack = "app";
 	ImplementStrStr implementStrStr;
 	cout << implementStrStr.strStr(haystack, needle);
 }
