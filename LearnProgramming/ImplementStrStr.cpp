@@ -27,7 +27,7 @@ public:
 };
 
 int main() {
-	string needle = "hello", haystack = "ll";
+	string haystack = "hello", needle = "ll";
 	ImplementStrStr implementStrStr;
 	cout << implementStrStr.strStr(haystack, needle);
 }
