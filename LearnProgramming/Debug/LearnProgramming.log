@@ -1,5 +1,5 @@
-﻿  ImplementStrStr.cpp
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\ImplementStrStr.cpp(12,12) : warning C4018: '<': signed/unsigned mismatch
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\ImplementStrStr.cpp(13,25) : warning C4018: '<': signed/unsigned mismatch
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\ImplementStrStr.cpp(13,48) : warning C4018: '<': signed/unsigned mismatch
+﻿  MergeSortedArray.cpp
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\MergeSortedArray.cpp(11,10) : warning C4018: '>=': signed/unsigned mismatch
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\MergeSortedArray.cpp(16,42) : warning C4018: '<': signed/unsigned mismatch
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\MergeSortedArray.cpp(30,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe

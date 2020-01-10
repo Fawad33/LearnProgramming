@@ -9,7 +9,7 @@ public:
 		if (needle == "" && haystack == "")
 			return 0;
 		int i, j, k = 0;
-		while (k < haystack.size()) {
+		for (int x = 0; k < haystack.size(); k++) {
 			for (j = 0, i = k; i < haystack.size() && j < needle.size(); i++, j++) {
 				if (haystack[i] != needle[j]) {
 					break;
@@ -18,7 +18,6 @@ public:
 			if (j == needle.size()) {
 				break;
 			}
-			k++;
 		}
 		if (haystack.size() == k)
 			return -1;
@@ -26,8 +25,8 @@ public:
 	}
 };
 
-int main() {
-	string haystack = "hello", needle = "ll";
-	ImplementStrStr implementStrStr;
-	cout << implementStrStr.strStr(haystack, needle);
-}
+//int main() {
+//	string haystack = "hello", needle = "ll";
+//	ImplementStrStr implementStrStr;
+//	cout << implementStrStr.strStr(haystack, needle);
+//}

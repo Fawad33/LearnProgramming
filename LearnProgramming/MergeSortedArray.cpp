@@ -6,18 +6,20 @@ using namespace std;
 class MergeSortedArray {
 public:
 	void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
-		auto pointer1 = nums1.begin(), pointer2 = nums2.begin();
-		int i = 0;
-		while (i < nums2.size()) {
-			if (*pointer2 > *pointer1) {
-				pointer1++;	
+		int i = 0, j = 0;
+		while (j < n) {
+			if (i >= nums1.size() && nums1[i] < nums2[j]) {
+				auto it = nums1.begin();
+				nums1.insert(it + i + 1, nums2[j]);
+				i++, j++;
+			}						
+			else if (nums1[i] < nums2[j] && i + 1 < nums1.size()) {
+				i++;
 			}
 			else {
-				auto index = pointer1;				
-				nums1.insert(nums1.begin() + distance(nums1.begin(), pointer1), *pointer2);
-				pointer1 = index + 1;	
-				pointer1++, pointer2++;
-				i++;
+				auto it = nums1.begin();
+				nums1.insert(it + i +1, nums2[j]);
+				i++, j++;
 			}
 		}
 		for (auto i = nums1.begin(); i != nums1.end(); i++)
@@ -25,10 +27,10 @@ public:
 	}
 };
 
-//void main() {
-//	vector<int> num1 = { 1, 2, 3, 0, 0, 0 };
-//	vector<int> num2 = { 2, 4, 6 };
-//	int m = 6, n = 3;
-//	MergeSortedArray mergeSortedArrayObject;
-//	mergeSortedArrayObject.merge(num1, m, num2, n);
-//}
+void main() {
+	vector<int> num1 = { 1, 2, 3, 0, 0, 0};
+	vector<int> num2 = { 2, 5, 6 };
+	int m = 3, n = 3;
+	MergeSortedArray mergeSortedArrayObject;
+	mergeSortedArrayObject.merge(num1, m, num2, n);
+}
