@@ -29,10 +29,10 @@ public:
 	}
 };
 
-void main() {
-	vector<int> num1 = { 4, 5, 6, 0, 0, 0, 0, 0 };
-	vector<int> num2 = { 2, 3, 7, 8, 9 };
-	int m = 3, n = 5;
-	MergeSortedArray mergeSortedArrayObject;
-	mergeSortedArrayObject.merge(num1, m, num2, n);
-}
+//void main() {
+//	vector<int> num1 = { 4, 5, 6, 0, 0, 0, 0, 0 };
+//	vector<int> num2 = { 2, 3, 7, 8, 9 };
+//	int m = 3, n = 5;
+//	MergeSortedArray mergeSortedArrayObject;
+//	mergeSortedArrayObject.merge(num1, m, num2, n);
+//}

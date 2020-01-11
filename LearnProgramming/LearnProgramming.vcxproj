@@ -168,6 +168,7 @@
     <ClCompile Include="SearchWithBool.cpp" />
     <ClCompile Include="TraverseTree.cpp" />
     <ClCompile Include="TwoSum.cpp" />
+    <ClCompile Include="TwoSumII.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sample.h" />
