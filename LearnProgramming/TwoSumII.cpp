@@ -14,7 +14,7 @@ public:
 			if (numbers[i] > target)
 				break;
 			for (int j = counter; j < size; j++) {
-				if (numbers[j] > target || numbers[i] + numbers[j] > target)
+				if (numbers[j] > target)
 					break;
 				if (numbers[i] + numbers[j] == target) {
 					numsNew.push_back(i + 1);
@@ -30,8 +30,8 @@ public:
 };
 
 void main(){
-	vector<int> numbers = { 6, 1, 11, 15 };
-	int target = 9;
+	vector<int> numbers = { 6, 3, 11, 15 };
+	int target = 11;
 	TwoSumII twoSumII;
 	twoSumII.twoSumII(numbers, target);
 }
