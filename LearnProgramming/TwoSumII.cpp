@@ -15,6 +15,9 @@ public:
 					numsNew.push_back(j + 1);
 					break;
 				}
+				if (numbers[i] + numbers[j] > target) {
+					break;
+				}
 			}
 		}
 		for (auto i = numsNew.begin(); i != numsNew.end(); i++)
@@ -24,8 +27,8 @@ public:
 };
 
 void main(){
-	vector<int> numbers = { 6, 3, 11, 15 };
-	int target = 9;
+	vector<int> numbers = { 3, 4, 6, 8, 15 };
+	int target = 10;
 	TwoSumII twoSumII;
 	twoSumII.twoSumII(numbers, target);
 }

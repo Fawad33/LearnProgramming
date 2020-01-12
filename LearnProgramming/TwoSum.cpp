@@ -8,10 +8,8 @@ public:
 	vector<int> twoSum(vector<int>& nums, int target) {
 		vector<int> numsNew;
 		int size = nums.size();
-		int counter = 0;
 		for (int i = 0; i < size; i++) {
-			counter++;
-			for (int j = counter; j < size; j++) {
+			for (int j = i + 1; j < size; j++) {
 				if (nums[i] + nums[j] == target) {
 					cout << i << " " << j;
 					numsNew.push_back(i);
