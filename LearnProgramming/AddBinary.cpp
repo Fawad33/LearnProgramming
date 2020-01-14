@@ -48,24 +48,24 @@ public:
 					resultReversed.push_back('1');
 					aLength--, bLength--;
 				}
-				
+
 			}
 			else {
 				if (aLength < 0 && b[bLength] == '0') {
-				resultReversed.push_back('0');
-				aLength--, bLength--;
+					resultReversed.push_back('0');
+					aLength--, bLength--;
 				}
 				else if (aLength < 0 && b[bLength] == '1') {
-				resultReversed.push_back('1');
-				aLength--, bLength--;
+					resultReversed.push_back('1');
+					aLength--, bLength--;
 				}
 				else if (a[aLength] == '0' && bLength < 0) {
-				resultReversed.push_back('0');
-				aLength--, bLength--;
+					resultReversed.push_back('0');
+					aLength--, bLength--;
 				}
 				else if (a[aLength] == '1' && bLength < 0) {
-				resultReversed.push_back('1');
-				aLength--, bLength--;
+					resultReversed.push_back('1');
+					aLength--, bLength--;
 				}
 				else if (a[aLength] == '0' && b[bLength] == '0') {
 					resultReversed.push_back('0');
@@ -84,7 +84,7 @@ public:
 					aLength--, bLength--;
 					carry = '1';
 				}
-				
+
 			}
 			if (aLength < 0 && bLength < 0) {
 				if (carry == '1')
