@@ -26,9 +26,9 @@ public:
 	}
 };
 
-void main(){
-	vector<int> numbers = { 3, 4, 6, 8, 15 };
-	int target = 10;
-	TwoSumII twoSumII;
-	twoSumII.twoSumII(numbers, target);
-}
+//void main(){
+//	vector<int> numbers = { 3, 4, 6, 8, 15 };
+//	int target = 10;
+//	TwoSumII twoSumII;
+//	twoSumII.twoSumII(numbers, target);
+//}
