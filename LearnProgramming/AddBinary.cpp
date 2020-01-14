@@ -9,97 +9,92 @@ public:
 	string addBinary(string a, string b) {
 		int aLength = a.size() - 1;
 		int bLength = b.size() - 1;
-		string result;
-		int carry = 0;
+		string resultReversed;
+		char carry = '0';
 		while (true) {
-			if (carry == 1) {
-				if (a[aLength] == 0 && b[bLength] == 0) {
-					result.push_back(1);
+			if (carry == '1') {
+				if (aLength < 0 && b[bLength] == '0') {
+					resultReversed.push_back('1');
 					aLength--, bLength--;
-					carry = 1;
+					carry = '0';
 				}
-				else if (a[aLength] == 0 && b[bLength] == 1) {
-					result.push_back(0);
+				else if (aLength < 0 && b[bLength] == '1') {
+					resultReversed.push_back('0');
 					aLength--, bLength--;
-					carry = 1;
 				}
-				else if (a[aLength] == 1 && b[bLength] == 0) {
-					result.push_back(0);
+				else if (a[aLength] == '0' && bLength < 0) {
+					resultReversed.push_back('1');
 					aLength--, bLength--;
-					carry = 1;
+					carry = '0';
 				}
-				else if (a[aLength] == 1 && b[bLength] == 1) {
-					result.push_back(1);
+				else if (a[aLength] == '1' && bLength < 0) {
+					resultReversed.push_back('0');
 					aLength--, bLength--;
-					carry = 1;
 				}
-				else if (a[aLength] == NULL && b[bLength] == 0) {
-					result.push_back(1);
+				else if (a[aLength] == '0' && b[bLength] == '0') {
+					resultReversed.push_back('1');
 					aLength--, bLength--;
-					carry = 0;
+					carry = '0';
 				}
-				else if (a[aLength] == NULL && b[bLength] == 1) {
-					result.push_back(0);
+				else if (a[aLength] == '0' && b[bLength] == '1') {
+					resultReversed.push_back('0');
 					aLength--, bLength--;
-					carry = 1;
 				}
-				else if (a[aLength] == 0 && b[bLength] == NULL) {
-					result.push_back(1);
+				else if (a[aLength] == '1' && b[bLength] == '0') {
+					resultReversed.push_back('0');
 					aLength--, bLength--;
-					carry = 0;
 				}
-				else if (a[aLength] == 1 && b[bLength] == NULL) {
-					result.push_back(0);
+				else if (a[aLength] == '1' && b[bLength] == '1') {
+					resultReversed.push_back('1');
 					aLength--, bLength--;
-					carry = 1;
 				}
+				
 			}
 			else {
-				if (a[aLength] == 0 && b[bLength] == 0) {
-					result.push_back(0);
-					aLength--, bLength--;
-					carry = 0;
+				if (aLength < 0 && b[bLength] == '0') {
+				resultReversed.push_back('0');
+				aLength--, bLength--;
 				}
-				else if (a[aLength] == 0 && b[bLength] == 1) {
-					result.push_back(1);
-					aLength--, bLength--;
-					carry = 0;
+				else if (aLength < 0 && b[bLength] == '1') {
+				resultReversed.push_back('1');
+				aLength--, bLength--;
 				}
-				else if (a[aLength] == 1 && b[bLength] == 0) {
-					result.push_back(1);
-					aLength--, bLength--;
-					carry = 0;
+				else if (a[aLength] == '0' && bLength < 0) {
+				resultReversed.push_back('0');
+				aLength--, bLength--;
 				}
-				else if (a[aLength] == 1 && b[bLength] == 1) {
-					result.push_back(0);
-					aLength--, bLength--;
-					carry = 1;
+				else if (a[aLength] == '1' && bLength < 0) {
+				resultReversed.push_back('1');
+				aLength--, bLength--;
 				}
-				else if (a[aLength] == NULL && b[bLength] == 0) {
-					result.push_back(0);
+				else if (a[aLength] == '0' && b[bLength] == '0') {
+					resultReversed.push_back('0');
 					aLength--, bLength--;
-					carry = 0;
 				}
-				else if (a[aLength] == NULL && b[bLength] == 1) {
-					result.push_back(1);
+				else if (a[aLength] == '0' && b[bLength] == '1') {
+					resultReversed.push_back('1');
 					aLength--, bLength--;
-					carry = 0;
 				}
-				else if (a[aLength] == 0 && b[bLength] == NULL) {
-					result.push_back(0);
+				else if (a[aLength] == '1' && b[bLength] == '0') {
+					resultReversed.push_back('1');
 					aLength--, bLength--;
-					carry = 0;
 				}
-				else if (a[aLength] == 1 && b[bLength] == NULL) {
-					result.push_back(1);
+				else if (a[aLength] == '1' && b[bLength] == '1') {
+					resultReversed.push_back('0');
 					aLength--, bLength--;
-					carry = 0;
+					carry = '1';
 				}
+				
 			}
 			if (aLength < 0 && bLength < 0) {
+				if (carry == '1')
+					resultReversed.push_back('1');
 				break;
 			}
 		}
+		string result;
+		for (auto it = resultReversed.rbegin(); it != resultReversed.rend(); it++)
+			result.push_back(*it);
 		return result;
 	}
 };
