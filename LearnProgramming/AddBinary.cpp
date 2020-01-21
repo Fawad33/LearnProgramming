@@ -13,7 +13,7 @@ public:
 		char carry = '0';
 		while (true) {
 			if (carry == '1') {
-				if ((aLength < 0 || a[aLength] == '0') && (b[bLength] == '0' || bLength < 0)) {
+				if ((aLength < 0 || a[aLength] == '0') && (bLength < 0 || b[bLength] == '0')) {
 					resultReversed.push_back('1');
 					carry = '0';
 				}
@@ -28,7 +28,7 @@ public:
 				}
 			}
 			else {
-				if ((aLength < 0 || a[aLength] == '0') && (b[bLength] == '0' || bLength < 0)) {
+				if ((aLength < 0 || a[aLength] == '0') && (bLength < 0 || b[bLength] == '0')) {
 					resultReversed.push_back('0');
 				}
 				else if ((aLength < 0 || a[aLength] == '0') && b[bLength] == '1') {
