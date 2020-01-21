@@ -26,7 +26,6 @@ public:
 				else if (a[aLength] == '1' && b[bLength] == '1') {
 					resultReversed.push_back('1');
 				}
-				aLength--, bLength--;
 			}
 			else {
 				if ((aLength < 0 || a[aLength] == '0') && (b[bLength] == '0' || bLength < 0)) {
@@ -42,8 +41,9 @@ public:
 					resultReversed.push_back('0');
 					carry = '1';
 				}
-				aLength--, bLength--;
 			}
+			aLength--, bLength--;
+
 			if (aLength < 0 && bLength < 0) {
 				if (carry == '1')
 					resultReversed.push_back('1');
