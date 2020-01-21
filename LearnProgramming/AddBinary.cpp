@@ -13,78 +13,36 @@ public:
 		char carry = '0';
 		while (true) {
 			if (carry == '1') {
-				if (aLength < 0 && b[bLength] == '0') {
+				if ((aLength < 0 || a[aLength] == '0') && b[bLength] == '0') {
 					resultReversed.push_back('1');
-					aLength--, bLength--;
 					carry = '0';
 				}
-				else if (aLength < 0 && b[bLength] == '1') {
+				else if ((aLength < 0 || a[aLength] == '0') && b[bLength] == '1') {
 					resultReversed.push_back('0');
-					aLength--, bLength--;
 				}
-				else if (a[aLength] == '0' && bLength < 0) {
-					resultReversed.push_back('1');
-					aLength--, bLength--;
-					carry = '0';
-				}
-				else if (a[aLength] == '1' && bLength < 0) {
+				else if (a[aLength] == '1' && (bLength < 0 || b[bLength] == '0')) {
 					resultReversed.push_back('0');
-					aLength--, bLength--;
-				}
-				else if (a[aLength] == '0' && b[bLength] == '0') {
-					resultReversed.push_back('1');
-					aLength--, bLength--;
-					carry = '0';
-				}
-				else if (a[aLength] == '0' && b[bLength] == '1') {
-					resultReversed.push_back('0');
-					aLength--, bLength--;
-				}
-				else if (a[aLength] == '1' && b[bLength] == '0') {
-					resultReversed.push_back('0');
-					aLength--, bLength--;
 				}
 				else if (a[aLength] == '1' && b[bLength] == '1') {
 					resultReversed.push_back('1');
-					aLength--, bLength--;
 				}
-
+				aLength--, bLength--;
 			}
 			else {
-				if (aLength < 0 && b[bLength] == '0') {
+				if ((aLength < 0 || a[aLength] == '0') && (b[bLength] == '0' || bLength < 0)) {
 					resultReversed.push_back('0');
-					aLength--, bLength--;
 				}
-				else if (aLength < 0 && b[bLength] == '1') {
+				else if ((aLength < 0 || a[aLength] == '0') && b[bLength] == '1') {
 					resultReversed.push_back('1');
-					aLength--, bLength--;
 				}
-				else if (a[aLength] == '0' && bLength < 0) {
-					resultReversed.push_back('0');
-					aLength--, bLength--;
-				}
-				else if (a[aLength] == '1' && bLength < 0) {
+				else if (a[aLength] == '1' && (bLength < 0 || b[bLength] == '0')) {
 					resultReversed.push_back('1');
-					aLength--, bLength--;
-				}
-				else if (a[aLength] == '0' && b[bLength] == '0') {
-					resultReversed.push_back('0');
-					aLength--, bLength--;
-				}
-				else if (a[aLength] == '0' && b[bLength] == '1') {
-					resultReversed.push_back('1');
-					aLength--, bLength--;
-				}
-				else if (a[aLength] == '1' && b[bLength] == '0') {
-					resultReversed.push_back('1');
-					aLength--, bLength--;
-				}
+				}				
 				else if (a[aLength] == '1' && b[bLength] == '1') {
 					resultReversed.push_back('0');
-					aLength--, bLength--;
 					carry = '1';
 				}
-
+				aLength--, bLength--;
 			}
 			if (aLength < 0 && bLength < 0) {
 				if (carry == '1')
@@ -100,7 +58,7 @@ public:
 };
 
 void main() {
-	string a = "11", b = "1";
+	string a = "101111", b = "10";
 	AddBinary addBinary;
 	cout << addBinary.addBinary(a, b);
 }
