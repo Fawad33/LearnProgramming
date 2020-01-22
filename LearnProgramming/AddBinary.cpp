@@ -13,34 +13,42 @@ public:
 		char carry = '0';
 		while (true) {
 			if (carry == '1') {
-				if ((aLength < 0 || a[aLength] == '0') && (bLength < 0 || b[bLength] == '0')) {
-					resultReversed.push_back('1');
-					carry = '0';
+				if (aLength < 0 || a[aLength] == '0') {
+					if (bLength < 0 || b[bLength] == '0') {
+						resultReversed.push_back('1');
+						carry = '0';
+					}
+					else {
+						resultReversed.push_back('0');
+					}					
 				}
-				else if ((aLength < 0 || a[aLength] == '0') && b[bLength] == '1') {
-					resultReversed.push_back('0');
-				}
-				else if (a[aLength] == '1' && (bLength < 0 || b[bLength] == '0')) {
-					resultReversed.push_back('0');
-				}
-				else if (a[aLength] == '1' && b[bLength] == '1') {
-					resultReversed.push_back('1');
+				else {
+					if (bLength < 0 || b[bLength] == '0') {
+						resultReversed.push_back('0');
+					}
+					else {
+						resultReversed.push_back('1');
+					}
 				}
 			}
 			else {
-				if ((aLength < 0 || a[aLength] == '0') && (bLength < 0 || b[bLength] == '0')) {
-					resultReversed.push_back('0');
-				}
-				else if ((aLength < 0 || a[aLength] == '0') && b[bLength] == '1') {
-					resultReversed.push_back('1');
-				}
-				else if (a[aLength] == '1' && (bLength < 0 || b[bLength] == '0')) {
-					resultReversed.push_back('1');
+				if (aLength < 0 || a[aLength] == '0') {
+					if (bLength < 0 || b[bLength] == '0') {
+						resultReversed.push_back('0');
+					}
+					else {
+						resultReversed.push_back('1');
+					}
 				}				
-				else if (a[aLength] == '1' && b[bLength] == '1') {
-					resultReversed.push_back('0');
-					carry = '1';
-				}
+				else {
+					if (bLength < 0 || b[bLength] == '0'){
+						resultReversed.push_back('1');
+					}
+					else {
+						resultReversed.push_back('0');
+						carry = '1';
+					}
+				}									
 			}
 			aLength--, bLength--;
 
