@@ -124,6 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AddBinary.cpp" />
+    <ClCompile Include="AddBinaryWithMap.cpp" />
     <ClCompile Include="AddDigits.cpp" />
     <ClCompile Include="arrayOfPointers.cpp" />
     <ClCompile Include="DepthFirstSearch.cpp" />

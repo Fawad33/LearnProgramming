@@ -65,8 +65,8 @@ public:
 	}
 };
 
-void main() {
-	string a = "101111", b = "10";
-	AddBinary addBinary;
-	cout << addBinary.addBinary(a, b);
-}
+//void main() {
+//	string a = "101111", b = "10";
+//	AddBinary addBinary;
+//	cout << addBinary.addBinary(a, b);
+//}
