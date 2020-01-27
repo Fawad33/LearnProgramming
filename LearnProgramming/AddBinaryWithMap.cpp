@@ -26,7 +26,7 @@ public:
 				tempStr.push_back('0');
 			}
 			else {
-				tempStr.push_back(a[aLength]);
+				tempStr.push_back(b[bLength]);
 			}
 
 			tempStr.push_back(carry);
