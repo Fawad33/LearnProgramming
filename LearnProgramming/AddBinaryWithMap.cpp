@@ -8,43 +8,40 @@ class AddBinaryWithMap {
 public:
 	string addBinaryWithMapFunc(string a, string b) {
 		char carry = '0';
-		string resultReversed;
-		int aLength = a.size() - 1;
-		int bLength = b.size() - 1;
+		string result;
+		int aIndex = a.size() - 1;
+		int bIndex = b.size() - 1;
 		map<string, string> resultTable = { {"001","10"}, {"011", "01"}, {"101", "01"},
 		{"111", "11"}, {"000", "00"},{"010", "10"}, {"100","10"}, {"110", "01"} };
 		
 		while (true) {
-			string tempStr;
-			if (aLength < 0) {
-				tempStr.push_back('0');
+			string keyString = "";
+			if (aIndex < 0) {
+				keyString += '0';
 			}
 			else {
-				tempStr.push_back(a[aLength]);
+				keyString += a[aIndex];
 			}
-			if(bLength < 0) {
-				tempStr.push_back('0');
+			if(bIndex < 0) {
+				keyString += '0';
 			}
 			else {
-				tempStr.push_back(b[bLength]);
+				keyString += b[bIndex];
 			}
 
-			tempStr.push_back(carry);
+			keyString += carry;
 
-			auto it = resultTable.find(tempStr);
-			resultReversed.push_back(it->second[0]);
+			auto it = resultTable.find(keyString);
+			result = it->second[0] + result;
 			carry = it->second[1];
 
-			aLength--, bLength--;
-			if (aLength < 0 && bLength < 0) {
+			aIndex--, bIndex--;
+			if (aIndex < 0 && bIndex < 0) {
 				if (carry == '1')
-					resultReversed.push_back('1');
+					result = '1' + result;
 				break;
 			}			
 		}
-		string result;
-		for (auto it = resultReversed.rbegin(); it != resultReversed.rend(); it++)
-			result.push_back(*it);
 		return result;
 	}
 };

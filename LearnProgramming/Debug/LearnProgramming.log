@@ -1,3 +1,3 @@
 ﻿  AddBinaryWithMap.cpp
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\AddBinaryWithMap.cpp(52,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\AddBinaryWithMap.cpp(49,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe
