@@ -31,9 +31,11 @@ public:
 
 			keyString += carry;
 
-			auto it = resultTable.find(keyString);
+			/*auto it = resultTable.find(keyString);
 			result = it->second[0] + result;
-			carry = it->second[1];
+			carry = it->second[1];*/
+			result = resultTable.find(keyString)->second[0] + result;
+			carry = resultTable.find(keyString)->second[1];
 
 			aIndex--, bIndex--;
 			if (aIndex < 0 && bIndex < 0) {
@@ -46,8 +48,8 @@ public:
 	}
 };
 
-void main() {
-	string a = "1010", b = "1011";
-	AddBinaryWithMap addBinaryWithMap;
-	cout << addBinaryWithMap.addBinaryWithMapFunc(a, b);
-}
+//void main() {
+//	string a = "1010", b = "1011";
+//	AddBinaryWithMap addBinaryWithMap;
+//	cout << addBinaryWithMap.addBinaryWithMapFunc(a, b);
+//}

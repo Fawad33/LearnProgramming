@@ -171,6 +171,7 @@
     <ClCompile Include="TraverseTree.cpp" />
     <ClCompile Include="TwoSum.cpp" />
     <ClCompile Include="TwoSumII.cpp" />
+    <ClCompile Include="ValidPalindrome.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sample.h" />
