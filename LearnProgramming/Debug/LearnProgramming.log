@@ -1,5 +1,3 @@
-﻿  AddBinaryWithMap.cpp
-  ValidPalindrome.cpp
-  Generating Code...
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\AddBinaryWithMap.cpp(51,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
+﻿  ValidPalindrome.cpp
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\ValidPalindrome.cpp(36,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe

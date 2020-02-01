@@ -48,8 +48,8 @@ public:
 	}
 };
 
-void main() {
-	string a = "1010", b = "1011";
-	AddBinaryWithMap addBinaryWithMap;
-	cout << addBinaryWithMap.addBinaryWithMapFunc(a, b);
-}
+//void main() {
+//	string a = "1010", b = "1011";
+//	AddBinaryWithMap addBinaryWithMap;
+//	cout << addBinaryWithMap.addBinaryWithMapFunc(a, b);
+//}
