@@ -7,29 +7,28 @@ class ValidPalindrome {
 public:
 	bool isPalindrome(string s){
 		int length = s.length();
-		for (int i = 0; i < length; i++) {
-			s[i] = tolower(s[i]);
-		}
 		int leftMax, rightMin;
-		if (length % 2 == 0) {
-			leftMax = length / 2;
-			rightMin = leftMax + 1;
-		}
-		else {
-			leftMax = (length / 2) - 1;
-			rightMin = leftMax + 2;
-		}
-		for (int i = 0, j = length - 1; i <= leftMax, j >= rightMin; i++, j--) {
-			if (int(s[i]) <= 96 || int(s[i]) > 122) {
+		int i = 0, j = length - 1;
+		while (true) {
+			char lowerI = tolower(s[i]);
+			char lowerJ = tolower(s[j]);
+			while ((int(lowerI) <= 96 || int(lowerI) > 122)) {
 				i++;
 			}
-			if (int(s[j]) <= 96 || int(s[j]) > 122) {
+			while ((int(lowerJ) <= 96 || int(lowerJ) > 122)) {
 				j--;
 			}
-			if (s[i] != s[j])
+			
+			if (lowerI == lowerJ)
+				i++, j--;
+			else
 				return false;
+
+			if (length % 2 == 0 && (j - i) == 1)
+				return true;
+			else if (length % 2 == 1 && (j - i) == 2)
+				return true;
 		}
-		return true;
 	}
 };
 
