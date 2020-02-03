@@ -9,7 +9,7 @@ public:
 		int length = s.length();
 		int i = 0, j = length - 1;
 		bool palindrome = true;
-		while ((j - i) > 3) {
+		while ((j - i) > 2) {
 			while (int(tolower(s[i])) <= 96 || int(tolower(s[i])) > 122) {
 				i++;
 			}
@@ -17,7 +17,7 @@ public:
 				j--;
 			}
 			
-			if (tolower(s[j]) == tolower(s[j]))
+			if (tolower(s[i]) == tolower(s[j]))
 				i++, j--;
 			else {
 				palindrome = false;
@@ -29,7 +29,7 @@ public:
 };
 
 void main() {
-	string input = "race a car";
+	string input = "A man, a plan, a canal: Panama";
 	ValidPalindrome validPalindrome;
 	if (validPalindrome.isPalindrome(input) == true)
 		cout << "true";
