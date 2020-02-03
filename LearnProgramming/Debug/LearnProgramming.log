@@ -1,5 +1,3 @@
 ﻿  ValidPalindrome.cpp
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\ValidPalindrome.cpp(10,16) : warning C4101: 'rightMin': unreferenced local variable
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\ValidPalindrome.cpp(10,7) : warning C4101: 'leftMax': unreferenced local variable
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\ValidPalindrome.cpp(35,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\ValidPalindrome.cpp(31,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe

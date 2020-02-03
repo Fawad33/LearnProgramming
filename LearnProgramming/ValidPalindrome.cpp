@@ -7,33 +7,29 @@ class ValidPalindrome {
 public:
 	bool isPalindrome(string s){
 		int length = s.length();
-		int leftMax, rightMin;
 		int i = 0, j = length - 1;
-		while (true) {
-			char lowerI = tolower(s[i]);
-			char lowerJ = tolower(s[j]);
-			while ((int(lowerI) <= 96 || int(lowerI) > 122)) {
+		bool palindrome = true;
+		while ((j - i) > 3) {
+			while (int(tolower(s[i])) <= 96 || int(tolower(s[i])) > 122) {
 				i++;
 			}
-			while ((int(lowerJ) <= 96 || int(lowerJ) > 122)) {
+			while (int(tolower(s[j])) <= 96 || int(tolower(s[j])) > 122) {
 				j--;
 			}
 			
-			if (lowerI == lowerJ)
+			if (tolower(s[j]) == tolower(s[j]))
 				i++, j--;
-			else
-				return false;
-
-			if (length % 2 == 0 && (j - i) == 1)
-				return true;
-			else if (length % 2 == 1 && (j - i) == 2)
-				return true;
+			else {
+				palindrome = false;
+				break;
+			}
 		}
+		return palindrome;
 	}
 };
 
 void main() {
-	string input = "A man, a plan, a canal: Panama";
+	string input = "race a car";
 	ValidPalindrome validPalindrome;
 	if (validPalindrome.isPalindrome(input) == true)
 		cout << "true";
