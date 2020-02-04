@@ -9,11 +9,11 @@ public:
 		int length = s.length();
 		int i = 0, j = length - 1;
 		bool palindrome = true;
-		while ((j - i) > 2) {
-			while (int(tolower(s[i])) <= 96 || int(tolower(s[i])) > 122) {
+		while ((j - i) >= 1) {
+			while ((int(tolower(s[i])) <= 96 || int(tolower(s[i])) > 122) && i < (length - 1)) {
 				i++;
 			}
-			while (int(tolower(s[j])) <= 96 || int(tolower(s[j])) > 122) {
+			while ((int(tolower(s[j])) <= 96 || int(tolower(s[j])) > 122) && j < (length - 1)) {
 				j--;
 			}
 			
@@ -29,7 +29,7 @@ public:
 };
 
 void main() {
-	string input = "A man, a plan, a canal: Panama";
+	string input = ".,";
 	ValidPalindrome validPalindrome;
 	if (validPalindrome.isPalindrome(input) == true)
 		cout << "true";
