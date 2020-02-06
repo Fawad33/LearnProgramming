@@ -129,6 +129,7 @@
     <ClCompile Include="arrayOfPointers.cpp" />
     <ClCompile Include="DepthFirstSearch.cpp" />
     <ClCompile Include="ImplementStrStr.cpp" />
+    <ClCompile Include="MinStack.cpp" />
     <ClCompile Include="PascalsTriangle.cpp" />
     <ClCompile Include="PascalsTriangleII.cpp" />
     <ClCompile Include="SameTree.cpp" />

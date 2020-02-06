@@ -28,9 +28,9 @@ public:
 	}
 };
 
-void main() {
-	string input = "race a car";
-	ValidPalindrome validPalindrome;
-	if (validPalindrome.isPalindrome(input) == true)
-		cout << "true";
-}
+//void main() {
+//	string input = "race a car";
+//	ValidPalindrome validPalindrome;
+//	if (validPalindrome.isPalindrome(input) == true)
+//		cout << "true";
+//}
