@@ -5,15 +5,16 @@ using namespace std;
 class CountPrimes {
 public:
 	int countPrimes(int n) {
-		int result = 0;
-		for (int i = 0; i <= n; i++) {
-			bool flag = false;
-			for (int j = 2; j <= i; j++) {
+		int result = 1;
+		if (n == 2)
+			return result;
+		for (int i = 3; i <= n; i++) {
+			bool flag = true;
+			for (int j = 2; j <= sqrt(i); j++) {
 				if (i % j == 0)
-					break;
-				else
-					flag = true;				
-			}			
+					flag = false;
+					break;				
+			}
 			if (flag == true)
 				result++;
 		}
@@ -22,7 +23,7 @@ public:
 };
 
 void main() {
-	int n = 2;
+	int n = 4;
 	CountPrimes countPrimesObject;
 	cout << countPrimesObject.countPrimes(n);
 }
