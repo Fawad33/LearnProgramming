@@ -10,7 +10,8 @@ public:
 			return result;
 		for (int i = 3; i <= n; i++) {
 			bool flag = true;
-			for (int j = 2; j <= sqrt(i); j++) {
+			int iSqrt = (int)floor(sqrt(i));
+			for (int j = 2; j <= iSqrt; j++) {
 				if (i % j == 0)
 					flag = false;
 					break;				
@@ -23,7 +24,7 @@ public:
 };
 
 void main() {
-	int n = 4;
+	int n = 10;
 	CountPrimes countPrimesObject;
 	cout << countPrimesObject.countPrimes(n);
 }
