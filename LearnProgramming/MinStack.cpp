@@ -39,10 +39,10 @@ public:
 	}
 };
 
-void main() {
-	MinStack minStackObject;
-	minStackObject.push(1);
-	minStackObject.push(2);
-	minStackObject.pop();
-	cout << minStackObject.top();
-}
+//void main() {
+//	MinStack minStackObject;
+//	minStackObject.push(1);
+//	minStackObject.push(2);
+//	minStackObject.pop();
+//	cout << minStackObject.top();
+//}
