@@ -5,16 +5,16 @@ using namespace std;
 class CountPrimes {
 public:
 	int countPrimes(int n) {
+		if (n == 0 || n == 1 || n == 2)
+			return 0;
 		int result = 1;
-		if (n == 2)
-			return result;
-		for (int i = 3; i <= n; i++) {
+		for (int i = 3; i < n; i++) {
 			bool flag = true;
-			int iSqrt = (int)floor(sqrt(i));
-			for (int j = 2; j <= iSqrt; j++) {
-				if (i % j == 0)
+			for (int j = 2; j * j <= i; j++) {
+				if (i % j == 0) {
 					flag = false;
-					break;				
+					break;
+				}
 			}
 			if (flag == true)
 				result++;
