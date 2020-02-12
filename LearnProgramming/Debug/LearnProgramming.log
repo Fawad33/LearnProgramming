@@ -1,5 +1,3 @@
-﻿  CountPrimes.cpp
-  SingleNumber.cpp
-  Generating Code...
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\SingleNumber.cpp(30,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
+﻿  SingleNumberWithSet.cpp
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\SingleNumberWithSet.cpp(24,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe
