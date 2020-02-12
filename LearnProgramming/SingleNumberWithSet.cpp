@@ -16,7 +16,8 @@ public:
 				counterSet.insert(*i);
 			}
 		}
-		
+		int x = counterSet.begin();
+		return x;
 	}
 };
 
