@@ -21,8 +21,8 @@ public:
 	}
 };
 
-void main() {
-	vector<int> nums = { 4,1,2,1,2 };
-	SingleNumberWithSet singleNumberWithSetObject;
-	cout << singleNumberWithSetObject.sigleNumberWithSet(nums);
-}
+//void main() {
+//	vector<int> nums = { 4,1,2,1,2 };
+//	SingleNumberWithSet singleNumberWithSetObject;
+//	cout << singleNumberWithSetObject.sigleNumberWithSet(nums);
+//}
