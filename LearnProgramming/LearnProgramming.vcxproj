@@ -130,6 +130,7 @@
     <ClCompile Include="CountPrimes.cpp" />
     <ClCompile Include="DecimalToBinary.cpp" />
     <ClCompile Include="DepthFirstSearch.cpp" />
+    <ClCompile Include="ExcelSheetColumnTitle.cpp" />
     <ClCompile Include="ImplementStrStr.cpp" />
     <ClCompile Include="MinStack.cpp" />
     <ClCompile Include="PascalsTriangle.cpp" />
