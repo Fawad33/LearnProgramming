@@ -20,7 +20,6 @@ public:
 			if (resultMap[*it] > val) {
 				val = resultMap[*it];
 				result = *it;
-
 			}
 		}
 		return result;
