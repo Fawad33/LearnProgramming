@@ -1,3 +1,3 @@
-﻿  ExcelSheetColumnTitle.cpp
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\ExcelSheetColumnTitle.cpp(36,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
+﻿  MajorityElement.cpp
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\MajorityElement.cpp(30,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe

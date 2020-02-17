@@ -33,8 +33,8 @@ public:
 	}
 };
 
-void main() {
-	int n = 703;
-	ExcelSheetColumnTitle excelSheetColumnTitleObject;
-	cout << excelSheetColumnTitleObject.convertToTitle(n);
-}
+//void main() {
+//	int n = 701;
+//	ExcelSheetColumnTitle excelSheetColumnTitleObject;
+//	cout << excelSheetColumnTitleObject.convertToTitle(n);
+//}
