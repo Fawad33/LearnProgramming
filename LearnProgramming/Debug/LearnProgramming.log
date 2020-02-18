@@ -1,3 +1,4 @@
-﻿  MajorityElement.cpp
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\MajorityElement.cpp(37,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
+﻿  ExcelSheetColumnNumber.cpp
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\ExcelSheetColumnNumber.cpp(15,27) : warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\ExcelSheetColumnNumber.cpp(24,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe
