@@ -11,9 +11,7 @@ public:
 		int value = 0, charValue = 0, counter = 0;
 		for (auto it : s) {
 			charValue = ((int)it) - 64;
-			if (counter > 0) {
-				charValue = charValue * pow(26, counter);
-			}
+			charValue = charValue * pow(26, counter);
 			value += charValue;
 			counter++;
 		}
