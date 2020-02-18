@@ -21,6 +21,10 @@ public:
 				val = resultMap[*it];
 				result = *it;
 			}
+
+			if (val > (nums.size() / 2)) {
+				break;
+			}
 		}
 		return result;
 	}
