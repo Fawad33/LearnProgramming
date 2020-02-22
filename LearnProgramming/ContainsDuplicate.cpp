@@ -1,21 +1,21 @@
 #include<iostream>
 #include<vector>
-#include<map>
+#include<set>
 
 using namespace std;
 
 class ContainsDiplicate {
 public:
 	bool containsDuplicate(vector<int>& nums) {
-		map<int, int> resultMap;
+		set<int> resultSet;
 		bool result = false;
 		for (auto i : nums) {
-			if (resultMap.find(i) != resultMap.end()) {
+			if (resultSet.find(i) != resultSet.end()) {
 				result = true;
 				break;
 			}
 			else {
-				resultMap[i] = 1;
+				resultSet.insert(i);
 			}
 		}
 		return result;
