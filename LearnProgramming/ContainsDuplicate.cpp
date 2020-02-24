@@ -14,16 +14,14 @@ public:
 				result = true;
 				break;
 			}
-			else {
-				resultSet.insert(i);
-			}
+			resultSet.insert(i);
 		}
 		return result;
 	}
 };
 
-void main() {
-	vector<int> nums = { 1,2,3,1 };
-	ContainsDiplicate containsDuplicateObject;
-	cout << containsDuplicateObject.containsDuplicate(nums);
-}
+//void main() {
+//	vector<int> nums = { 1,2,3,1 };
+//	ContainsDiplicate containsDuplicateObject;
+//	cout << containsDuplicateObject.containsDuplicate(nums);
+//}

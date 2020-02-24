@@ -181,6 +181,7 @@
     <ClCompile Include="TwoSum.cpp" />
     <ClCompile Include="TwoSumII.cpp" />
     <ClCompile Include="ValidPalindrome.cpp" />
+    <ClCompile Include="VerifyingAnAlienDictionary.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sample.h" />

@@ -1,3 +1,6 @@
-﻿  ContainsDuplicate.cpp
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\ContainsDuplicate.cpp(25,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
+﻿  VerifyingAnAlienDictionary.cpp
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\VerifyingAnAlienDictionary.cpp(22,22) : warning C4018: '<': signed/unsigned mismatch
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\VerifyingAnAlienDictionary.cpp(27,23) : warning C4018: '<': signed/unsigned mismatch
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\VerifyingAnAlienDictionary.cpp(27,46) : warning C4018: '<': signed/unsigned mismatch
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\VerifyingAnAlienDictionary.cpp(39,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe
