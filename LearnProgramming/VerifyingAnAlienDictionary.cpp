@@ -36,7 +36,6 @@ public:
 						result = false;
 					}
 				}
-
 			}
 		}
 		return result;
