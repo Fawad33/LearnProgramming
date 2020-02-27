@@ -42,9 +42,9 @@ public:
 	}
 };
 
-void main() {
-	vector <string> words = { "hello","leetcode" };
-	string order = "hlabcdefgijkmnopqrstuvwxyz";
-	VerifyingAnAlienDictionary verifyingAnAlienDictionaryObject;
-	cout << verifyingAnAlienDictionaryObject.isAlienSorted(words, order);
-}
+//void main() {
+//	vector <string> words = { "hello","leetcode" };
+//	string order = "hlabcdefgijkmnopqrstuvwxyz";
+//	VerifyingAnAlienDictionary verifyingAnAlienDictionaryObject;
+//	cout << verifyingAnAlienDictionaryObject.isAlienSorted(words, order);
+//}
