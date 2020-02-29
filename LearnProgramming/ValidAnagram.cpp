@@ -37,8 +37,8 @@ public:
 	}
 };
 
-void main() {
-	string s = "aacc", t = "ccac";
-	ValidAnagram validAnagraamObject;
-	cout << validAnagraamObject.isAnagram(s, t);
-}
+//void main() {
+//	string s = "aacc", t = "ccac";
+//	ValidAnagram validAnagraamObject;
+//	cout << validAnagraamObject.isAnagram(s, t);
+//}
