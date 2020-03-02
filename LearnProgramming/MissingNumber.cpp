@@ -16,8 +16,8 @@ public:
 	}
 };
 
-void main() {
-	vector<int> nums = { 3,0,1 };
-	MissingNumber missingNumberObject;
-	cout << missingNumberObject.missingNumber(nums);
-}
+//void main() {
+//	vector<int> nums = { 3,0,1 };
+//	MissingNumber missingNumberObject;
+//	cout << missingNumberObject.missingNumber(nums);
+//}
