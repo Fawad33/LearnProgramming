@@ -1,36 +1,41 @@
 #include<iostream>
-#include<set>
+#include<map>
 
 using namespace std;
 
 class FindTheDifference {
 public:
 	char findTheDifference(string s, string t) {
-		char x = 'a';
-		bool flag = true;
-		set<char> charSet;		
-		for (char i : t) {
-			charSet.insert(i);
-		}
-		for (char i : s) {
-			if (charSet.find(i) != charSet.end()) {
-				charSet.erase(i);
+		char result = 'a';
+		map<char, int> numberMap;
+		for (auto i : t) {
+			if (numberMap.find(i) != numberMap.end()) {
+				numberMap[i]++;
 			}
 			else {
-				x = i;
-				flag = false;
-				break;
+				numberMap[i] = 1;
 			}
 		}
-		if (flag == true) {
-			x = *charSet.begin();
+			
+		for (auto i : s) {
+			if (numberMap.find(i) != numberMap.end()) {
+				numberMap[i]--;
+			}
+			else {
+				numberMap[i] = 1;
+			}
 		}
-		return x;
+		for (auto i = numberMap.begin(); i != numberMap.end(); i++) {
+			if (i->second == 1) {
+				result = i->first;
+			}
+		}
+		return result;
 	}
 };
 
 void main() {
-	string s = "a", t = "aa";
+	string s = "abcd", t = "abcde";
 	FindTheDifference findTheDifferenceObject;
 	cout << findTheDifferenceObject.findTheDifference(s, t);
 }
