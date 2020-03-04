@@ -135,6 +135,7 @@
     <ClCompile Include="ExcelSheetColumnTitle.cpp" />
     <ClCompile Include="FindTheDifference.cpp" />
     <ClCompile Include="ImplementStrStr.cpp" />
+    <ClCompile Include="IntersectionOfTwovArrays.cpp" />
     <ClCompile Include="MajorityElement.cpp" />
     <ClCompile Include="MinStack.cpp" />
     <ClCompile Include="MissingNumber.cpp" />
