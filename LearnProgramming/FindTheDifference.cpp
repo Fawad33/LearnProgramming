@@ -18,25 +18,24 @@ public:
 		}
 			
 		for (auto i : t) {
-			if (numberMap.find(i) != numberMap.end()) {
-				numberMap[i]--;
-			}
-			else if(numberMap[i] == 0 || numberMap.find(i) == numberMap.end()){
+			if (numberMap.find(i) == numberMap.end()) {
 				result = i;
 				break;
 			}
-		}
-		/*for (auto i = numberMap.begin(); i != numberMap.end(); i++) {
-			if (i->second == 1) {
-				result = i->first;
+			else if(numberMap[i] == 0){
+				result = i;
+				break;
 			}
-		}*/
+			else {
+				numberMap[i]--;
+			}
+		}
 		return result;
 	}
 };
 
-void main() {
-	string s = "abcd", t = "abcde";
-	FindTheDifference findTheDifferenceObject;
-	cout << findTheDifferenceObject.findTheDifference(s, t);
-}
+//void main() {
+//	string s = "abcd", t = "abcde";
+//	FindTheDifference findTheDifferenceObject;
+//	cout << findTheDifferenceObject.findTheDifference(s, t);
+//}
