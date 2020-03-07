@@ -201,7 +201,10 @@
     <ClCompile Include="FindTheDifference.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="IntersectionOfTwovArrays.cpp">
+    <ClCompile Include="PerfectNumber.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IntersectionOfTwoArrays.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,3 +1,3 @@
-﻿  IntersectionOfTwovArrays.cpp
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\IntersectionOfTwovArrays.cpp(29,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
+﻿  PerfectNumber.cpp
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\PerfectNumber.cpp(23,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe

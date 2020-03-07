@@ -26,10 +26,10 @@ public:
 	}
 };
 
-void main() {
-	vector<int> nums1 = { 4,9,5 }, nums2 = { 9,4,9,8,4 }, result;
-	InterSectionOfTwoArraysClass interSectionOfTwoArraysClassObject;
-	result = interSectionOfTwoArraysClassObject.intersection(nums1, nums2);
-	for (auto i : result)
-		cout << i << " ";
-}
+//void main() {
+//	vector<int> nums1 = { 4,9,5 }, nums2 = { 9,4,9,8,4 }, result;
+//	InterSectionOfTwoArraysClass interSectionOfTwoArraysClassObject;
+//	result = interSectionOfTwoArraysClassObject.intersection(nums1, nums2);
+//	for (auto i : result)
+//		cout << i << " ";
+//}

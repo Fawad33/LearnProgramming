@@ -135,12 +135,13 @@
     <ClCompile Include="ExcelSheetColumnTitle.cpp" />
     <ClCompile Include="FindTheDifference.cpp" />
     <ClCompile Include="ImplementStrStr.cpp" />
-    <ClCompile Include="IntersectionOfTwovArrays.cpp" />
+    <ClCompile Include="IntersectionOfTwoArrays.cpp" />
     <ClCompile Include="MajorityElement.cpp" />
     <ClCompile Include="MinStack.cpp" />
     <ClCompile Include="MissingNumber.cpp" />
     <ClCompile Include="PascalsTriangle.cpp" />
     <ClCompile Include="PascalsTriangleII.cpp" />
+    <ClCompile Include="PerfectNumber.cpp" />
     <ClCompile Include="SameTree.cpp" />
     <ClCompile Include="SameTreeWithVector.cpp" />
     <ClCompile Include="SingleNumber.cpp" />
