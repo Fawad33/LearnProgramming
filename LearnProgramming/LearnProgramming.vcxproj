@@ -144,6 +144,7 @@
     <ClCompile Include="PerfectNumber.cpp" />
     <ClCompile Include="SameTree.cpp" />
     <ClCompile Include="SameTreeWithVector.cpp" />
+    <ClCompile Include="SearchInABinarySearchTree.cpp" />
     <ClCompile Include="SingleNumber.cpp" />
     <ClCompile Include="SingleNumberWithSet.cpp" />
     <ClCompile Include="SymmetricTree.cpp" />
