@@ -137,6 +137,7 @@
     <ClCompile Include="ImplementStrStr.cpp" />
     <ClCompile Include="IntersectionOfTwoArrays.cpp" />
     <ClCompile Include="MajorityElement.cpp" />
+    <ClCompile Include="MaximumDepthOfBinaryTree.cpp" />
     <ClCompile Include="MinStack.cpp" />
     <ClCompile Include="MissingNumber.cpp" />
     <ClCompile Include="PascalsTriangle.cpp" />
