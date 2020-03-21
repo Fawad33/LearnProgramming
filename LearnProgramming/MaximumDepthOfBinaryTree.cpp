@@ -11,32 +11,32 @@ struct TreeNode {
 
 class MaximumDepthOfBinaryTree {
 public:
-	int calculateHeight(TreeNode* root, int &height) {
-		if (root == NULL)
-			return height;
-		calculateHeight(root->left, height);
-		calculateHeight(root->right, height);
-	}
-
-	int maxDepth(TreeNode* root) {
-		int heightRight = 1, heightLeft = 1;
+	int calculateHeight(TreeNode* root) {
 		TreeNode* rightSubTree = root->right;
 		TreeNode* leftSubTree = root->left;
-		int rightMaxHeight = calculateHeight(rightSubTree, heightRight);
-		int leftMaxHeight = calculateHeight(leftSubTree, heightLeft);
+		if (rightSubTree == NULL)
+			return 0;		
+		int rightMaxHeight = calculateHeight(rightSubTree) + 1;
+		if (leftSubTree == NULL)
+			return 0;
+		int leftMaxHeight = calculateHeight(leftSubTree) + 1;
 		if (rightMaxHeight < leftMaxHeight)
 			return leftMaxHeight;
 		else
 			return rightMaxHeight;
 	}
+
+	int maxDepth(TreeNode* root) {
+		if (root == NULL)
+			return 0;
+		else
+			return calculateHeight(root) + 1;
+	}
 };
 
 void main() {
 	struct TreeNode* root = new TreeNode(1);
-	root->left = new TreeNode(2);
-	root->right = new TreeNode(3);
-	root->left->left = new TreeNode(4);
-	root->left->right = new TreeNode(5);
+	root->right = new TreeNode(2);
 
 	MaximumDepthOfBinaryTree maximumDepthOfBinaryTreeObject;
 	cout << maximumDepthOfBinaryTreeObject.maxDepth(root);
