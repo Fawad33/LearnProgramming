@@ -25,16 +25,15 @@ public:
 			return -1;
 		if (abs(x - y) > 1) 
 			return -1;
-		else if (abs(x - y) <= 1)
-			return max(x, y) + 1;
+		return max(x, y) + 1;
 	}
 
 	bool isBalanced(TreeNode* root) {
 		int result = calculateResult(root);
 		if (result == -1)
-			return true;
-		else
 			return false;
+		else
+			return true;
 	}
 };
 
