@@ -127,6 +127,7 @@
     <ClCompile Include="AddBinaryWithMap.cpp" />
     <ClCompile Include="AddDigits.cpp" />
     <ClCompile Include="arrayOfPointers.cpp" />
+    <ClCompile Include="BalancedBinaryTree.cpp" />
     <ClCompile Include="ContainsDuplicate.cpp" />
     <ClCompile Include="CountPrimes.cpp" />
     <ClCompile Include="DecimalToBinary.cpp" />
