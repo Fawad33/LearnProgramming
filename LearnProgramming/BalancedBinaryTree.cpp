@@ -13,25 +13,28 @@ struct TreeNode {
 
 class BalancedBinaryTree {
 public:
-	bool calculateResult(TreeNode* root, int height) {
+	int calculateResult(TreeNode* root) {
 		if (root == NULL)
 			return 0;
-
-		int x = calculateResult(root->left, height) + 1;
-		int y = calculateResult(root->right, height) + 1;
+		int x = calculateResult(root->left);
 		if (x == -1)
 			return -1;
-		else if (x >= 0 && y == -1) 
+		int y = calculateResult(root->right);
+
+		if (y == -1) 
 			return -1;
-		if (x - y > abs(1)) 
+		if (abs(x - y) > 1) 
 			return -1;
-		else if ((x - y) <= abs(1))
-			return max(x, y);
+		else if (abs(x - y) <= 1)
+			return max(x, y) + 1;
 	}
 
 	bool isBalanced(TreeNode* root) {
-		int height = 0;
-		return calculateResult(root, height);
+		int result = calculateResult(root);
+		if (result == -1)
+			return true;
+		else
+			return false;
 	}
 };
 
@@ -43,5 +46,5 @@ void main() {
 	root->left->right = new TreeNode(5);
 
 	BalancedBinaryTree balancedBinaryTreeObject;
-	balancedBinaryTreeObject.isBalanced(root);
+	cout << balancedBinaryTreeObject.isBalanced(root);
 }
