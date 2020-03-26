@@ -11,26 +11,44 @@ struct TreeNode {
 	TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
-struct calc {
-	bool result = true;
-	int height = 0;
+struct TreeResult {
+	bool result;
+	int height;
 };
 
 class BalancedBinaryTeeWithStruct {
 public:
+	TreeResult findIsBalanced(TreeNode* root) {
+		if (root == NULL) {
+			TreeResult z;
+			z.height = 0;
+			z.result = true;
+			return z;
+		}
+		auto x = findIsBalanced(root->left);
+		if (x.result == false) {
+			x.height++;
+			return x;
+		}
+			
+		auto y = findIsBalanced(root->right);
+		if (y.result == false) {
+			y.height++;
+			return y;
+		}
+		if (abs(x.height - y.height) > 1) {
+			x.height++, y.height++;
+			x.result = false;
+			return x;
+		}
+		TreeResult p;
+		p.height = max(x.height, y.height) + 1;
+		p.result = true;
+		return p;
+	}
+
 	bool isBalanced(TreeNode* root) {
-		if (root == NULL)
-			return 0;
-		calc x, y;
-		x.height = isBalanced(root->left);
-		if (x.result == false)
-			return false;
-		y.height = isBalanced(root->right);
-		if (y.result == false)
-			return false;
-		if (abs(x.height - y.height) > 1)
-			return false;
-		return max(x.height, y.height) + 1;
+		return findIsBalanced(root).result;
 	}
 };
 
