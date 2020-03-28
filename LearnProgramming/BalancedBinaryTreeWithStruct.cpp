@@ -19,32 +19,31 @@ struct TreeResult {
 class BalancedBinaryTeeWithStruct {
 public:
 	TreeResult findIsBalanced(TreeNode* root) {
+		TreeResult z;
 		if (root == NULL) {
-			TreeResult z;
 			z.height = 0;
 			z.result = true;
 			return z;
 		}
-		auto x = findIsBalanced(root->left);
-		if (x.result == false) {
-			x.height++;
-			return x;
+
+		auto left = findIsBalanced(root->left);
+		if (left.result == false) {
+			return left;
 		}
-			
-		auto y = findIsBalanced(root->right);
-		if (y.result == false) {
-			y.height++;
-			return y;
+
+		auto right = findIsBalanced(root->right);
+		if (right.result == false) {
+			return right;
 		}
-		if (abs(x.height - y.height) > 1) {
-			x.height++, y.height++;
-			x.result = false;
-			return x;
+
+		if (abs(left.height - right.height) > 1) {
+			z.result = false;
+			return z;
 		}
-		TreeResult p;
-		p.height = max(x.height, y.height) + 1;
-		p.result = true;
-		return p;
+
+		z.height = max(left.height, right.height) + 1;
+		z.result = true;
+		return z;
 	}
 
 	bool isBalanced(TreeNode* root) {
