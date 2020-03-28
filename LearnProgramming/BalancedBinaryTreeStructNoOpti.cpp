@@ -29,21 +29,15 @@ public:
 		auto left = findIsBalanced(root->left);
 		auto right = findIsBalanced(root->right);
 
-		if (left.result == false) {
-			return left;
-		}
-		if (right.result == false) {
-			return right;
-		}
 		z.height = max(left.height, right.height) + 1;
 		if (abs(left.height - right.height) > 1) {
-			z.result = false;
+			z.result = false;			
 		}
 		else {
 			z.result = true;
 		}
-
 		return z;
+		
 	}
 
 	bool isBalanced(TreeNode* root) {
