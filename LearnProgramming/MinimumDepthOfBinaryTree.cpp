@@ -15,17 +15,23 @@ public:
 	int minDepth(TreeNode* root) {
 		if (root == NULL)
 			return 0;
-		return min(minDepth(root->left), minDepth(root->right)) + 1;
+		auto left = root->left;
+		auto right = root->right;
+		if (left == NULL || right == NULL) {
+			return max(minDepth(left), minDepth(right)) + 1;
+		}
+		else
+			return min(minDepth(left), minDepth(right)) + 1;
 	}
 };
 
-//void main() {
-//	struct TreeNode* root = new TreeNode(1);
-//	root->left = new TreeNode(2);
-//	root->right = new TreeNode(3);
-//	root->left->left = new TreeNode(4);
-//	root->left->right = new TreeNode(5);
-//
-//	MinimmumDepthOfBinaryTree minimmumDepthOfBinaryTreeObject;
-//	cout << minimmumDepthOfBinaryTreeObject.minDepth(root);
-//}
+void main() {
+	struct TreeNode* root = new TreeNode(1);
+	root->left = new TreeNode(2);
+	root->right = new TreeNode(3);
+	root->left->left = new TreeNode(4);
+	root->left->right = new TreeNode(5);
+
+	MinimmumDepthOfBinaryTree minimmumDepthOfBinaryTreeObject;
+	cout << minimmumDepthOfBinaryTreeObject.minDepth(root);
+}
