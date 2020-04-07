@@ -137,6 +137,7 @@
     <ClCompile Include="ExcelSheetColumnNumber.cpp" />
     <ClCompile Include="ExcelSheetColumnTitle.cpp" />
     <ClCompile Include="FindTheDifference.cpp" />
+    <ClCompile Include="Hangman.cpp" />
     <ClCompile Include="ImplementStrStr.cpp" />
     <ClCompile Include="IntersectionOfTwoArrays.cpp" />
     <ClCompile Include="MajorityElement.cpp" />

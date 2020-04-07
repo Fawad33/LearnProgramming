@@ -1,5 +1,7 @@
-﻿  BalancedBinaryTreeStructNoOpti.cpp
-  MinimumDepthOfBinaryTree.cpp
-  Generating Code...
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\MinimumDepthOfBinaryTree.cpp(28,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
+﻿  Hangman.cpp
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\Hangman.cpp(22,21) : warning C4018: '<': signed/unsigned mismatch
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\Hangman.cpp(27,23) : warning C4018: '<': signed/unsigned mismatch
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\Hangman.cpp(32,23) : warning C4018: '<': signed/unsigned mismatch
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\Hangman.cpp(42,24) : warning C4018: '<': signed/unsigned mismatch
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\Hangman.cpp(50,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe
