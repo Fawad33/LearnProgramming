@@ -1,56 +1,59 @@
 #include<iostream>
 #include<string>
 #include<vector>
+#include<set>
 
 using namespace std;
 
-string replaceWithUnderscore(string s) {
-	string underScoredStr;
-	int length = s.length();
-	for (int i = 0; i < length; i++) {
-		underScoredStr += "_";
-	}
-	return underScoredStr;
-}
-
 void checkValidityOfWord(string str, string underscoredStr) {
-	char input;
-	
+	char input;	
 	int attempt = 0;
 	vector<char> wrongAns;
-	while (attempt < 13) {
-		for (int i = 0; i < underscoredStr.size(); i++) {
-			cout << "\nEnter your guess: ";
-			cin >> input;
-			if (underscoredStr[i] == '_') {				
-				vector<int> v;
-				for (int j = 0; j < str.size(); j++) {
-					if (str[j] == input) {
-						v.push_back(j);
+	set<char> guesses;	
+	while (true) {
+		cout << "\n" <<underscoredStr << "\nEnter you guess: ";
+		cin >> input;		
+		if (guesses.find(input) != guesses.end()) {
+			cout << "\nAlready entered, try something else";
+		}
+		else {
+			guesses.insert(input);
+			for (int i = 0; i < str.size(); i++) {
+				if (str[i] == input) {					
+					for (int i = 0; i < str.size(); i++) {
+						if (str[i] == input) {
+							underscoredStr[i] = input;
+						}
+					}
+					cout << "\nCorrect guess! \nPrevious Inputs: ";
+					for (auto it = guesses.begin(); it != guesses.end(); it++) {
+						cout << *it << " ";
 					}
 				}
-				for (int k = 0; k < v.size(); k++) {
-					underscoredStr[v[k]] = input;
+				else {
+					attempt++;
+					cout << "\nIncorrect guess! \nPrevious Inputs: ";
+					for (auto it = guesses.begin(); it != guesses.end(); it++) {
+						cout << *it << " ";
+					}
+					break;
 				}
-				cout << "\nCorrect guess! : " << underscoredStr;
-			}
-			else {
-				attempt++;
-				wrongAns.push_back(input);
-				cout << "\nWrong Guess!";
-				cout << "\nPrevious Inputs: ";
-				for (auto i = 0; i < wrongAns.size(); i++) {
-					cout << wrongAns[i] << ", ";
-				}
-			}
+			}		
+		}		
+		cout << "\nYou have " << (13 - attempt) << " attempts left";
+		if (attempt == 13) {
+			cout << "\nYou lost";
+			break;
 		}
 	}
 }
 
 void main() {
 	string word = "hello";
-	string underscoredStr = replaceWithUnderscore(word);
-	cout << underscoredStr;
+	string underscoredStr;
+	for (int i = 0; i < word.length(); i++) {
+		underscoredStr += '_';
+	}
 	checkValidityOfWord(word, underscoredStr);
 
 }
