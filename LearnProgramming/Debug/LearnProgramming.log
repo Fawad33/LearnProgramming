@@ -1,5 +1,7 @@
 ﻿  Hangman.cpp
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\Hangman.cpp(20,22) : warning C4018: '<': signed/unsigned mismatch
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\Hangman.cpp(49,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\Hangman.cpp(52,20) : warning C4018: '<': signed/unsigned mismatch
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\Hangman.cpp(21,22) : warning C4018: '<': signed/unsigned mismatch
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\Hangman.cpp(53,18) : warning C4129: 'h': unrecognized character escape sequence
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\Hangman.cpp(60,21) : warning C4018: '<': signed/unsigned mismatch
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\Hangman.cpp(65,19) : warning C4129: 'h': unrecognized character escape sequence
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\Hangman.cpp(71,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe

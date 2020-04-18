@@ -1,5 +1,6 @@
 #include<iostream>
 #include<string>
+#include<fstream>
 #include<set>
 
 using namespace std;
@@ -46,12 +47,27 @@ void checkValidityOfWord(string str, string underscoredStr) {
 	}
 }
 
-void main() {
-	string word = "hello";
-	string underscoredStr;
-	for (int i = 0; i < word.length(); i++) {
-		underscoredStr += '_';
+void chooseWordFromFile() {
+	string line, newStr, underscoredStr;
+	int lineNum = 0;
+	ifstream myfile("E:\hangman.txt");
+	if (myfile.is_open()) {
+		getline(myfile, line);
+		lineNum = stoi(line);
+		getline(myfile, line);
+		newStr = line;
+		cout << newStr;
+		for (int i = 0; i < newStr.length(); i++) {
+			underscoredStr += '_';
+		}
+		lineNum++;
+		checkValidityOfWord(newStr, underscoredStr);
+		ofstream myfile("E:\hangman.txt");
+		myfile << lineNum;
+		myfile.close();
 	}
-	checkValidityOfWord(word, underscoredStr);
+}
 
+void main() {
+	chooseWordFromFile();
 }
