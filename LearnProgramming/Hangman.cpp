@@ -68,6 +68,6 @@ void chooseWordFromFile() {
 	}
 }
 
-void main() {
-	chooseWordFromFile();
-}
+//void main() {
+//	chooseWordFromFile();
+//}

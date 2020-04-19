@@ -136,6 +136,7 @@
     <ClCompile Include="DepthFirstSearch.cpp" />
     <ClCompile Include="ExcelSheetColumnNumber.cpp" />
     <ClCompile Include="ExcelSheetColumnTitle.cpp" />
+    <ClCompile Include="FileIO.cpp" />
     <ClCompile Include="FindTheDifference.cpp" />
     <ClCompile Include="Hangman.cpp" />
     <ClCompile Include="ImplementStrStr.cpp" />
