@@ -2,8 +2,17 @@
 #include<string>
 #include<fstream>
 #include<set>
+#include<map>
+#include<vector>
 
 using namespace std;
+
+struct resultStats {
+	int winStat = 0, looseStat = 0;
+};
+
+map<string, resultStats> resultMap;
+vector<string> words;
 
 void checkValidityOfWord(string str, string underscoredStr) {
 	char input;
@@ -47,27 +56,39 @@ void checkValidityOfWord(string str, string underscoredStr) {
 	}
 }
 
-void chooseWordFromFile() {
+map<string, resultStats> returnUserStats() {
+	string currentUserName;
+	string line2;
+	char* ptr;
+	vector<string> subStrings;
+	cout << "Enter Username: ";
+	cin >> currentUserName;
+	ifstream myfile2("e:\hangmanResultStats.txt");
+	if (myfile2.is_open()) {
+		while (getline(myfile2, line2)) {
+			//ptr = strtok(line2, ",");
+			while (ptr != NULL) {
+				subStrings.push_back(ptr);
+				ptr = strtok(NULL, ",");
+			}
+
+		}
+	}
+
+}
+
+void getInputs() {
 	string line, newStr, underscoredStr;
 	int lineNum = 0;
 	ifstream myfile("E:\hangman.txt");
 	if (myfile.is_open()) {
-		getline(myfile, line);
-		lineNum = stoi(line);
-		getline(myfile, line);
-		newStr = line;
-		cout << newStr;
-		for (int i = 0; i < newStr.length(); i++) {
-			underscoredStr += '_';
+		while (getline(myfile, line)) {
+			words.push_back(line);
 		}
-		lineNum++;
-		checkValidityOfWord(newStr, underscoredStr);
-		ofstream myfile("E:\hangman.txt");
-		myfile << lineNum;
-		myfile.close();
 	}
+	
 }
 
-//void main() {
-//	chooseWordFromFile();
-//}
+void main() {
+	//chooseWordFromFile();
+}
