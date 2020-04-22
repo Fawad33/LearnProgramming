@@ -9,9 +9,10 @@ using namespace std;
 
 struct resultStats {
 	int winStat = 0, looseStat = 0;
+	string lastPlayedWord;
 };
 
-map<string, resultStats> resultMap;
+map<string, resultStats > resultMap;
 vector<string> words;
 
 void checkValidityOfWord(string str, string underscoredStr) {
@@ -56,7 +57,7 @@ void checkValidityOfWord(string str, string underscoredStr) {
 	}
 }
 
-map<string, resultStats> returnUserStats() {
+vector<string> returnUserStats() {
 	string currentUserName;
 	string line2;
 	char* ptr;
@@ -68,12 +69,25 @@ map<string, resultStats> returnUserStats() {
 		while (getline(myfile2, line2)) {
 			//ptr = strtok(line2, ",");
 			while (ptr != NULL) {
-				subStrings.push_back(ptr);
+				string str = ptr;
+				subStrings.push_back(str);
 				ptr = strtok(NULL, ",");
 			}
-
+			resultStats res;
+			if (resultMap.find(subStrings[0]) != resultMap.end()) {
+				cout << "This name is already taken, try something else: " << endl;
+				returnUserStats();
+			}
+			else {
+				res.winStat = stoi(subStrings[1]);
+				res.looseStat = stoi(subStrings[2]);
+				res.lastPlayedWord = subStrings[3];
+				resultMap.insert(subStrings[0], res);
+			}
 		}
+		myfile2.close();
 	}
+	return subStrings;
 
 }
 
