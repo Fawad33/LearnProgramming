@@ -65,7 +65,7 @@ vector<string> wordAndUnderscore(int num) {
 
 vector<string> checkUserName(map<string, resultStats> mainFunctionMap) {
 	string userName;
-	int win, loose, lastWord;
+	int win = 0, loose = 0, lastWord = 0;
 	vector<string> currentPlayer;
 	cout << "enter username: ";
 	cin >> userName;
