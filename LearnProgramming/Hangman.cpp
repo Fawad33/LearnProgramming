@@ -23,11 +23,14 @@ map<string, resultStats> returnUserStatsMap() {
 	ifstream myfile2("E:\hangmanResultStats.txt");
 	if (myfile2.is_open()) {
 		while (getline(myfile2, line2)) {
-			//ptr = strtok(line2, ",");
+			char cstr[100];
+			char* context = NULL;
+			strcpy_s(cstr, line2.c_str());
+			ptr = strtok_s(cstr, ",", &context);
 			while (ptr != NULL) {
-				string str = ptr;
-				subStrings.push_back(str);
-				ptr = strtok(NULL, ",");
+				//string str = ptr;
+				subStrings.push_back(ptr);
+				ptr = strtok_s(NULL, ",", &context);
 			}
 
 			res.winStat = stoi(subStrings[1]);
@@ -42,25 +45,26 @@ map<string, resultStats> returnUserStatsMap() {
 }
 
 void getWordForGame() {
-	string line, newStr, underscoredStr;
-	int lineNum = 0;
-	ifstream myfile("E:\hangman.txt");
+	string line;
+	ifstream myfile("E:\hangmanInput.txt");
 	if (myfile.is_open()) {
 		while (getline(myfile, line)) {
 			words.push_back(line);
 		}
+		myfile.close();
 	}
 }
 
 vector<string> wordAndUnderscore(int num) {
 	vector<string> wordForGame;
-	string currentWord = words[num + 1];
+	string currentWord = words[num];
 	string underScore;
 	for (int i = 0; i < currentWord.size(); i++) {
 		underScore += '_';
 	}
 	wordForGame.push_back(currentWord);
 	wordForGame.push_back(underScore);
+	return wordForGame;
 }
 
 vector<string> checkUserName(map<string, resultStats> mainFunctionMap) {
@@ -71,11 +75,7 @@ vector<string> checkUserName(map<string, resultStats> mainFunctionMap) {
 	cin >> userName;
 	mainFunctionMap = returnUserStatsMap();
 	auto it = mainFunctionMap.find(userName);
-	if (it != mainFunctionMap.end()) {
-		mainFunctionMap.insert(pair<string, resultStats>(userName, res));
-	}
-	else {
-		userName = it->first;
+	if (mainFunctionMap.find(userName) != mainFunctionMap.end()) {
 		win = it->second.winStat;
 		loose = it->second.looseStat;
 		lastWord = it->second.countOfLastPlayedWord;
@@ -93,15 +93,16 @@ void saveAllUserStats(map<string, resultStats> userList) {
 	for (auto it = userList.begin(); it != userList.end(); it++) {
 		convertMapToString += it->first;
 		convertMapToString += ",";
-		convertMapToString += it->second.winStat;
+		convertMapToString += to_string(it->second.winStat);
 		convertMapToString += ",";
-		convertMapToString += it->second.looseStat;
+		convertMapToString += to_string(it->second.looseStat);
 		convertMapToString += ",";
-		convertMapToString += it->second.countOfLastPlayedWord;
+		convertMapToString += to_string(it->second.countOfLastPlayedWord);
+		convertMapToString += "\n";
 
 		ofstream myfile3("E:\hangmanResultStats.txt");
 		if (myfile3.is_open()) {
-			myfile3 << convertMapToString << endl;
+			myfile3 << convertMapToString << "\n";
 		}
 		myfile3.close();
 	}
@@ -117,6 +118,7 @@ void saveCurrentPlayerStat(string name, int playerWin, int playerLoose, int play
 void checkValidityOfWord(string str, string underscoredStr, string name, int winScore, int looseScore, int lastPlayedWord) {
 	char input;
 	int attempt = 0;
+	bool continueFlag = false;
 	set<char> guesses;
 	while (true) {
 		cout << "\n" << underscoredStr << "\nEnter you guess: ";
@@ -148,27 +150,38 @@ void checkValidityOfWord(string str, string underscoredStr, string name, int win
 		if (attempt == 13) {
 			looseScore++;
 			lastPlayedWord++;
+			if (lastPlayedWord > (words.size() - 1)) {
+				lastPlayedWord = 0;
+			}
 			saveCurrentPlayerStat(name, winScore, looseScore, lastPlayedWord);
 			saveAllUserStats(resultMap);
+			continueFlag = true;
 			cout << "\nYou lost";
+			break;
 		}
 		if (underscoredStr == str) {
 			winScore++;
 			lastPlayedWord++;
+			if (lastPlayedWord > (words.size() - 1)) {
+				lastPlayedWord = 0;
+			}
 			saveCurrentPlayerStat(name, winScore, looseScore, lastPlayedWord);
 			saveAllUserStats(resultMap);
+			continueFlag = true;
 			cout << "\nYOU WON!";
-		}
-		
+			break;
+		}		
 	}
-	cout << "Do you want to continue playing? [Enter Y to continue/press any key + enter to logoff]: ";
-	string gameContinueInput;
-	cin >> gameContinueInput;
-	if (gameContinueInput == "Y") {
-		vector<string> NewWords = wordAndUnderscore(lastPlayedWord);
-		string str1 = NewWords[0];
-		string str2 = NewWords[2];
-		checkValidityOfWord(str1, str2, name, winScore, looseScore, lastPlayedWord);
+	if (continueFlag == true) {
+		cout << "Do you want to continue playing? [Enter Y to continue/press any key + enter to logoff]: ";
+		string gameContinueInput;
+		cin >> gameContinueInput;
+		if (gameContinueInput == "Y") {
+			vector<string> NewWords = wordAndUnderscore(lastPlayedWord);
+			string str1 = NewWords[0];
+			string str2 = NewWords[1];
+			checkValidityOfWord(str1, str2, name, winScore, looseScore, lastPlayedWord);
+		}
 	}
 }
 
