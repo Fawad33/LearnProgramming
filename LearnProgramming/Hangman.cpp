@@ -186,17 +186,17 @@ void checkValidityOfWord(string str, string underscoredStr, string name, int win
 }
 
 
-void main() {
-	map<string, resultStats> mainFunctionMap;
-	mainFunctionMap = returnUserStatsMap();
-	vector<string> currentUserNameAndStat = checkUserName(mainFunctionMap);
-	string name = currentUserNameAndStat[0];
-	int win = stoi(currentUserNameAndStat[1]);
-	int loose = stoi(currentUserNameAndStat[2]);
-	int lastWord = stoi(currentUserNameAndStat[3]);
-	getWordForGame();
-	vector<string> currentWordsToPlay = wordAndUnderscore(lastWord);
-	string str1 = currentWordsToPlay[0];
-	string str2 = currentWordsToPlay[1];
-	checkValidityOfWord(str1, str2, name, win, loose, lastWord);
-}
+//void main() {
+//	map<string, resultStats> mainFunctionMap;
+//	mainFunctionMap = returnUserStatsMap();
+//	vector<string> currentUserNameAndStat = checkUserName(mainFunctionMap);
+//	string name = currentUserNameAndStat[0];
+//	int win = stoi(currentUserNameAndStat[1]);
+//	int loose = stoi(currentUserNameAndStat[2]);
+//	int lastWord = stoi(currentUserNameAndStat[3]);
+//	getWordForGame();
+//	vector<string> currentWordsToPlay = wordAndUnderscore(lastWord);
+//	string str1 = currentWordsToPlay[0];
+//	string str2 = currentWordsToPlay[1];
+//	checkValidityOfWord(str1, str2, name, win, loose, lastWord);
+//}

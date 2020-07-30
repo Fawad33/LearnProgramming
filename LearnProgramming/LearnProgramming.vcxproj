@@ -131,6 +131,7 @@
     <ClCompile Include="BalancedBinaryTreeStructNoOpti.cpp" />
     <ClCompile Include="BalancedBinaryTreeWithStruct.cpp" />
     <ClCompile Include="ContainsDuplicate.cpp" />
+    <ClCompile Include="ConvertSortedArrayToBSTcpp.cpp" />
     <ClCompile Include="CountPrimes.cpp" />
     <ClCompile Include="DecimalToBinary.cpp" />
     <ClCompile Include="DepthFirstSearch.cpp" />

@@ -45,5 +45,5 @@ public:
 //
 //	TraverseTree traverseTreeObject;
 //	cout << "printPreOrder traversal: ";
-//	traverseTreeObject.printInOrder(root);
+//	traverseTreeObject.printPreOrder(root);
 //}
