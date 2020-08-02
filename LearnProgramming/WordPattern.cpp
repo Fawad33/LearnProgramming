@@ -60,7 +60,9 @@ public:
 		if (patternMap.size() != strMap.size())
 			return false;
 		else {
-			for()
+			for (auto i = strMap.begin(), j = patternMap.begin(); i != strMap.end(), j != patternMap.end(); i++, j++) {
+
+			}
 		}
 	}
 };
