@@ -35,10 +35,10 @@ public:
 	}
 };
 
-void main() {
-	TreeNode* mainRoot;
-	vector<int> nums = { 1,2,3,4,5 };
-	ConvertSortedArrayToBST convertSortedArrayToBST;
-	mainRoot = convertSortedArrayToBST.sortedArrayToBST(nums);
-	convertSortedArrayToBST.printPostOrder(mainRoot);
-}
+//void main() {
+//	TreeNode* mainRoot;
+//	vector<int> nums = { 1,2,3,4,5 };
+//	ConvertSortedArrayToBST convertSortedArrayToBST;
+//	mainRoot = convertSortedArrayToBST.sortedArrayToBST(nums);
+//	convertSortedArrayToBST.printPostOrder(mainRoot);
+//}
