@@ -1,76 +1,57 @@
 #include<iostream>
 #include<map>
 #include<string>
+#include<vector>
 
 using namespace std;
 
 class WordPattern {
 public:
-	map<char, int> patternMap;
-	map<string, int> strMap;
-	map<char, int> patternToMapConverter(string pattern, map<char, int> patternMap) {
-		int pos = 0;
-		for (auto i : pattern) {
-			map<char, int>::iterator patternMapIterator;
-			patternMapIterator = patternMap.find(i);
-			if (patternMapIterator != patternMap.end()) {
-				patternMapIterator->second++;
-				patternMapIterator->second += pos;
-				pos++;
-			}
-			else {
-				patternMap.insert({ i, (1 + pos)});
-				pos++;
-			}
-		}
-		return patternMap;
-	}
-
-	void seperateWord(string str) {
+	vector<string> strWordArray(string str) {
+		vector<string> strWord;
 		string word = "";
 		for (auto i : str) {
 			if (i == ' ') {
-				strToMapConverter(word);
+				strWord.push_back(word);
 				word = "";
 			}
 			else {
 				word += i;
 			}
 		}
-		strToMapConverter(word);
-	}
-
-	void strToMapConverter(string str) {
-		map<string, int>::iterator strMapIterator;
-		int pos2 = 0;
-		strMapIterator = strMap.find(str);
-		if (strMapIterator != strMap.end()) {
-			strMapIterator->second++;
-			strMapIterator->second += pos2;
-			pos2++;
-		}
-		else {
-			strMap.insert({ str, (1 + pos2) });
-			pos2++;
-		}
+		strWord.push_back(word);
+		return strWord;
 	}
 
 	bool wordPattern(string pattern, string str) {		
-		patternMap = patternToMapConverter(pattern, patternMap);
-		if (patternMap.size() != strMap.size())
+		vector<string> strWord = strWordArray(str);
+		map<char, string> patternMap;
+		if (pattern.length() != strWord.size())
 			return false;
-		else {
-			for (auto i = strMap.begin(), j = patternMap.begin(); i != strMap.end(), j != patternMap.end(); i++, j++) {
-
+		
+		for (int i = 0; i < pattern.length(); i++) {
+			map<char, string>::iterator mapIterator;
+			map<char, string>::iterator mapIterator2;
+			mapIterator = patternMap.find(pattern[i]);
+			mapIterator2 = patternMap.find(pattern[i]);
+			if (mapIterator == patternMap.end()) {
+				for (mapIterator2 = patternMap.begin(); mapIterator2 != patternMap.end(); mapIterator2++) {
+					if (mapIterator2->second == strWord[i])
+						return false;
+				}
+				patternMap.insert({ pattern[i], strWord[i] });
+			}
+			else if (mapIterator != patternMap.end() && mapIterator->second != strWord[i]) {
+				return false;
 			}
 		}
+		return true;
 	}
 };
 
 void main() {
 	string pattern = "abba";
-	string str = "cat dog dog cat";
+	string str = "dog dog dog dog";
 	WordPattern wordPattern;
-	wordPattern.seperateWord(str);
-	wordPattern.wordPattern(pattern, str);
+	cout << wordPattern.wordPattern(pattern, str);
 }
