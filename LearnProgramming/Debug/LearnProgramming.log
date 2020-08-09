@@ -1,4 +1,4 @@
 ﻿  PathSum.cpp
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\PathSum.cpp(19,1) : error C2561: 'PathSum::helperFunctionOfPathSum': function must return a value
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\PathSum.cpp(14) : message : see declaration of 'PathSum::helperFunctionOfPathSum'
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\PathSum.cpp(32,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\PathSum.cpp(35,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\PathSum.cpp(27)  : warning C4715: 'PathSum::helperFunctionOfPathSum': not all control paths return a value
+  LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe
