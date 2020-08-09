@@ -49,9 +49,9 @@ public:
 	}
 };
 
-void main() {
-	string pattern = "abba";
-	string str = "dog dog dog dog";
-	WordPattern wordPattern;
-	cout << wordPattern.wordPattern(pattern, str);
-}
+//void main() {
+//	string pattern = "abba";
+//	string str = "dog dog dog dog";
+//	WordPattern wordPattern;
+//	cout << wordPattern.wordPattern(pattern, str);
+//}

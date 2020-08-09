@@ -1,4 +1,4 @@
-﻿  WordPattern.cpp
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\WordPattern.cpp(32,21) : warning C4018: '<': signed/unsigned mismatch
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\WordPattern.cpp(52,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
-  LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe
+﻿  PathSum.cpp
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\PathSum.cpp(19,1) : error C2561: 'PathSum::helperFunctionOfPathSum': function must return a value
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\PathSum.cpp(14) : message : see declaration of 'PathSum::helperFunctionOfPathSum'
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\PathSum.cpp(32,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
