@@ -28,7 +28,9 @@ public:
 			}
 		}
 		else {
-			if (root->right == NULL)
+			if (x == true)
+				return true;
+			else if (root->right == NULL)
 				helperFunctionOfPathSum(root->left, sum, temp);
 			else
 				helperFunctionOfPathSum(root->left, sum, temp);
