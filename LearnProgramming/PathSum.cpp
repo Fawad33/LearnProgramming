@@ -13,20 +13,15 @@ class PathSum {
 public:
 	bool x = false;
 	bool helperFunctionOfPathSum(TreeNode* root, int sum, int temp) {
-		if (x == true)
-			return x;
-		if (root == NULL)
+		if (x == true || root == NULL)
 			return x;
 		else
 			temp += root->val;
 		if (root->left == NULL) {
 			if (root->right == NULL) {
-				if (sum == temp) {
+				if (sum == temp) 
 					x = true;
-					return x;
-				}
-				else
-					return x;
+				return x;
 			}
 			else{
 				helperFunctionOfPathSum(root->right, sum, temp);
@@ -46,7 +41,7 @@ public:
 };
 
 void main() {
-	int sum = 22;
+	int sum = 21;
 	struct TreeNode* root = new TreeNode(5);
 	root->left = new TreeNode(4);
 	root->right = new TreeNode(8);
