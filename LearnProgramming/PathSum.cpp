@@ -11,27 +11,28 @@ struct TreeNode {
 
 class PathSum {
 public:
-	bool x = false;
 	bool helperFunctionOfPathSum(TreeNode* root, int sum, int temp) {
-		if (x == true || root == NULL)
-			return x;
+		if (root == NULL)
+			return false;
 		else
 			temp += root->val;
 		if (root->left == NULL) {
 			if (root->right == NULL) {
 				if (sum == temp) 
-					x = true;
-				return x;
+					return true;
 			}
 			else{
-				helperFunctionOfPathSum(root->right, sum, temp);
+				return helperFunctionOfPathSum(root->right, sum, temp);
 			}
 		}
 		else {
-			helperFunctionOfPathSum(root->left, sum, temp);
-			helperFunctionOfPathSum(root->right, sum, temp);	
+			bool isFound = helperFunctionOfPathSum(root->left, sum, temp);
+			if (isFound == true)
+				return true;
+			if (root->right != NULL) {
+				return helperFunctionOfPathSum(root->right, sum, temp);
+			}			
 		}
-		return x;
 	}
 
 	bool hasPathSum(TreeNode* root, int sum) {
@@ -41,7 +42,7 @@ public:
 };
 
 void main() {
-	int sum = 21;
+	int sum = 22;
 	struct TreeNode* root = new TreeNode(5);
 	root->left = new TreeNode(4);
 	root->right = new TreeNode(8);
