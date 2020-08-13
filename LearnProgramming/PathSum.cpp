@@ -18,8 +18,7 @@ public:
 			temp += root->val;
 		if (root->left == NULL) {
 			if (root->right == NULL) {
-				if (sum == temp) 
-					return true;
+				return sum == temp;
 			}
 			else{
 				return helperFunctionOfPathSum(root->right, sum, temp);
@@ -29,9 +28,9 @@ public:
 			bool isFound = helperFunctionOfPathSum(root->left, sum, temp);
 			if (isFound == true)
 				return true;
-			if (root->right != NULL) {
+			if (root->right != NULL)
 				return helperFunctionOfPathSum(root->right, sum, temp);
-			}			
+			return false;
 		}
 	}
 
