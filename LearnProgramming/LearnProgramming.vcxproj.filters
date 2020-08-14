@@ -243,6 +243,9 @@
     <ClCompile Include="PathSum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="InvertBinaryTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sample.h">

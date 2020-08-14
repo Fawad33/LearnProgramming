@@ -1,4 +1,3 @@
-﻿  PathSum.cpp
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\PathSum.cpp(43,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\PathSum.cpp(35)  : warning C4715: 'PathSum::helperFunctionOfPathSum': not all control paths return a value
+﻿  InvertBinaryTree.cpp
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\InvertBinaryTree.cpp(42,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe
