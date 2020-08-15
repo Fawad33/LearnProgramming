@@ -11,30 +11,15 @@ struct TreeNode {
 
 class InvertBinaryTree {
 public:
-	void inverterFunction(TreeNode* left, TreeNode* right) {
-		if (left != NULL && right != NULL) {
-			int invert = left->val;
-			left->val = right->val;
-			right->val = invert;
-		}
-		else if (left == NULL && right == NULL)
-			return;
-		else if (left == NULL) {
-			left->val = right->val;
-			right->val = NULL;
-		}
-		else {
-			right->val = left->val;
-			left->val = NULL;
-		}
-		inverterFunction(left->left, right->right);
-		inverterFunction(left->right, right->left);
-	}
-
 	TreeNode* invertTree(TreeNode* root) {
 		if (root == NULL)
 			return NULL;
-		inverterFunction(root->left, root->right);
+		struct TreeNode* currentNode = new TreeNode(0);
+		currentNode = root->left;
+		root->left = root->right;
+		root->right = currentNode;
+		invertTree(root->left);
+		invertTree(root->right);
 		return root;
 	}
 };
