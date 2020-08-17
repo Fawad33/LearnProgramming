@@ -16,7 +16,8 @@ public:
 	void binaryTreePathsHelper(TreeNode* root, vector<string> &paths, string s) {
 		if (root == NULL)
 			return;
-		else if (s != "")
+
+		if (s != "")
 			s += "->";
 
 		s = s + to_string(root->val);
