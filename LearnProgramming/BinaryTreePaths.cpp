@@ -16,14 +16,14 @@ public:
 	void binaryTreePathsHelper(TreeNode* root, vector<string> &paths, string s) {
 		if (root == NULL)
 			return;
-		else
-			s = s + to_string(root->val) + "->";
+		else if (s != "")
+			s += "->";
+
+		s = s + to_string(root->val);
 
 		if (root->left == NULL) {
 			if (root->right == NULL) {
-				s.pop_back();
-				s.pop_back();
-				paths.push_back(s);				
+				paths.push_back(s);
 				s = "";
 				return;
 			}
@@ -50,8 +50,8 @@ void main() {
 	root->left = new TreeNode(2);
 	root->right = new TreeNode(3);
 	root->left->right = new TreeNode(5);
-	BinaryTreePaths binaryTreePathsobj;
-	vector<string> x = binaryTreePathsobj.binaryTreePaths(root);
+	BinaryTreePaths binaryTreePathsObj;
+	vector<string> x = binaryTreePathsObj.binaryTreePaths(root);
 	for (auto i : x)
 		cout << i << " ";
 }
