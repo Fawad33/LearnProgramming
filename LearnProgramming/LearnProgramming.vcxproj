@@ -197,6 +197,7 @@
     <ClCompile Include="TraverseTree.cpp" />
     <ClCompile Include="TwoSum.cpp" />
     <ClCompile Include="TwoSumII.cpp" />
+    <ClCompile Include="UglyNumber.cpp" />
     <ClCompile Include="ValidAnagram.cpp" />
     <ClCompile Include="ValidPalindrome.cpp" />
     <ClCompile Include="VerifyingAnAlienDictionary.cpp" />

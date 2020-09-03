@@ -25,7 +25,6 @@ public:
 		if (root->left == NULL) {
 			if (root->right == NULL) {
 				paths.push_back(s);
-				s = "";
 				return;
 			}
 			else {
@@ -46,13 +45,13 @@ public:
 	}
 };
 
-void main() {
-	struct TreeNode* root = new TreeNode(1);
-	root->left = new TreeNode(2);
-	root->right = new TreeNode(3);
-	root->left->right = new TreeNode(5);
-	BinaryTreePaths binaryTreePathsObj;
-	vector<string> x = binaryTreePathsObj.binaryTreePaths(root);
-	for (auto i : x)
-		cout << i << " ";
-}
+//void main() {
+//	struct TreeNode* root = new TreeNode(1);
+//	root->left = new TreeNode(2);
+//	root->right = new TreeNode(3);
+//	root->left->right = new TreeNode(5);
+//	BinaryTreePaths binaryTreePathsObj;
+//	vector<string> x = binaryTreePathsObj.binaryTreePaths(root);
+//	for (auto i : x)
+//		cout << i << " ";
+//}
