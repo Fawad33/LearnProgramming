@@ -5,26 +5,27 @@ using namespace std;
 class UglyNumber {
 public:
 	bool isUgly(int num) {
+		bool x = true;
 		if (num == 1)
 			return true;
-		if (num <= 0)
+		else if (num <= 0)
 			return false;
-		for (int i = 2; i <= num / 2; i++) {
-			if (num % i == 0) {
-				if (i != 2) {
-					if (i != 3) {
-						if (i != 5)
-							return false;
-					}
-				}
-			}
-		}
-		return true;
+		else {
+			if (num % 2 == 0)
+				num = isUgly(num / 2);
+			else if (num % 3 == 0)
+				num = isUgly(num / 3);
+			else if (num % 5 == 0)
+				num = isUgly(num / 5);
+			else
+				return false;
+		}	
+		return x;
 	}
 };
 
 void main() {
-	int num = 7;
+	int num = 5;
 	UglyNumber uglyNumber;
 	cout << uglyNumber.isUgly(num);
 }
