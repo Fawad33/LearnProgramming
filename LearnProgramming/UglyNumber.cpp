@@ -5,11 +5,11 @@ using namespace std;
 class UglyNumber {
 public:
 	bool isUgly(int num) {
-		bool x = true;
-		if (num == 1)
-			return true;
+		bool x = true; //in leetcode, it accepts uninitialized var. to keep the code running, it is initialized to true. for some cases this
+		if (num == 1)// may return wrong result eg 14
+			x = true;
 		else if (num <= 0)
-			return false;
+			x = false;
 		else {
 			if (num % 2 == 0)
 				num = isUgly(num / 2);
@@ -18,14 +18,14 @@ public:
 			else if (num % 5 == 0)
 				num = isUgly(num / 5);
 			else
-				return false;
+				x = false;
 		}	
 		return x;
 	}
 };
 
 void main() {
-	int num = 5;
+	int num = 14;
 	UglyNumber uglyNumber;
 	cout << uglyNumber.isUgly(num);
 }
