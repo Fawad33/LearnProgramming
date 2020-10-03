@@ -24,8 +24,8 @@ public:
 	}
 };
 
-void main() {
-	int num = 14;
-	UglyNumber uglyNumber;
-	cout << uglyNumber.isUgly(num);
-}
+//void main() {
+//	int num = 14;
+//	UglyNumber uglyNumber;
+//	cout << uglyNumber.isUgly(num);
+//}

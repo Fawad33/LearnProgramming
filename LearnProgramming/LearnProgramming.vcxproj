@@ -144,6 +144,7 @@
     <ClCompile Include="ImplementStrStr.cpp" />
     <ClCompile Include="IntersectionOfTwoArrays.cpp" />
     <ClCompile Include="InvertBinaryTree.cpp" />
+    <ClCompile Include="IsomorphicString.cpp" />
     <ClCompile Include="MajorityElement.cpp" />
     <ClCompile Include="MaximumDepthOfBinaryTree.cpp" />
     <ClCompile Include="MinimumDepthOfBinaryTree.cpp" />
