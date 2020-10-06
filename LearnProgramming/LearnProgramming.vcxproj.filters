@@ -255,6 +255,9 @@
     <ClCompile Include="IsomorphicString.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SumOfLeftLeaves.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sample.h">

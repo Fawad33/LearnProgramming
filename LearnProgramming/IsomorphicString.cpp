@@ -21,8 +21,8 @@ public:
 	}
 };
 
-void main() {
-	string s = "ab", t = "ca";
-	IsomorphicString isomorphicString;
-	cout << isomorphicString.isIsomorphic(s, t);
-}
+//void main() {
+//	string s = "ab", t = "ca";
+//	IsomorphicString isomorphicString;
+//	cout << isomorphicString.isIsomorphic(s, t);
+//}

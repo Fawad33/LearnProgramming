@@ -160,6 +160,7 @@
     <ClCompile Include="SearchInABinarySearchTreeWithLoop.cpp" />
     <ClCompile Include="SingleNumber.cpp" />
     <ClCompile Include="SingleNumberWithSet.cpp" />
+    <ClCompile Include="SumOfLeftLeaves.cpp" />
     <ClCompile Include="SymmetricTree.cpp" />
     <ClCompile Include="TraverseTreeWithStack.cpp" />
     <ClCompile Include="FrequencyCountOfChar.cpp" />
