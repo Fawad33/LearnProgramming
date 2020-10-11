@@ -19,8 +19,8 @@ public:
 	}
 };
 
-void main() {
-	int input = 13;
-	FactorialTrailingZeroes factorialTrailingZeroes;
-	cout << factorialTrailingZeroes.trailingZeroes(input);
-}
+//void main() {
+//	int input = 13;
+//	FactorialTrailingZeroes factorialTrailingZeroes;
+//	cout << factorialTrailingZeroes.trailingZeroes(input);
+//}
