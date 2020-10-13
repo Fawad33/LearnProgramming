@@ -23,9 +23,9 @@ public:
 	}
 };
 
-void main() {
-	vector<int> nums = { 1,0,1,1 };
-	int k = 1;
-	ContainsDuplicateII containsDuplicateII;
-	cout << containsDuplicateII.containsNearbyDuplicate(nums, k);
-}
+//void main() {
+//	vector<int> nums = { 1,0,1,1 };
+//	int k = 1;
+//	ContainsDuplicateII containsDuplicateII;
+//	cout << containsDuplicateII.containsNearbyDuplicate(nums, k);
+//}
