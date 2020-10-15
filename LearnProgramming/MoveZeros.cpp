@@ -12,18 +12,24 @@ public:
 				if (nums[i] == 0)
 					counter++;
 			}
-			for (auto it = nums.begin(); it != nums.end(); it++) {
-				if (*it == 0)
-					it = nums.erase(it);
+			int position = 0;
+			for (int j = 0; j < nums.size(); j++) {
+				if (nums[j] != 0) {
+					nums[position] = nums[j];
+					position++;
+				}
+
 			}
-			for (int i = 0; i < counter; i++)
-				nums.push_back(0);
+			for (int k = position; k < nums.size(); k++) {
+				nums[position] = 0;
+				position++;
+			}				
 		}		
 	}
 };
 
 void main() {
-	vector<int> nums = { 0, 0 };
+	vector<int> nums = { 0,1,0,3,12 };
 	MoveZeroes moveZeroesObject;
 	moveZeroesObject.moveZeroes(nums);
 	for (auto i : nums)
