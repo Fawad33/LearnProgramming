@@ -28,10 +28,10 @@ public:
 	}
 };
 
-void main() {
-	vector<int> nums = { 0,1,0,3,12 };
-	MoveZeroes moveZeroesObject;
-	moveZeroesObject.moveZeroes(nums);
-	for (auto i : nums)
-		cout << i << " ";
-}
+//void main() {
+//	vector<int> nums = { 0,1,0,3,12 };
+//	MoveZeroes moveZeroesObject;
+//	moveZeroesObject.moveZeroes(nums);
+//	for (auto i : nums)
+//		cout << i << " ";
+//}
