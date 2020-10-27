@@ -25,10 +25,10 @@ public:
 	}
 };
 
-void main() {
-	vector<char> s = { 'a','b','c','d','e', 'f' };
-	ReverseString reverseStringObject;
-	reverseStringObject.reverseString(s);
-	for (auto i : s)
-		cout << i;
-}
+//void main() {
+//	vector<char> s = { 'a','b','c','d','e', 'f' };
+//	ReverseString reverseStringObject;
+//	reverseStringObject.reverseString(s);
+//	for (auto i : s)
+//		cout << i;
+//}
