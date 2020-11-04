@@ -31,8 +31,8 @@ public:
 	}
 };
 
-void main() {
-	int n = -5;
-	PowerOfTwoMethodTwo powerOfTwoMethodTwo;
-	cout << powerOfTwoMethodTwo.isPowerOfTwo(n);
-}
+//void main() {
+//	int n = -5;
+//	PowerOfTwoMethodTwo powerOfTwoMethodTwo;
+//	cout << powerOfTwoMethodTwo.isPowerOfTwo(n);
+//}

@@ -1,4 +1,6 @@
-﻿  PowerOfTwoMethodTwo.cpp
+﻿  NumberOfOneBits.cpp
+  PowerOfTwoMethodTwo.cpp
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\NumberOfOneBits.cpp(22,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Generating Code...
 C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\PowerOfTwoMethodTwo.cpp(17,11) : warning C4553: '==': result of expression not used; did you intend '='?
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\PowerOfTwoMethodTwo.cpp(34,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe
