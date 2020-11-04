@@ -19,8 +19,8 @@ public:
 	}
 };
 
-void main() {
-	int n = 3;
-	PowerOfTwo powerOfTwo;
-	cout << powerOfTwo.isPowerOfTwo(n);
-}
+//void main() {
+//	int n = 3;
+//	PowerOfTwo powerOfTwo;
+//	cout << powerOfTwo.isPowerOfTwo(n);
+//}

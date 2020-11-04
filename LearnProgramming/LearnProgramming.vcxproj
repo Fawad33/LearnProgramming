@@ -158,6 +158,7 @@
     <ClCompile Include="PathSum.cpp" />
     <ClCompile Include="PerfectNumber.cpp" />
     <ClCompile Include="PowerOfTwo.cpp" />
+    <ClCompile Include="PowerOfTwoMethodTwo.cpp" />
     <ClCompile Include="ReverseString.cpp" />
     <ClCompile Include="SameTree.cpp" />
     <ClCompile Include="SameTreeWithVector.cpp" />
