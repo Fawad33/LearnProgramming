@@ -19,8 +19,8 @@ public:
 	}
 };
 
-void main() {
-	uint32_t n = 3;
-	NumberOfOneBits numberOfOneBits;
-	cout << numberOfOneBits.hammingWeight(n);
-}
+//void main() {
+//	uint32_t n = 3;
+//	NumberOfOneBits numberOfOneBits;
+//	cout << numberOfOneBits.hammingWeight(n);
+//}

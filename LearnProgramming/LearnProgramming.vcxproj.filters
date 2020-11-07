@@ -279,6 +279,9 @@
     <ClCompile Include="NumberOfOneBits.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ReverseBits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sample.h">
