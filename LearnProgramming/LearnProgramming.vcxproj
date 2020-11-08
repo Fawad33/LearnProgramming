@@ -161,6 +161,7 @@
     <ClCompile Include="PowerOfTwo.cpp" />
     <ClCompile Include="PowerOfTwoMethodTwo.cpp" />
     <ClCompile Include="ReverseBits.cpp" />
+    <ClCompile Include="ReverseBitsLowComplexity.cpp" />
     <ClCompile Include="ReverseString.cpp" />
     <ClCompile Include="SameTree.cpp" />
     <ClCompile Include="SameTreeWithVector.cpp" />

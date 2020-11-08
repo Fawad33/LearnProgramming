@@ -18,8 +18,8 @@ public:
 	}
 };
 
-void main() {
-	int n = 0B11111111111111111111111111111101;
-	ReverseBits reverseBitsobject;
-	cout << reverseBitsobject.reverseBits(n);
-}
+//void main() {
+//	int n = 0B11111111111111111111111111111101;
+//	ReverseBits reverseBitsobject;
+//	cout << reverseBitsobject.reverseBits(n);
+//}
