@@ -153,6 +153,7 @@
     <ClCompile Include="MinStack.cpp" />
     <ClCompile Include="MissingNumber.cpp" />
     <ClCompile Include="MoveZeros.cpp" />
+    <ClCompile Include="NumberComplement.cpp" />
     <ClCompile Include="NumberOfOneBits.cpp" />
     <ClCompile Include="PascalsTriangle.cpp" />
     <ClCompile Include="PascalsTriangleII.cpp" />

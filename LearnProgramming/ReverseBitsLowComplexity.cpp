@@ -10,7 +10,7 @@ public:
 			leftBit = n & left;
 			rightBit = n & right;
 			leftBit = leftBit << (31 - i);
-			n = n | leftBit;
+			n = n & leftBit;
 			n = n | rightBit;
 			left = left << 1;
 			right = right >> 1;
@@ -19,8 +19,8 @@ public:
 	}
 };
 
-void main() {
-	int n = 0B00000010100101000001111010011100;
-	ReverseBitsLowCOmplexity reverseBitsLowCOmplexity;
-	cout << reverseBitsLowCOmplexity.reverseBits(n);
-}
+//void main() {
+//	int n = 0B00000010100101000001111010011100;
+//	ReverseBitsLowCOmplexity reverseBitsLowCOmplexity;
+//	cout << reverseBitsLowCOmplexity.reverseBits(n);
+//}
