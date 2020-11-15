@@ -1,4 +1,4 @@
-﻿  NumberComplement.cpp
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\NumberComplement.cpp(8,17) : warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\NumberComplement.cpp(14,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
+﻿  PowerOfFour.cpp
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\PowerOfFour.cpp(8,17) : warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\PowerOfFour.cpp(23,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe

@@ -159,6 +159,7 @@
     <ClCompile Include="PascalsTriangleII.cpp" />
     <ClCompile Include="PathSum.cpp" />
     <ClCompile Include="PerfectNumber.cpp" />
+    <ClCompile Include="PowerOfFour.cpp" />
     <ClCompile Include="PowerOfTwo.cpp" />
     <ClCompile Include="PowerOfTwoMethodTwo.cpp" />
     <ClCompile Include="ReverseBits.cpp" />

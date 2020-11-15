@@ -11,8 +11,8 @@ public:
 	}
 };
 
-void main() {
-	int num = 2147483647;
-	NumberComplement numberComplement;
-	cout << numberComplement.findComplement(num);
-}
+//void main() {
+//	int num = 2147483647;
+//	NumberComplement numberComplement;
+//	cout << numberComplement.findComplement(num);
+//}
