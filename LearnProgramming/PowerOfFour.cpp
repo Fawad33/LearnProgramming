@@ -22,8 +22,8 @@ public:
 	}
 };
 
-void main() {
-	int num = 1;
-	PowerOfFour powerOfFour;
-	cout << powerOfFour.isPowerOfFour(num);
-}
+//void main() {
+//	int num = 1;
+//	PowerOfFour powerOfFour;
+//	cout << powerOfFour.isPowerOfFour(num);
+//}

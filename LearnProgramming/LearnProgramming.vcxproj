@@ -130,6 +130,7 @@
     <ClCompile Include="BalancedBinaryTree.cpp" />
     <ClCompile Include="BalancedBinaryTreeStructNoOpti.cpp" />
     <ClCompile Include="BalancedBinaryTreeWithStruct.cpp" />
+    <ClCompile Include="BinaryNumberWithAlternatingBits.cpp" />
     <ClCompile Include="BinaryTreePaths.cpp" />
     <ClCompile Include="ContainsDuplicate.cpp" />
     <ClCompile Include="ContainsDuplicateII.cpp" />
