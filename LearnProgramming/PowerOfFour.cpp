@@ -7,8 +7,13 @@ public:
 	bool isPowerOfFour(int num) {
 		if (num <= 0)
 			return false;
-		int bitLength = floor(log2(num));
-		if (bitLength % 2 == 0) {
+		int bitLength = 0, numCopy = num;
+		while (numCopy > 0) {
+			numCopy = numCopy >> 1;
+			bitLength++;
+		}
+
+		if ((bitLength - 1) % 2 == 0) {
 			int count = 0;
 			while (num > 0) {
 				if ((num & 1) == 1) {
@@ -22,8 +27,8 @@ public:
 	}
 };
 
-//void main() {
-//	int num = 1;
-//	PowerOfFour powerOfFour;
-//	cout << powerOfFour.isPowerOfFour(num);
-//}
+void main() {
+	int num = 2;
+	PowerOfFour powerOfFour;
+	cout << powerOfFour.isPowerOfFour(num);
+}

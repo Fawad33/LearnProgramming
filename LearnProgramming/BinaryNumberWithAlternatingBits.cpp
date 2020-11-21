@@ -16,8 +16,8 @@ public:
 	}
 };
 
-void main() {
-	int n = 4;
-	BinaryNumberWithAlternatingBits binaryNumberWithAlternatingBits;
-	cout << binaryNumberWithAlternatingBits.hasAlternatingBits(n);
-}
+//void main() {
+//	int n = 4;
+//	BinaryNumberWithAlternatingBits binaryNumberWithAlternatingBits;
+//	cout << binaryNumberWithAlternatingBits.hasAlternatingBits(n);
+//}
