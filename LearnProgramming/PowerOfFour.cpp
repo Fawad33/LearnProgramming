@@ -6,29 +6,21 @@ class PowerOfFour {
 public:
 	bool isPowerOfFour(int num) {
 		if (num <= 0)
-			return false;
-		int bitLength = 0, numCopy = num;
-		while (numCopy > 0) {
-			numCopy = numCopy >> 1;
+			return false;		
+		int count = 0, bitLength = 0;
+		while (num > 0) {
+			if ((num & 1) == 1) {
+				count++;
+			}
+			num = num >> 1;
 			bitLength++;
 		}
-
-		if ((bitLength - 1) % 2 == 0) {
-			int count = 0;
-			while (num > 0) {
-				if ((num & 1) == 1) {
-					count++;
-				}
-				num = num >> 1;
-			}
-			return (count == 1);
-		}
-		return false;
+		return (count == 1 && (bitLength % 2) == 1);
 	}
 };
 
 void main() {
-	int num = 2;
+	int num = 16;
 	PowerOfFour powerOfFour;
 	cout << powerOfFour.isPowerOfFour(num);
 }
