@@ -9,9 +9,10 @@ public:
 			return false;		
 		int count = 0, bitLength = 0;
 		while (num > 0) {
-			if ((num & 1) == 1) {
+			if ((num & 1) == 1)
 				count++;
-			}
+			if (count > 1)
+				return false;
 			num = num >> 1;
 			bitLength++;
 		}
