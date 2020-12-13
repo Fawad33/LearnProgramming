@@ -167,6 +167,7 @@
     <ClCompile Include="ReverseBits.cpp" />
     <ClCompile Include="ReverseBitsLowComplexity.cpp" />
     <ClCompile Include="ReverseString.cpp" />
+    <ClCompile Include="ReverseVowelsOfAstring.cpp" />
     <ClCompile Include="SameTree.cpp" />
     <ClCompile Include="SameTreeWithVector.cpp" />
     <ClCompile Include="SearchInABinarySearchTree.cpp" />

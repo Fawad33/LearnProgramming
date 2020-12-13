@@ -39,8 +39,8 @@ public:
 	}
 };
 
-void main() {
-	string num1 = "1", num2 = "9";
-	AddStrings addStrings;
-	cout << addStrings.addStrings(num1, num2);
-}
+//void main() {
+//	string num1 = "1", num2 = "9";
+//	AddStrings addStrings;
+//	cout << addStrings.addStrings(num1, num2);
+//}
