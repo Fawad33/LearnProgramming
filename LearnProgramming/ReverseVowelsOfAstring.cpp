@@ -28,8 +28,8 @@ public:
 	}
 };
 
-void main() {
-	string s = "hello";
-	ReverseVowelsOfAstring reverseVowelsOfAstring;
-	cout << reverseVowelsOfAstring.reverseVowels(s);
-}
+//void main() {
+//	string s = "hello";
+//	ReverseVowelsOfAstring reverseVowelsOfAstring;
+//	cout << reverseVowelsOfAstring.reverseVowels(s);
+//}

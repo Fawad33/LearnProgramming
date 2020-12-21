@@ -172,6 +172,7 @@
     <ClCompile Include="SameTreeWithVector.cpp" />
     <ClCompile Include="SearchInABinarySearchTree.cpp" />
     <ClCompile Include="SearchInABinarySearchTreeWithLoop.cpp" />
+    <ClCompile Include="SetMismatch.cpp" />
     <ClCompile Include="SingleNumber.cpp" />
     <ClCompile Include="SingleNumberWithSet.cpp" />
     <ClCompile Include="SumOfLeftLeaves.cpp" />
