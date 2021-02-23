@@ -142,6 +142,7 @@
     <ClCompile Include="ExcelSheetColumnNumber.cpp" />
     <ClCompile Include="ExcelSheetColumnTitle.cpp" />
     <ClCompile Include="FactorialTrailingZeroes.cpp" />
+    <ClCompile Include="FibonacciNumber.cpp" />
     <ClCompile Include="FileIO.cpp" />
     <ClCompile Include="FindTheDifference.cpp" />
     <ClCompile Include="Hangman.cpp" />

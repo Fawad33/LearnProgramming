@@ -29,10 +29,10 @@ public:
 	}
 };
 
-void main() {
-	vector<int> nums = { 1,2,2,4 };
-	SetMismatch setMismatch;
-	vector<int> resultInMain = setMismatch.findErrorNums(nums);
-	for (auto i : resultInMain)
-		cout << i;
-}
+//void main() {
+//	vector<int> nums = { 1,2,2,4 };
+//	SetMismatch setMismatch;
+//	vector<int> resultInMain = setMismatch.findErrorNums(nums);
+//	for (auto i : resultInMain)
+//		cout << i;
+//}
