@@ -12,7 +12,7 @@ public:
 	}
 };
 
-void main() {
-	FibonacciNumber fibonacciNumber;
-	cout << fibonacciNumber.fib(3);
-}
+//void main() {
+//	FibonacciNumber fibonacciNumber;
+//	cout << fibonacciNumber.fib(3);
+//}

@@ -1,9 +1,3 @@
-﻿  FibonacciNumber.cpp
-  SetMismatch.cpp
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\FibonacciNumber.cpp(15,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\SetMismatch.cpp(12,21) : warning C4018: '<=': signed/unsigned mismatch
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\SetMismatch.cpp(15,21) : warning C4018: '<': signed/unsigned mismatch
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\SetMismatch.cpp(20,21) : warning C4018: '<=': signed/unsigned mismatch
-  Generating Code...
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\SetMismatch.cpp(24,21) : warning C4018: '<=': signed/unsigned mismatch
+﻿  RansomeNote.cpp
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\RansomeNote.cpp(31,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe

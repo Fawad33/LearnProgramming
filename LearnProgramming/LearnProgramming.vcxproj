@@ -165,6 +165,7 @@
     <ClCompile Include="PowerOfFour.cpp" />
     <ClCompile Include="PowerOfTwo.cpp" />
     <ClCompile Include="PowerOfTwoMethodTwo.cpp" />
+    <ClCompile Include="RansomeNote.cpp" />
     <ClCompile Include="ReverseBits.cpp" />
     <ClCompile Include="ReverseBitsLowComplexity.cpp" />
     <ClCompile Include="ReverseString.cpp" />
