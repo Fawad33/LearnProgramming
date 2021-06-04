@@ -221,6 +221,7 @@
     <ClCompile Include="ValidPalindrome.cpp" />
     <ClCompile Include="VerifyingAnAlienDictionary.cpp" />
     <ClCompile Include="WordPattern.cpp" />
+    <ClCompile Include="WordStats.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sample.h" />

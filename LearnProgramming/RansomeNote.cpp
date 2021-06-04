@@ -27,9 +27,9 @@ public:
 	}
 };
 
-void main() {
-	string ransomNote = "aa";
-	string magazine = "ab";
-	RansomeNote ransomeNoteObject;
-	cout << ransomeNoteObject.canConstruct(ransomNote, magazine);
-}
+//void main() {
+//	string ransomNote = "aa";
+//	string magazine = "ab";
+//	RansomeNote ransomeNoteObject;
+//	cout << ransomeNoteObject.canConstruct(ransomNote, magazine);
+//}

@@ -1,3 +1,4 @@
-﻿  RansomeNote.cpp
-C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\RansomeNote.cpp(31,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
+﻿  WordStats.cpp
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\WordStats.cpp(13,22) : warning C4129: 'i': unrecognized character escape sequence
+C:\Users\Fawadul Hasan\source\repos\LearnProgramming\LearnProgramming\WordStats.cpp(31,13) : warning C4326: return type of 'main' should be 'int' instead of 'void'
   LearnProgramming.vcxproj -> C:\Users\Fawadul Hasan\source\repos\LearnProgramming\Debug\LearnProgramming.exe
