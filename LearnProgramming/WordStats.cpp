@@ -9,6 +9,7 @@ using namespace std;
 class WordStats {
 public:
 	vector<string> vectorOfWords;
+	int numberOfNeighbours = 3;
 
 	vector<string> fileToVectorConverterFunc() {
 		string line;
@@ -29,9 +30,20 @@ public:
 		int indexOfWord;
 	};
 
-	map<string, keyValue> graph;
+	map<string, vector<keyValue>> graph;
 
-	
+	void convertVectorToMap() {
+		for (int i = 0; i < vectorOfWords.size(); i++) {
+			if (graph.find(vectorOfWords[i]) == graph.end())
+				graph.insert(vectorOfWords[i], {'a', 0}); // had to insert a value to enter the key into the map. looking for better approach
+
+			if (i < numberOfNeighbours) {
+				for (int x = 0; x <= i; x++) {
+					graph[vectorOfWords[i]].push_back({ vectorOfWords[x], x });
+				}
+			}
+		}
+	}
 };
 
 void main() {
