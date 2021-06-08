@@ -10,6 +10,7 @@ class WordStats {
 public:
 	vector<string> vectorOfWords;
 	int numberOfNeighbours = 3;
+	string input = "hello";
 
 	vector<string> fileToVectorConverterFunc() {
 		string line;
@@ -41,6 +42,14 @@ public:
 				for (int x = 0; x <= i; x++) {
 					graph[vectorOfWords[i]].push_back({ vectorOfWords[x], x });
 				}
+			}
+		}
+	}
+
+	vector<keyValue> neighbourSearch() {
+		for (int i = 0; i < graph.size(); i++) {
+			if (graph.find(input) != graph.end()) {
+				return graph[i];
 			}
 		}
 	}
