@@ -47,9 +47,26 @@ public:
 	}
 
 	vector<keyValue> neighbourSearch() {
-		for (int i = 0; i < graph.size(); i++) {
+		/*for (int i = 0; i < graph.size(); i++) {
 			if (graph.find(input) != graph.end()) {
 				return graph[i];
+			}
+		}*/
+		// need to find out how to work with this method
+		auto it = graph.find(input);
+		for (it = graph.begin(); it != graph.end(); it++) {
+			if (it != graph.end())
+				return it->second;
+		}
+	}
+
+	void returnCount(vector<keyValue> neighbourWords) {
+		map<string, int> counterMap;
+		
+		for (auto it = neighbourWords.begin(); it != neighbourWords.end(); it++) {
+			auto mapIt = counterMap.find(it->neighbourWord);
+			if (mapIt != counterMap.end()) {
+
 			}
 		}
 	}
