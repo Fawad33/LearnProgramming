@@ -11,6 +11,7 @@ public:
 	vector<string> vectorOfWords;
 	int numberOfNeighbours = 3;
 	string input = "hello";
+	int ifMoreThanorEqual = 3;
 
 	vector<string> fileToVectorConverterFunc() {
 		string line;
@@ -52,7 +53,7 @@ public:
 				return graph[i];
 			}
 		}*/
-		// need to find out how to work with this method
+		//need to find out how to work with this method
 		auto it = graph.find(input);
 		for (it = graph.begin(); it != graph.end(); it++) {
 			if (it != graph.end())
@@ -60,15 +61,28 @@ public:
 		}
 	}
 
-	void returnCount(vector<keyValue> neighbourWords) {
-		map<string, int> counterMap;
+	vector<string> returnCount(vector<keyValue> neighbourWordsVector) {
+		map<keyValue, int> counterMap;
 		
-		for (auto it = neighbourWords.begin(); it != neighbourWords.end(); it++) {
+		for (auto it = neighbourWordsVector.begin(); it != neighbourWordsVector.end(); it++) {
 			auto mapIt = counterMap.find(it->neighbourWord);
 			if (mapIt != counterMap.end()) {
-
+				mapIt->
+				mapIt->second++;
+			}
+			else {
+				counterMap.insert({ mapIt, 1 });
 			}
 		}
+
+		vector<string> output;
+		for (auto it = counterMap.begin(); it != counterMap.end(); it++) {
+			if (it->second >= ifMoreThanorEqual) {
+				output.push_back(it->first);
+			}
+		}
+
+		return output;
 	}
 };
 
