@@ -55,8 +55,8 @@ public:
 		}*/
 		//need to find out how to work with this method
 		auto it = graph.find(input);
-		for (it = graph.begin(); it != graph.end(); it++) {
-			if (it != graph.end())
+		for (auto itGraph = graph.begin(); itGraph != graph.end(); itGraph++) {
+			if (it == itGraph->first)
 				return it->second;
 		}
 	}
@@ -67,11 +67,10 @@ public:
 		for (auto it = neighbourWordsVector.begin(); it != neighbourWordsVector.end(); it++) {
 			auto mapIt = counterMap.find(it->neighbourWord);
 			if (mapIt != counterMap.end()) {
-				mapIt->
 				mapIt->second++;
 			}
 			else {
-				counterMap.insert({ mapIt, 1 });
+				counterMap.insert({ mapIt->first, 1 });
 			}
 		}
 
