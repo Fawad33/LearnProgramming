@@ -1,27 +1,27 @@
-#include<iostream>
-
-using namespace std;
-
-struct TreeNode {
-	int val;
-	TreeNode* left;
-	TreeNode* right;
-	TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-};
-
-class SearchInABinarySraechTreeWithLoop {
-public:
-	TreeNode* searchBST(TreeNode* root, int val) {
-		while (true) {
-			if (root == nullptr || root->val == val)
-				return root;
-			if (root->val > val)
-				root = root->left;
-			else
-				root = root->right;
-		}
-	}
-};
+//#include<iostream>
+//
+//using namespace std;
+//
+//struct TreeNode {
+//	int val;
+//	TreeNode* left;
+//	TreeNode* right;
+//	TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+//};
+//
+//class SearchInABinarySraechTreeWithLoop {
+//public:
+//	TreeNode* searchBST(TreeNode* root, int val) {
+//		while (true) {
+//			if (root == nullptr || root->val == val)
+//				return root;
+//			if (root->val > val)
+//				root = root->left;
+//			else
+//				root = root->right;
+//		}
+//	}
+//};
 
 //void main() {
 //	int val = 2;
