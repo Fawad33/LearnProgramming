@@ -30,8 +30,9 @@ public:
 
 		return vectorOfWords;
 	}
-
-	map<string, vector<stringAndCount>> graph;	
+	
+	map<string, vector<stringAndCount>> graph;
+	stringAndCount initializeGraph = { "str", 1 };
 
 	void insertIntoGraph(string key, string word) {
 		for (auto it = graph.begin(); it != graph.end(); it++) {
@@ -43,14 +44,14 @@ public:
 						jt->countOfSameNeighbour++;
 					}						
 					else {
-						stringAndCount valueToInsert = { word, 0 };	
+						stringAndCount valueToInsert = { word, 1 };	
 						it->second.push_back(valueToInsert);
 					}
 						
 				}
 			}
 			else {
-				stringAndCount valueToInsertinGraph = { "a", 0 };
+				stringAndCount valueToInsertinGraph = { word, 1 };
 				graph.insert({ key, {valueToInsertinGraph} });
 			}
 		}
