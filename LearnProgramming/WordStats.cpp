@@ -32,7 +32,8 @@ public:
 	}
 	
 	map<string, vector<stringAndCount>> graph;
-	stringAndCount initializeGraph = { "str", 1 };
+	stringAndCount initializeGraphValue = { "str", 1 };
+	
 
 	void insertIntoGraph(string key, string word) {
 		for (auto it = graph.begin(); it != graph.end(); it++) {
@@ -46,6 +47,7 @@ public:
 					else {
 						stringAndCount valueToInsert = { word, 1 };	
 						it->second.push_back(valueToInsert);
+						break;
 					}
 						
 				}
@@ -58,6 +60,7 @@ public:
 	}
 
 	void convertVectorIntoMap(vector<string> vectorOfWords) {
+		graph.insert({ "a", {initializeGraphValue} });
 		for (int i = 0; i < vectorOfWords.size(); i++) {
 			if (k > i) {
 				for (int j = 0; j < i; j++)
