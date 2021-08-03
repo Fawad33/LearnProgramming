@@ -6,16 +6,11 @@
 
 using namespace std;
 
-struct stringAndCount {
-	string neighbourWord;
-	int countOfSameNeighbour;
-};
-
 class WordStats {
 public:
 	vector<string> vectorOfWords;
 	int k = 3;
-	string input = "banana";
+	string input = "ate";
 
 	vector<string> fileToVectorConverterFunc() {
 		string line;
@@ -27,67 +22,66 @@ public:
 			}
 			inputFile.close();
 		}
-
 		return vectorOfWords;
 	}
 	
-	map<string, vector<stringAndCount>> graph;	
+	map<string, map<string, int>> graph;
 
 	void insertIntoGraph(string key, string word) {
-		map<string, vector<stringAndCount>> :: iterator graphIterator;
-		graphIterator = graph.find(key);
 		bool flag = true;
+		map<string, map<string, int>> :: iterator graphIterator;
+		graphIterator = graph.find(key);		
 		if (graphIterator != graph.end()) {
-			for (auto jt = graphIterator->second.begin(); jt != graphIterator->second.end(); jt++) {
-				if (word == jt->neighbourWord) {
-					jt->countOfSameNeighbour++;
+			map<string, int> ::iterator valueMapIterator;
+			valueMapIterator = graphIterator->second.find(word);
+			if (valueMapIterator != graphIterator->second.end()) {
+				if (word == valueMapIterator->first) {
+					valueMapIterator->second++;
 					flag = false;
-				}								
+				}
 			}
-			if (flag != false) {
-				stringAndCount valueToInsert = { word, 1 };
-				graphIterator->second.push_back(valueToInsert);
-			}
+			if (flag == true)
+				graphIterator->second.insert({ word, 1 });
 		}
 		else {
-			stringAndCount valueToInsertinGraph = { word, 1 };
-			graph.insert({ key, {valueToInsertinGraph} });
-		}
+			map<string, int> insertValue = { {word, 1} };
+			graph.insert({ key, insertValue });
+		}	
 	}
 
-	void convertVectorIntoMap(vector<string> vectorOfWords) {
-		for (int i = 0; i < vectorOfWords.size(); i++) {
-			if (k > i) {
-				for (int j = 0; j < i; j++)
-					insertIntoGraph(vectorOfWords[i], vectorOfWords[j]);
-				for(int j = (i + 1); j <= (i + k); j++)
-					insertIntoGraph(vectorOfWords[i], vectorOfWords[j]);
-			}
-			else {
-				for (int j = (i - k); j < i; j++)
-					insertIntoGraph(vectorOfWords[i], vectorOfWords[j]);
-				for(int j = (i + 1); j < vectorOfWords.size(); j++)
-					insertIntoGraph(vectorOfWords[i], vectorOfWords[j]);
+		void convertVectorIntoMap(vector<string> vectorOfWords) {
+			for (int i = 0; i < vectorOfWords.size(); i++) {
+				if (k > i) {
+					for (int j = 0; j < i; j++)
+						insertIntoGraph(vectorOfWords[i], vectorOfWords[j]);
+					for (int j = (i + 1); j <= (i + k); j++)
+						insertIntoGraph(vectorOfWords[i], vectorOfWords[j]);
+				}
+				else {
+					for (int j = (i - k); j < i; j++)
+						insertIntoGraph(vectorOfWords[i], vectorOfWords[j]);
+					for (int j = (i + 1); j < vectorOfWords.size(); j++)
+						insertIntoGraph(vectorOfWords[i], vectorOfWords[j]);
+				}
 			}
 		}
-	}
 
-	vector<stringAndCount> neighbourSearch() {
-		auto it = graph.find(input);
-		for (auto itGraph = graph.begin(); itGraph != graph.end(); itGraph++) {
-			if (it == itGraph)
-				return itGraph->second;
+		map<string, int> neighbourSearch() {
+			auto it = graph.find(input);
+			for (auto itGraph = graph.begin(); itGraph != graph.end(); itGraph++) {
+				if (it == itGraph)
+					return itGraph->second;
+			}
 		}
-	}
-};
+	};
 
 void main() {
 	vector<string> tempVector;
 	WordStats wordStats;
 	tempVector = wordStats.fileToVectorConverterFunc();
 	wordStats.convertVectorIntoMap(tempVector);
-	vector<stringAndCount> tempResult = wordStats.neighbourSearch();
-	for (int i = 0; i < tempResult.size(); i++) {
-		cout << tempResult[i].neighbourWord << " appeared " << tempResult[i].countOfSameNeighbour << " times.\n";
+	map<string, int> tempResult = wordStats.neighbourSearch();
+	for (auto i = tempResult.begin(); i != tempResult.end(); i++) {
+		cout << i->first << " appeared " << i->second << " times.\n";
 	}
 }
