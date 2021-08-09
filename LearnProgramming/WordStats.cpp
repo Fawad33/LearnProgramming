@@ -9,8 +9,8 @@ using namespace std;
 class WordStats {
 public:
 	vector<string> vectorOfWords;
-	int k = 3;
-	string input = "ate";
+	int k = 2;
+	string input = "the";
 
 	vector<string> fileToVectorConverterFunc() {
 		string line;
@@ -60,7 +60,7 @@ public:
 				else {
 					for (int j = (i - k); j < i; j++)
 						insertIntoGraph(vectorOfWords[i], vectorOfWords[j]);
-					for (int j = (i + 1); j < vectorOfWords.size(); j++)
+					for (int j = (i + 1); j < (i + 1 + k) && j < vectorOfWords.size(); j++)
 						insertIntoGraph(vectorOfWords[i], vectorOfWords[j]);
 				}
 			}
