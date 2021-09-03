@@ -309,6 +309,12 @@
     <ClCompile Include="RansomeNote.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="WordStats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WordSearchWithContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sample.h">

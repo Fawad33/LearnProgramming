@@ -49,39 +49,39 @@ public:
 		}	
 	}
 
-		void convertVectorIntoMap(vector<string> vectorOfWords) {
-			for (int i = 0; i < vectorOfWords.size(); i++) {
-				if (k > i) {
-					for (int j = 0; j < i; j++)
-						insertIntoGraph(vectorOfWords[i], vectorOfWords[j]);
-					for (int j = (i + 1); j <= (i + k); j++)
-						insertIntoGraph(vectorOfWords[i], vectorOfWords[j]);
-				}
-				else {
-					for (int j = (i - k); j < i; j++)
-						insertIntoGraph(vectorOfWords[i], vectorOfWords[j]);
-					for (int j = (i + 1); j < (i + 1 + k) && j < vectorOfWords.size(); j++)
-						insertIntoGraph(vectorOfWords[i], vectorOfWords[j]);
-				}
+	void convertVectorIntoMap(vector<string> vectorOfWords) {
+		for (int i = 0; i < vectorOfWords.size(); i++) {
+			if (k > i) {
+				for (int j = 0; j < i; j++)
+					insertIntoGraph(vectorOfWords[i], vectorOfWords[j]);
+				for (int j = (i + 1); j <= (i + k); j++)
+					insertIntoGraph(vectorOfWords[i], vectorOfWords[j]);
+			}
+			else {
+				for (int j = (i - k); j < i; j++)
+					insertIntoGraph(vectorOfWords[i], vectorOfWords[j]);
+				for (int j = (i + 1); j < (i + 1 + k) && j < vectorOfWords.size(); j++)
+					insertIntoGraph(vectorOfWords[i], vectorOfWords[j]);
 			}
 		}
-
-		map<string, int> neighbourSearch() {
-			auto it = graph.find(input);
-			for (auto itGraph = graph.begin(); itGraph != graph.end(); itGraph++) {
-				if (it == itGraph)
-					return itGraph->second;
-			}
-		}
-	};
-
-void main() {
-	vector<string> tempVector;
-	WordStats wordStats;
-	tempVector = wordStats.fileToVectorConverterFunc();
-	wordStats.convertVectorIntoMap(tempVector);
-	map<string, int> tempResult = wordStats.neighbourSearch();
-	for (auto i = tempResult.begin(); i != tempResult.end(); i++) {
-		cout << i->first << " appeared " << i->second << " times.\n";
 	}
-}
+
+	map<string, int> neighbourSearch() {
+		auto it = graph.find(input);
+		for (auto itGraph = graph.begin(); itGraph != graph.end(); itGraph++) {
+			if (it == itGraph)
+				return itGraph->second;
+		}
+	}
+};
+
+//void main() {
+//	vector<string> tempVector;
+//	WordStats wordStats;
+//	tempVector = wordStats.fileToVectorConverterFunc();
+//	wordStats.convertVectorIntoMap(tempVector);
+//	map<string, int> tempResult = wordStats.neighbourSearch();
+//	for (auto i = tempResult.begin(); i != tempResult.end(); i++) {
+//		cout << i->first << " appeared " << i->second << " times.\n";
+//	}
+//}
