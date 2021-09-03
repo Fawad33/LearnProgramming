@@ -88,6 +88,6 @@ void main() {
 	WordSearchWithContext wordSearchWithContext;
 	vector<string> temp = wordSearchWithContext.fileToVectorConverterFunc();
 	for (auto i : temp) {
-		cout << i << " ";
+		cout << i << " v ";
 	}
 }
