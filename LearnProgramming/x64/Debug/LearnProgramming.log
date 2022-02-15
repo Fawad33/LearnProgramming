@@ -1,8 +1,4 @@
-﻿  WordSearchWithContext.cpp
-C:\Users\User\source\repos\LearnProgramming\LearnProgramming\WordSearchWithContext.cpp(17,22): warning C4129: 'W': unrecognized character escape sequence
-  WordStats.cpp
-C:\Users\User\source\repos\LearnProgramming\LearnProgramming\WordStats.cpp(17,22): warning C4129: 'i': unrecognized character escape sequence
-C:\Users\User\source\repos\LearnProgramming\LearnProgramming\WordStats.cpp(78,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  Generating Code...
-C:\Users\User\source\repos\LearnProgramming\LearnProgramming\WordStats.cpp(75): warning C4715: 'WordStats::neighbourSearch': not all control paths return a value
-  LearnProgramming.vcxproj -> C:\Users\User\source\repos\LearnProgramming\x64\Debug\LearnProgramming.exe
+﻿  MedianOfTwoSortedArrays.cpp
+C:\Users\Fawad\source\repos\LearnProgramming\LearnProgramming\MedianOfTwoSortedArrays.cpp(15,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Fawad\source\repos\LearnProgramming\LearnProgramming\MedianOfTwoSortedArrays.cpp(26,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  LearnProgramming.vcxproj -> C:\Users\Fawad\Source\Repos\LearnProgramming\x64\Debug\LearnProgramming.exe
