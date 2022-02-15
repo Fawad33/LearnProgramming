@@ -84,10 +84,10 @@ public:
 	}
 };
 
-void main() {
-	WordSearchWithContext wordSearchWithContext;
-	vector<string> temp = wordSearchWithContext.fileToVectorConverterFunc();
-	for (auto i : temp) {
-		cout << i << " v ";
-	}
-}
+//void main() {
+//	WordSearchWithContext wordSearchWithContext;
+//	vector<string> temp = wordSearchWithContext.fileToVectorConverterFunc();
+//	for (auto i : temp) {
+//		cout << i << " v ";
+//	}
+//}
