@@ -318,6 +318,9 @@
     <ClCompile Include="MedianOfTwoSortedArrays.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MedianOfTwoSortedArraysMethodTwo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sample.h">

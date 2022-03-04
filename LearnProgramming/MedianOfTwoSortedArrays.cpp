@@ -23,8 +23,8 @@ public:
     }
 };
 
-void main() {
-    vector<int> nums1 = { 1,2 }, nums2 = { 3,4 };
-    MedianOfTwoSortedArrays medianOfTwoSortedArrays;
-    cout << medianOfTwoSortedArrays.findMedianSortedArrays(nums1, nums2);
-}
+//void main() {
+//    vector<int> nums1 = { 1,2 }, nums2 = { 3,4 };
+//    MedianOfTwoSortedArrays medianOfTwoSortedArrays;
+//    cout << medianOfTwoSortedArrays.findMedianSortedArrays(nums1, nums2);
+//}

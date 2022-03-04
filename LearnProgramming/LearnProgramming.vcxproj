@@ -153,6 +153,7 @@
     <ClCompile Include="MajorityElement.cpp" />
     <ClCompile Include="MaximumDepthOfBinaryTree.cpp" />
     <ClCompile Include="MedianOfTwoSortedArrays.cpp" />
+    <ClCompile Include="MedianOfTwoSortedArraysMethodTwo.cpp" />
     <ClCompile Include="MinimumDepthOfBinaryTree.cpp" />
     <ClCompile Include="MinStack.cpp" />
     <ClCompile Include="MissingNumber.cpp" />
