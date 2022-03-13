@@ -11,7 +11,7 @@ public:
             nums1.push_back(*i);
         }
         sort(nums1.begin(), nums1.end());
-        double result = 0;;
+        double result = 0;
         int size = nums1.size();
         if (size % 2 == 0) {
             result = float(float(nums1[(size / 2) - 1] + nums1[size / 2])/2);
