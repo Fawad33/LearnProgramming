@@ -48,8 +48,8 @@ public:
 	}
 };
 
-void main() {
-	vector<int> m = { 1,3 }, n = { 2 };
-	MedianOfTwoSortedArraysMethodTwo medianOfTwoSortedArraysMethodTwo;
-	cout << medianOfTwoSortedArraysMethodTwo.findMedianSortedArrays(m, n);
-}
+//void main() {
+//	vector<int> m = { 1,3 }, n = { 2 };
+//	MedianOfTwoSortedArraysMethodTwo medianOfTwoSortedArraysMethodTwo;
+//	cout << medianOfTwoSortedArraysMethodTwo.findMedianSortedArrays(m, n);
+//}

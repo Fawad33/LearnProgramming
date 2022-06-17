@@ -146,6 +146,7 @@
     <ClCompile Include="FileIO.cpp" />
     <ClCompile Include="FindTheDifference.cpp" />
     <ClCompile Include="Hangman.cpp" />
+    <ClCompile Include="HeapSort.cpp" />
     <ClCompile Include="ImplementStrStr.cpp" />
     <ClCompile Include="IntersectionOfTwoArrays.cpp" />
     <ClCompile Include="InvertBinaryTree.cpp" />
@@ -168,6 +169,7 @@
     <ClCompile Include="PowerOfTwo.cpp" />
     <ClCompile Include="PowerOfTwoMethodTwo.cpp" />
     <ClCompile Include="RansomeNote.cpp" />
+    <ClCompile Include="RelativeRanks.cpp" />
     <ClCompile Include="ReverseBits.cpp" />
     <ClCompile Include="ReverseBitsLowComplexity.cpp" />
     <ClCompile Include="ReverseString.cpp" />
