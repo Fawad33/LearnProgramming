@@ -36,10 +36,10 @@ public:
 	}
 };
 
-void main() {
-	vector<int> arr = { 1, 12, 9, 5, 6, 10 };
-	int sizeOfArray = arr.size();
-	HeapSort heapSort;
-	heapSort.heapsort(arr, sizeOfArray);
-	heapSort.printArray(arr, sizeOfArray);
-}
+//void main() {
+//	vector<int> arr = { 1, 12, 9, 5, 6, 10 };
+//	int sizeOfArray = arr.size();
+//	HeapSort heapSort;
+//	heapSort.heapsort(arr, sizeOfArray);
+//	heapSort.printArray(arr, sizeOfArray);
+//}
