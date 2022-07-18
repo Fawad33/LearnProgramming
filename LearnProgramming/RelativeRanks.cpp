@@ -14,7 +14,7 @@ public:
             heap.push({ score[i], i });
         }
 
-        vector<string> answer;
+        vector<string> answer(size, "GhorarDim");
         int i = 0;
         while (!heap.empty()) {
             int index = heap.top().second;
