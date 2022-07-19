@@ -1,4 +1,3 @@
-﻿  RelativeRanks.cpp
-C:\Users\Fawad\source\repos\LearnProgramming\LearnProgramming\RelativeRanks.cpp(12,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Fawad\source\repos\LearnProgramming\LearnProgramming\RelativeRanks.cpp(38,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+﻿  LastStoneWeight.cpp
+C:\Users\Fawad\source\repos\LearnProgramming\LearnProgramming\LastStoneWeight.cpp(31,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
   LearnProgramming.vcxproj -> C:\Users\Fawad\Source\Repos\LearnProgramming\x64\Debug\LearnProgramming.exe

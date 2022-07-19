@@ -35,10 +35,10 @@ public:
     }
 };
 
-void main() {
-    vector<int> score = {5, 4, 3, 2, 1};
-    RelativeRanks relativeRanks;
-    vector<string> answer = relativeRanks.findRelativeRanks(score);
-    for (int i = 0; i < answer.size(); i++)
-        cout << answer[i] << " ";
-}
+//void main() {
+//    vector<int> score = {5, 4, 3, 2, 1};
+//    RelativeRanks relativeRanks;
+//    vector<string> answer = relativeRanks.findRelativeRanks(score);
+//    for (int i = 0; i < answer.size(); i++)
+//        cout << answer[i] << " ";
+//}
