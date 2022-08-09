@@ -154,6 +154,7 @@
     <ClCompile Include="LastStoneWeight.cpp" />
     <ClCompile Include="MajorityElement.cpp" />
     <ClCompile Include="MaximumDepthOfBinaryTree.cpp" />
+    <ClCompile Include="MaximumProductOfTwoElements.cpp" />
     <ClCompile Include="MedianOfTwoSortedArrays.cpp" />
     <ClCompile Include="MedianOfTwoSortedArraysMethodTwo.cpp" />
     <ClCompile Include="MinimumDepthOfBinaryTree.cpp" />

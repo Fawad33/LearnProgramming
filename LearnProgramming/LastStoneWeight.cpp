@@ -28,8 +28,8 @@ public:
     }
 };
 
-void main() {
-    vector<int> stones = { 1 };
-    LastStoneWeight lastStoneWeight;
-    cout << lastStoneWeight.lastStoneWeight(stones);
-}
+//void main() {
+//    vector<int> stones = { 1 };
+//    LastStoneWeight lastStoneWeight;
+//    cout << lastStoneWeight.lastStoneWeight(stones);
+//}
