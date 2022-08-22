@@ -333,6 +333,9 @@
     <ClCompile Include="MaximumProductOfTwoElements.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="TopKFrequentElements.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sample.h">

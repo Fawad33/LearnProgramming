@@ -185,6 +185,7 @@
     <ClCompile Include="SingleNumberWithSet.cpp" />
     <ClCompile Include="SumOfLeftLeaves.cpp" />
     <ClCompile Include="SymmetricTree.cpp" />
+    <ClCompile Include="TopKFrequentElements.cpp" />
     <ClCompile Include="TraverseTreeWithStack.cpp" />
     <ClCompile Include="FrequencyCountOfChar.cpp" />
     <ClCompile Include="FrequencyCountOfInt.cpp" />

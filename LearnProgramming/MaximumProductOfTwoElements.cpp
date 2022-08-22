@@ -20,8 +20,8 @@ public:
     }
 };
 
-void main() {
-    vector<int> nums = { 3,4,5,2 };
-    MaxixmumProductOfTwoElements maxixmumProductOfTwoElements;
-    cout << maxixmumProductOfTwoElements.maxProduct(nums);
-}
+//void main() {
+//    vector<int> nums = { 3,4,5,2 };
+//    MaxixmumProductOfTwoElements maxixmumProductOfTwoElements;
+//    cout << maxixmumProductOfTwoElements.maxProduct(nums);
+//}
