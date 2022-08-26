@@ -12,7 +12,10 @@ public:
         map<int, int> counterMap;
         for (int i = 0; i < nums.size(); i++) {
             if (counterMap.find(nums[i]) != counterMap.end()) {
-                counterMap.insert({ nums[i], 0 });
+                counterMap[nums[i]]++;                
+            }
+            else {
+                counterMap.insert({ nums[i], 1 });
             }
         }
 
@@ -23,6 +26,7 @@ public:
         vector<int> result;
         for (int i = 0; i < k; i++) {
             result.push_back(queue.top().second);
+            queue.pop();
         }
 
         return result;
