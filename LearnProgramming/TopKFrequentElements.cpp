@@ -33,12 +33,12 @@ public:
     }
 };
 
-void main() {
-    vector<int> nums = { 1,1,1,2,2,3 };
-    int k = 2;
-    TopKFrequentElements topKFrequentElements;
-    vector<int> result = topKFrequentElements.topKFrequent(nums, k);
-    for (int i = 0; i < k; i++) {
-        cout << result[i] << " ";
-    }
-}
+//void main() {
+//    vector<int> nums = { 1,1,1,2,2,3 };
+//    int k = 2;
+//    TopKFrequentElements topKFrequentElements;
+//    vector<int> result = topKFrequentElements.topKFrequent(nums, k);
+//    for (int i = 0; i < k; i++) {
+//        cout << result[i] << " ";
+//    }
+//}

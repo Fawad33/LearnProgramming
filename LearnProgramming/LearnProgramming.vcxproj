@@ -151,6 +151,7 @@
     <ClCompile Include="IntersectionOfTwoArrays.cpp" />
     <ClCompile Include="InvertBinaryTree.cpp" />
     <ClCompile Include="IsomorphicString.cpp" />
+    <ClCompile Include="KthLargestElementInAnArray.cpp" />
     <ClCompile Include="LastStoneWeight.cpp" />
     <ClCompile Include="MajorityElement.cpp" />
     <ClCompile Include="MaximumDepthOfBinaryTree.cpp" />
