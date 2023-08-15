@@ -20,8 +20,8 @@ public:
     }
 };
 
-void main() {
-    vector<int> nums = { 3,2,1,5,6,4 };
-    KthLargestElementInAnArray kthLargestElementInAnArray;
-    cout << kthLargestElementInAnArray.findKthLargest(nums, 2);
-}
+//void main() {
+//    vector<int> nums = { 3,2,1,5,6,4 };
+//    KthLargestElementInAnArray kthLargestElementInAnArray;
+//    cout << kthLargestElementInAnArray.findKthLargest(nums, 2);
+//}

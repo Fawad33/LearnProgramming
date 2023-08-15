@@ -1,3 +1,3 @@
-﻿  KthLargestElementInAnArray.cpp
-C:\Users\Fawad\source\repos\LearnProgramming\LearnProgramming\KthLargestElementInAnArray.cpp(25,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+﻿  DivideTwoIntegers.cpp
+C:\Users\Fawad\source\repos\LearnProgramming\LearnProgramming\DivideTwoIntegers.cpp(38,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
   LearnProgramming.vcxproj -> C:\Users\Fawad\Source\Repos\LearnProgramming\x64\Debug\LearnProgramming.exe

@@ -339,6 +339,9 @@
     <ClCompile Include="KthLargestElementInAnArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DivideTwoIntegers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sample.h">

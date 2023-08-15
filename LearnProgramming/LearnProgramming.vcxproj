@@ -139,6 +139,7 @@
     <ClCompile Include="CountPrimes.cpp" />
     <ClCompile Include="DecimalToBinary.cpp" />
     <ClCompile Include="DepthFirstSearch.cpp" />
+    <ClCompile Include="DivideTwoIntegers.cpp" />
     <ClCompile Include="ExcelSheetColumnNumber.cpp" />
     <ClCompile Include="ExcelSheetColumnTitle.cpp" />
     <ClCompile Include="FactorialTrailingZeroes.cpp" />
